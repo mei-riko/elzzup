@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.navbar-mobile{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 101;
+
+    width: 100%;
+    background: $black;
+    color: $white;
+
+    height: 50px;
+
+    .navbar{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        
+        .navbar__link{
+            padding: 15px;
+        }
+    }
+}

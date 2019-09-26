@@ -1,11 +1,16 @@
 $white:                     #ffffff;
-$black:                     #000000;
+$black:                     #252526;
 $light-grey:                #f6f6f6;
-$grey:                      #726d72;
+$grey:                      #DBDBDB;
 $dark-grey:                 #3d3e40;
+$red:                       #F42121;
+$blue:                      #00F3D4;
+$light-blue:                #E3F7F0;
+$gold:                      #FFC700;
 
-$link-color:                #232323 !default;
-$link-hover-color:          #dd5287 !default;
+
+$link-color:                #252526 !default;
+$link-hover-color:          #F42121 !default;
 $link-decoration:           none !default;
 $link-hover-decoration:     underline !default;
 
@@ -28,9 +33,9 @@ $container-max-widths: (
 ) !default;
 
 $body-color:                #000000;
-$body-bg:                   #ffffff;
+$body-bg:                   #F4FAF8;
 
-$font-family-base:            "Noto Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base:            "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 

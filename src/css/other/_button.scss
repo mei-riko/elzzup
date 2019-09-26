@@ -1,0 +1,16 @@
+.btn{
+    border: none;
+    outline: none;
+    background: none;
+    transition: .4s;
+
+    &_border{
+        color: #969696;
+        border: 1px solid #C4C4C4;
+        border-radius: 4px;
+        padding: 6px 10px;
+        &:hover{
+            background: $body-bg;
+        }
+    }
+}
