@@ -1,0 +1,45 @@
+.cabinet-task{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background: $white;
+    border-bottom: 1px solid $grey;
+    .cabinet-task__title{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 6px;
+        padding-right: 40px;
+    }
+    .cabinet-task__offer{
+        color: $dark-grey;
+    }
+    .cabinet-task__reward{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size:24px;
+        line-height: 1;
+        font-weight: bold;
+        color: $red;
+    }
+
+    &_locked{
+        background: $body-bg;
+        .cabinet-task__title,
+        .cabinet-task__offer,
+        .cabinet-task__reward{
+            color: $grey;
+        }
+    }
+}
+
+.container_cabinet-task{
+    padding: 0;
+
+    .col-6:nth-child(2n){
+        .cabinet-task{
+            border-left: 1px solid $grey;
+        }
+    }
+}

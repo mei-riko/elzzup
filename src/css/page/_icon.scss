@@ -6,6 +6,10 @@
     align-items: center;
     justify-content: center;
 
+    .path{
+        fill: $black;
+    }
+
     &_link{
         transition: .4s;
         &:hover{

@@ -1,0 +1,140 @@
+.message{
+    position: relative;
+    background: $white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    // column
+    .message__row{
+        .message__info{
+            padding-right: 40px;
+        }
+
+        & + .message__row{
+            margin-top: 30px;
+        }
+
+        &_answer{
+            justify-content: flex-end;
+            .message__info{
+                padding-left: 40px;
+                padding-right: 0;
+            }
+        }
+    }
+    .message__image{
+        flex: 0 0 100px;
+        .img-fluid{
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+        }
+        .no-image{
+            display: block;
+            overflow: hidden;
+
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            
+            background: $light-blue;
+            color: $blue;
+
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 60px;
+            text-align: center;
+        }
+    }
+    .message__info{
+        flex: 0 0 calc(100% - 100px);
+        padding-left: 0;
+        position: relative;
+        .message__data{
+            position: absolute;
+            top: 6px;
+            right: 20px;
+            line-height: 1;
+        }
+    }
+    // elements
+    .message__data{
+        font-size: 10px;
+        color: $dark-grey;
+    }
+    .message__alert{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        background: $red;
+        color: $white;
+
+        font-weight: bold;
+        line-height: 1;
+
+        border-radius: 0 2px 0 0;
+        padding: 4px 10px;
+    }
+    .message__name{
+        color: $black;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+    .message__introtext{
+        color: $dark-grey;
+    }
+    .message__item{
+        padding: 10px;
+        background: $body-bg;
+        & + .message__item{
+            margin-top: 20px;
+        }
+    }
+    &:hover{
+        text-decoration: none;
+    }
+    & + .message{
+        margin-top: 0;
+    }
+
+    &_inside{
+        background: $white;
+        box-shadow: none;
+        padding: 20px 0 100px;
+        margin: 0;
+        .message__name{
+            margin-bottom: 0;
+        }
+        .message__data{
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+        .message__row{
+            .message__info{
+                .message__data{
+                    position: unset;
+                }
+            }
+        }
+    }
+}
+
+.message-answer{
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    .btn{
+        height: 100%;
+        width: 40px;
+        background-size: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

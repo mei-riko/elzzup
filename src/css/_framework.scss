@@ -38,6 +38,9 @@ p {
     &.lead{
         font-size: 1.15em;
     }
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 ol, ul{
     padding: 0;

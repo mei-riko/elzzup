@@ -44,7 +44,14 @@
         & + .cabinet-navigation__link{
             margin-left: 25px;
         }
-
+        &--active{
+            .icon{
+                background: $black;
+                .path{
+                    fill: $white;
+                }
+            }
+        }
         &:hover{
             text-decoration: none;
         }

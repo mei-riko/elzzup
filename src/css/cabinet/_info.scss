@@ -1,6 +1,5 @@
 .cabinet-info{
     position: relative;
-    overflow-x: hidden;
     max-width: 100%;
     
     background: $white;
@@ -8,14 +7,27 @@
     
     padding: 30px 0 20px;
     margin-bottom: 10px;
-    
+    // column
+    .cabinet-info__image{
+        flex: 0 0 100px;
+    }
+    .cabinet-info__data{
+        flex: 0 0 calc(100% - 100px);
+        padding-left: 0;
+        overflow-x: hidden;      
+    }
+    // elements
     .cabinet-info__pay{
         position: absolute;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         background: linear-gradient(180deg, #00F3D4 0%, #02A5AE 100%);
-        border-radius: 20px;
-        padding: 10px 12px;
+        border-radius: 25px;
+        padding: 15px 17px;
+
+        right: 20px;
+        bottom: -20px;
+        z-index: 11;
         .svg{
             width: 16px;
             height: 19px;
@@ -39,7 +51,6 @@
         padding: 2px 6px;
         margin-bottom: 5px;
     }
-
     .cabinet-info__label{
         font-size: 8px;
         line-height: 1;
@@ -55,18 +66,18 @@
         white-space: nowrap;
     }
 
+    // start page
     &_full{
         .cabinet-info__image{
             position: relative;
             flex: 0 0 140px;
             .cabinet-info__pay{
-                top: 60px;
+                top: 70px;
                 left: 20px;
             }
         }
         .cabinet-info__data{
             flex: 0 0 calc(100% - 140px);
-            padding-left: 0;
         }
     }
 }

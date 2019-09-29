@@ -13,4 +13,14 @@
             background: $body-bg;
         }
     }
+
+    &_message{
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        background: url("../img/redo-variant.svg") no-repeat center/contain;
+        &:hover{
+            background: $light-blue url("../img/redo-variant.svg") no-repeat center/contain;
+        }
+    }
 }
