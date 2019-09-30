@@ -4,16 +4,27 @@
     background: none;
     transition: .4s;
 
+    &:hover{
+        text-decoration: none;
+    }
+
     &_border{
         color: #969696;
         border: 1px solid #C4C4C4;
         border-radius: 4px;
-        padding: 6px 10px;
+        padding: 6px 10px 4px;
         &:hover{
             background: $body-bg;
         }
+        &--active{
+            color: $white;
+            background: $blue;
+            &:hover{
+                color: $white;
+                background: darken($color: $blue, $amount: 5%);
+            }
+        }
     }
-
     &_message{
         padding: 0;
         width: 30px;
@@ -22,5 +33,14 @@
         &:hover{
             background: $light-blue url("../img/redo-variant.svg") no-repeat center/contain;
         }
+    }
+}
+
+.btn-group{
+    @extend .row;
+    @extend .no-gutters;
+
+    .btn{
+        margin: 0 6px;
     }
 }

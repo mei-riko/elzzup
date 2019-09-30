@@ -40,11 +40,7 @@
             border-radius: 2px;
             padding: 2px 6px;
         }
-
-        & + .cabinet-navigation__link{
-            margin-left: 25px;
-        }
-        &--active{
+        &.cabinet-navigation__link--active{
             .icon{
                 background: $black;
                 .path{
@@ -55,10 +51,16 @@
         &:hover{
             text-decoration: none;
         }
-
-        &_last{
+        & + .cabinet-navigation__link{
+            margin-left: 25px;
+        }
+        &.cabinet-navigation__link_last{
             margin-right: 20px;
         }
+    }
+
+    .btn{
+        white-space: nowrap;
     }
 }
 

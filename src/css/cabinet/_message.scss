@@ -1,7 +1,11 @@
 .message{
     position: relative;
+
     background: $white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    
+    display: block;
+
     padding: 16px 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -121,6 +125,16 @@
             }
         }
     }
+
+    &_alert{
+        padding: 16px;
+        &_viewed{
+            .message__name,
+            .message__introtext{
+                color: $grey;
+            }
+        }
+    }
 }
 
 .message-answer{
@@ -129,6 +143,10 @@
     left: 0;
     width: 100%;
     margin: 0;
+
+    background: $white;
+    border-top: 1px solid $light-grey;
+
     .btn{
         height: 100%;
         width: 40px;

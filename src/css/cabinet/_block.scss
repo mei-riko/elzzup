@@ -142,6 +142,10 @@
             }
         }
     }
+    .cabinet-block__btn-small{
+        font-size: 10px;
+    }
+
 
     &_locked{
         position: relative;
@@ -207,4 +211,8 @@ a.cabinet-block{
             color: $link-hover-color;
         }
     }
+}
+
+.cabinet-subtitle{
+    margin: 20px 0;
 }

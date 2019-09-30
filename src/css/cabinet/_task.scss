@@ -24,6 +24,49 @@
         color: $red;
     }
 
+    // Create Task
+    .cabinet-task__category{
+        position: relative;
+        flex: 0 0 calc(100% - 90px);
+        max-width: calc(100% - 90px);
+        &.cabinet-task__category_choose{
+            flex: 0 0 calc(100% - 180px);
+            max-width: calc(100% - 180px);
+        }
+    }
+    .cabinet-task__icon{
+        background: $body-bg;
+        flex: 0 0 60px;
+        max-width: 60px;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+
+        &_camera{background: $body-bg url("../img/camera.svg") no-repeat center / 32px;}
+        &_plate{background: $body-bg url("../img/plate.svg") no-repeat center / 32px;}
+        &_travel{background: $body-bg url("../img/travel.svg") no-repeat center / 32px;}
+        &_box{background: $body-bg url("../img/box.svg") no-repeat center / 26px;}
+        &_hand{background: $body-bg url("../img/hand.svg") no-repeat center / 32px;}
+        &_gift{background: $body-bg url("../img/gift.svg") no-repeat center / 28px;}
+        &_mask{background: $body-bg url("../img/mask.svg") no-repeat center / 28px;}
+        &_heart{background: $body-bg url("../img/heart.svg") no-repeat center / 28px;}
+    }
+    .cabinet-task__info{
+        background: $black;
+        color: $white;
+
+        font-weight: bold;
+        line-height: 18px;
+
+        text-align: center;
+        width: 18px;
+        border-radius: 100%;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
     &_locked{
         background: $body-bg;
         .cabinet-task__title,

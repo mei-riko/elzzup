@@ -30,7 +30,7 @@ html(lang="ru")
                 </svg>
         .cabinet-navigation-scroll
             .cabinet-navigation
-                a.cabinet-navigation__link.cabinet-navigation__link--active(href="message.html")
+                a.cabinet-navigation__link(href="message.html")
                     .icon.icon_link
                         <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3.16667 0.166676H14C15.3807 0.166676 16.5 1.28597 16.5 2.66667V10.1667C16.5 11.5474 15.3807 12.6667 14 12.6667H3.16667C1.78596 12.6667 0.666672 11.5474 0.666672 10.1667V2.66667C0.666672 1.28596 1.78596 0.166676 3.16667 0.166676ZM3.16667 1.00001C2.75977 1.00001 2.38692 1.14583 2.09754 1.38805L8.58334 5.6L15.0691 1.38805C14.7798 1.14583 14.4069 1.00001 14 1.00001H3.16667ZM8.58334 6.59358L1.61151 2.06605C1.53949 2.25239 1.50001 2.45492 1.50001 2.66667V10.1667C1.50001 11.0872 2.2462 11.8333 3.16667 11.8333H14C14.9205 11.8333 15.6667 11.0872 15.6667 10.1667V2.66667C15.6667 2.45492 15.6272 2.25239 15.5552 2.06605L8.58334 6.59358Z" class="path"/>
@@ -64,35 +64,25 @@ html(lang="ru")
                             <path d="M0 7V6H6V0H7V6H13V7H7V13H6V7H0Z" class="path"/>
                         </svg>
                     .title Создать
-        .cabinet-block.cabinet-block_alert
+        .cabinet-task.cabinet-task_category
             .container
-                p Здесь есть о чем поговорить
-        .container
-            a.message(href="message-chat.html")
-                .message__alert 11
-                .row
-                    .col.message__image
-                        img.img-fluid(src="../img/demo-photo.png")
-                    .col.message__info
-                        .message__data 7 сент 2019
-                        .message__name Катерина Мельник       
-                        .message__introtext Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатании еще в...         
-            a.message(href="message-chat.html")
-                .row
-                    .col.message__image
-                        span.no-image АС
-                    .col.message__info
-                        .message__data 27 сент 2019
-                        .message__name Анна Старовер       
-                        .message__introtext Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатании еще в...         
-            a.message(href="message-chat.html")
-                .row
-                    .col.message__image
-                        span.no-image ЮМ
-                    .col.message__info
-                        .message__data 27 сент 2019
-                        .message__name Юрий Мартынов       
-                        .message__introtext Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатании еще в...         
+                .row.no-gutters.justify-content-between.align-items-center
+                    .cabinet-task__icon.cabinet-task__icon_camera
+                    .cabinet-task__category.cabinet-task__category_choose Камера
+                    a.btn.btn_border Сохранить
+        form.form
+            .form-group
+                .container
+                    .form-label УКАЖИТЕ НАЗВАНИЕ 
+                    input.input(type="text" placeholder="Пишите здесь...")
+            .form-group
+                .container
+                    .form-label ДЕТАЛИ 
+                    textarea.textarea(rows="2" placeholder="Описание...")
+            .form-group
+                .container
+                    input.input(type="text" placeholder="Размер вознаграждения")
+        button.btn.btn_cta Опубликовать
         include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js")
