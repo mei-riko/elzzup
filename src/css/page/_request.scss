@@ -115,3 +115,39 @@
         padding-bottom: 0;
     }
 }
+
+.request-link{
+    position: relative;
+
+    width: calc(100% - 10px);
+    height: 140px;
+    padding: 10px;
+    margin: 0 auto 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    color: $white;
+    font-weight: bold;
+    line-height: 1.2;
+
+    background-size: cover;
+    background-position: center;
+    
+    .icon-category{
+        width: 30px;
+        height: 30px;
+
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        background-size: 16px;
+    }
+
+    &:hover{
+        text-decoration: none;
+        color: $white;
+    }
+}

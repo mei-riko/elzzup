@@ -10,7 +10,77 @@ html(lang="ru")
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-        
+        .header-block
+            .container
+                p.header-block__subtitle ЗАЧЕМ НУЖЕН ELZZUP
+                p.header-block__title Границы, адреса, визы — не имеют значения
+                .row.no-gutters.mt-30
+                    .col-4.col-xl-3
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-1.jpg');") Сделать фото заката над морем
+                            .icon-category.icon-category_camera
+                    .col-4.col-xl-3
+                        a.request-link(href="#" style="background-image:url('../img/image-demo.jpg');") Миссия «Начало»
+                            .icon-category.icon-category_heart
+                    .col-4.col-xl-3
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
+                            .icon-category.icon-category_gift
+                    .col-4.col-xl-3.d-none.d-xl-block
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
+                            .icon-category.icon-category_gift
+        .content-block
+            .container
+                h2.content-title.text-bold Окей, а что теперь?
+                p.content-offer Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
+                .row.step#indexStep.mt-30
+                    .col-12.step__item
+                        .step__col
+                            .step__number 01
+                        .step__content
+                            p.step__title Регистрация
+                            p Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
+                    .col-12.step__item
+                        .step__col
+                            .step__number 02
+                        .step__content
+                            p.step__title Миссии за ZZ
+                            p Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
+                    .col-12.step__item
+                        .step__col
+                            .step__number 03
+                        .step__content
+                            p.step__title Рост рейтинга
+                            p Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
+                a.btn.btn_cta.btn_fullwidth(href="#") Присоединится к команде
+        .content-block.cabinet-task.cabinet-task_category
+            .container
+                .row.no-gutters.justify-content-between.align-items-center
+                    .cabinet-task__category.cabinet-task__category_choose.text-bold Категория «Камера»
+                    a.btn.btn_border(href="page-request.html") Все заявки
+                .row.no-gutters.mt-30
+                    .col-4
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-1.jpg');") Сделать фото заката над морем
+                            .icon-category.icon-category_camera
+                    .col-4
+                        a.request-link(href="#" style="background-image:url('../img/image-demo.jpg');") Миссия «Начало»
+                            .icon-category.icon-category_camera
+                    .col-4
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
+                            .icon-category.icon-category_camera
+        .content-block.cabinet-task.cabinet-task_category
+            .container
+                .row.no-gutters.justify-content-between.align-items-center
+                    .cabinet-task__category.cabinet-task__category_choose.text-bold Категория «Сердце»
+                    a.btn.btn_border(href="page-request.html") Все заявки
+                .row.no-gutters.mt-30
+                    .col-4
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-1.jpg');") Сделать фото заката над морем
+                            .icon-category.icon-category_heart
+                    .col-4
+                        a.request-link(href="#" style="background-image:url('../img/image-demo.jpg');") Миссия «Начало»
+                            .icon-category.icon-category_heart
+                    .col-4
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
+                            .icon-category.icon-category_heart
         include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js")

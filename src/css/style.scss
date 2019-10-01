@@ -11,6 +11,7 @@
 @import "other/tabs.scss";
 @import "other/form.scss";
 @import "other/button.scss";
+@import "other/list.scss";
 @import "other/pagination.scss";
 @import "other/footer.scss";
 
@@ -18,7 +19,7 @@ body{
     position: relative;
     min-height: 100vh;
 
-    padding: 0 0 50px;
+    padding: 0 0 56px;
 }
 
 @import "cabinet/info.scss";
@@ -27,10 +28,15 @@ body{
 @import "cabinet/task.scss";
 @import "cabinet/message.scss";
 
+@import "page/title.scss";
+
 @import "page/icon.scss";
 @import "page/item.scss";
 @import "page/navigation.scss";
 @import "page/tab.scss";
-@import "page/title.scss";
 @import "page/request.scss";
 
+@import "page/step.scss";
+
+@import "content/header.scss";
+@import "content/block.scss";

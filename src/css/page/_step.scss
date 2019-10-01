@@ -1,0 +1,33 @@
+.step{
+    .step__item{
+        display: flex;
+        flex-wrap: nowrap;
+        .step__col{
+            padding-right: 20px;
+        }
+    }
+    .step__number{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 40px;
+
+        text-align: center;
+
+        background: $body-bg;
+        color: darken($color: $body-bg, $amount: 20%);
+    }
+    .step__content{
+        color: $dark-grey;
+        margin-bottom: 20px;
+    }
+    .step__title{
+        color: $black;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,9 @@
+.content-block{
+    background: $white;
+    border-bottom: 1px solid $grey;
+    padding: 20px 0;
+
+    & + .content-block{
+        margin-top: 10px;
+    }
+}

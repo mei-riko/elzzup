@@ -77,6 +77,16 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(document).ready(function () {
+    (0, _jquery2.default)("a.scroll").click(function () {
+        (0, _jquery2.default)("html, body").animate({
+            scrollTop: (0, _jquery2.default)((0, _jquery2.default)(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 500,
+            easing: "swing"
+        });
+        return false;
+    });
+
     if ((0, _jquery2.default)("#datepicker").lenght) {
         (0, _jquery2.default)("#datepicker").datepicker({
             beforeShow: function beforeShow(input, inst) {
@@ -86,9 +96,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
             }
         });
     }
+
+    // Collapse Item
     (0, _jquery2.default)(".item.item_collapse").on("click", function () {
         (0, _jquery2.default)(this).toggleClass("item_collapse--active");
         (0, _jquery2.default)(this).find(".item__content").slideToggle();
+    });
+    // Nav Mobile
+    (0, _jquery2.default)(".navbar-mobile .navbar .navbar__link#openNabvar").on("click", function () {
+        (0, _jquery2.default)(this).toggleClass("navbar__link--active");
+        (0, _jquery2.default)(".navbar-fullscreen").toggleClass("navbar-fullscreen--active");
+    });
+    // Hide Navigation on Desktop
+    (0, _jquery2.default)(window).resize(function () {
+        if ((0, _jquery2.default)(window).width() > 991 || !window.matchMedia('screen and (max-width: 992px)').matches) {
+            (0, _jquery2.default)(".navbar-mobile .navbar .navbar__link#openNabvar").removeClass("navbar__link--active");
+            (0, _jquery2.default)(".navbar-fullscreen").removeClass("navbar-fullscreen--active");
+        }
     });
 });
 

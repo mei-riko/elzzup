@@ -1,0 +1,49 @@
+.footer{
+    background: #1d1d20;
+    color: $white;
+
+    padding: 20px 0;
+
+    .text-small{
+        font-size: 10px;
+    }
+    .list{
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        .list__item{
+            margin-left: 10px;
+        }
+        .list__link{
+            &:hover{
+                .icon-svg{
+                    path{
+                        fill: $blue;
+                    }
+                }
+            }
+        }
+        .icon-svg{
+            width: 20px;
+            height: 20px;
+            path{
+                fill: $white;
+                transition: .4s;
+            }
+        }
+    }
+    .footer__logo{
+        display: block;
+
+        width: 100px;
+        height: 42px;
+        background: url("../img/logo-text-white.svg") no-repeat left 6px / contain;
+
+        margin-bottom: 10px;
+    }
+    .footer__link{
+        color: $white;
+        &:hover{
+            color: $link-hover-color;
+        }
+    }
+}

@@ -7,26 +7,57 @@ header.header
                 <svg class="header__info" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C12 0.8954 12.8954 0 14 0C15.1046 0 16 0.8954 16 2C16 3.1046 15.1046 4 14 4C12.8954 4 12 3.1046 12 2ZM6 2C6 0.8954 6.8954 0 8 0C9.1046 0 10 0.8954 10 2C10 3.1046 9.1046 4 8 4C6.8954 4 6 3.1046 6 2ZM0 2C0 0.8954 0.89543 0 2 0C3.10457 0 4 0.8954 4 2C4 3.1046 3.10457 4 2 4C0.89543 4 0 3.1046 0 2ZM2 1C1.44771 1 1 1.4477 1 2C1 2.5523 1.44771 3 2 3C2.55228 3 3 2.5523 3 2C3 1.4477 2.55228 1 2 1ZM8 1C7.4477 1 7 1.4477 7 2C7 2.5523 7.4477 3 8 3C8.5523 3 9 2.5523 9 2C9 1.4477 8.5523 1 8 1ZM14 1C13.4477 1 13 1.4477 13 2C13 2.5523 13.4477 3 14 3C14.5523 3 15 2.5523 15 2C15 1.4477 14.5523 1 14 1Z" fill="black"/>
                 </svg>
+.navbar-fullscreen
+    .cabinet-info
+        .container
+            .row
+                a.col.cabinet-info__image(href="cabinet.html")
+                    img.img-fluid(src="../img/demo-photo.png")
+                .col.cabinet-info__data
+                    a.cabinet-info__name(href="cabinet.html") Катерина Мельник
+                    .row
+                        .col-4
+                            p.cabinet-info__label Рейтинг
+                            p.cabinet-info__value 4.8
+                        .col-8
+                            p.cabinet-info__label Собрано пазлов
+                            p.cabinet-info__value 16 из 100
+        a.cabinet-info__pay(href="#")
+            <svg class="svg" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.42875 15.3231L14.4303 15.2142C14.853 15.205 15.2178 15.3474 15.5251 15.6414C15.8322 15.9356 15.9903 16.2939 15.9996 16.7164C16.0088 17.1391 15.8662 17.4995 15.572 17.7972C15.2778 18.1044 14.9198 18.2624 14.497 18.2716L6.40983 18.4479C5.78045 18.4615 5.31886 18.1897 5.02466 17.6323C4.73047 17.0656 4.7703 16.529 5.14473 16.0227L6.82486 13.7194L1.78639 13.8293C1.15702 13.8429 0.695425 13.571 0.401421 13.0136C0.107033 12.447 0.146862 11.9105 0.521293 11.4041L6.57107 3.11064L1.55512 3.22013C1.13258 3.22917 0.767577 3.08698 0.460489 2.79278C0.16283 2.50821 0.00967146 2.15417 0.000435752 1.73164C-0.00879996 1.30891 0.128773 0.944291 0.413541 0.637204C0.707737 0.339545 1.0662 0.186001 1.48892 0.176766L9.57614 0.000517514C10.2148 -0.0135285 10.6812 0.258348 10.9754 0.815761C11.2599 1.37337 11.2199 1.90981 10.8553 2.42528L9.17208 4.72862L14.1994 4.61914C14.838 4.6051 15.3046 4.87697 15.5986 5.43439C15.8832 5.99199 15.8431 6.52843 15.4787 7.0439L9.42875 15.3231ZM6.91125 7.82259L4.80532 10.7045L9.09223 10.6112L11.1943 7.72927L6.91125 7.82259Z" fill="white"/>
+            </svg>
+    nav.nav.nav_light
+        .nav__item
+            a.nav__link(href="page-request.html") Актуальные заявки
+        .nav__item
+            a.nav__link(href="blog.html") Блог проекта
+        .nav__item
+            a.nav__link(href="faq.html") Популярные вопросы
+        .nav__item
+            a.nav__link(href="#") Правила проекта
 .navbar-mobile
     .container
         nav.navbar
             .navbar__item
                 a.navbar__link(href="/")
-                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="navbar__icon" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.3333 7.11539L10.4583 2.24039L2.78207 9.91667H4.5V11V18.5833H7.75V12.0833H13.1667V18.5833H16.4167V9.91667H18.1346L16.4167 8.19873V4.50001H15.3333V7.11539ZM0.166672 11L10.4583 0.708344L14.25 4.5V3.41667H17.5V7.75L20.75 11H17.5L17.4992 19.6648H12.0826V13.1648L8.83268 13.1645V19.6645H3.41601V11H0.166672Z" fill="white"/>
                     </svg>
+                    span.navbar__item-name Домой
             .navbar__item
-                a.navbar__link(href="/")
-                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                a.navbar__link(href="blog.html")
+                    <svg class="navbar__icon" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21.3333 16V17.1667H6.16667V16H21.3333ZM21.3333 9.00001V10.1667H6.16667V9.00001H21.3333ZM21.3333 2.00002V3.16669H6.16667V2.00002H21.3333ZM0.333332 0.833344H3.83333V4.33334H0.333332V0.833344ZM1.5 2.00002V3.16669H2.66667V2.00002H1.5ZM0.333332 7.83334H3.83333V11.3333H0.333332V7.83334ZM1.5 9.00001V10.1667H2.66667V9.00001H1.5ZM0.333332 14.8333H3.83333V18.3333H0.333332V14.8333ZM1.5 16V17.1667H2.66667V16H1.5Z" fill="white"/>
                     </svg>
+                    span.navbar__item-name Блог
             .navbar__item
-                a.navbar__link(href="/")
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                a.navbar__link(href="page-request.html")
+                    <svg class="navbar__icon" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 0H16C17.6569 0 19 1.34315 19 3V16C19 17.6569 17.6569 19 16 19H3C1.34315 19 0 17.6569 0 16V3C0 1.34315 1.34315 0 3 0ZM3 1C1.89543 1 1 1.89543 1 3V6H6V1.00001L3 1ZM1 16C1 17.1046 1.89543 18 3 18H6V13H1V16ZM6 7H1V12H6V7ZM16 18C17.1046 18 18 17.1046 18 16V13H13V18H16ZM18 7H13V12H18V7ZM18 3C18 1.89543 17.1046 1 16 1L13 1.00001V6H18V3ZM7 1.00001V6H12V1.00001H7ZM7 18H12V13H7V18ZM12 7H7V12H12V7Z" fill="white"/>
                     </svg>
+                    span.navbar__item-name Заявки
             .navbar__item
-                a.navbar__link(href="#")
-                    <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                a.navbar__link#openNabvar(href="#")
+                    <svg class="navbar__icon" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.25 2.33332V0.916656H24.3333V2.33332H0.25ZM24.3333 7.99999V9.41665H0.25V7.99999H24.3333ZM0.25 15.0833H24.3333V16.5H0.25V15.0833Z" fill="white"/>
                     </svg>

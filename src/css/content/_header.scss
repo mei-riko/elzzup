@@ -1,0 +1,22 @@
+.header-block{
+    padding: 50px 0 20px;
+    background: $black;
+    color: $white;
+    .header-block__subtitle{
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        letter-spacing: 0.2em;
+
+        color: $blue;
+    }
+    .header-block__title{
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+
+        color: $light-grey;
+    }
+}

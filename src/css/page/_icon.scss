@@ -17,3 +17,20 @@
         }
     }
 }
+.icon-category{
+    background: $body-bg;
+    flex: 0 0 60px;
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+
+    &_camera{background: $body-bg url("../img/camera.svg") no-repeat center / 32px;}
+    &_plate{background: $body-bg url("../img/plate.svg") no-repeat center / 32px;}
+    &_travel{background: $body-bg url("../img/travel.svg") no-repeat center / 32px;}
+    &_box{background: $body-bg url("../img/box.svg") no-repeat center / 26px;}
+    &_hand{background: $body-bg url("../img/hand.svg") no-repeat center / 32px;}
+    &_gift{background: $body-bg url("../img/gift.svg") no-repeat center / 28px;}
+    &_mask{background: $body-bg url("../img/mask.svg") no-repeat center / 28px;}
+    &_heart{background: $body-bg url("../img/heart.svg") no-repeat center / 28px;}
+}
