@@ -1,0 +1,18 @@
+.tab-content .tab-pane,.tab-content>.tab-pane {
+    display: none
+}
+
+.tab-content .tab-pane.fade {
+    opacity: 1;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear
+}
+
+.tab-content .tab-pane.fade:not(.show) {
+    opacity: 0
+}
+
+.tab-content .tab-pane.show,.tab-content>.active {
+    display: block
+}

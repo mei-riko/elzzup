@@ -1,0 +1,46 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Cabinet Page
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+        .title-block.bg-white
+            .container
+                h1.text-bold.mb-0 Блог
+        .navigation-scroll
+            .container
+                .navigation.btn-group
+                    a.btn.btn_border.navigation__btn-small(href="#") Любой город
+                    a.btn.btn_border.btn_border--active.navigation__btn-small(href="#") Тип заявки · СЮРПРИЗ
+                    a.btn.btn_border.navigation__btn-small(href="#") Статус заявки
+        .container        
+            p.item-subtitle.text-small сегодня
+            a.item.item_image(href="#")
+                .item__image(style="background-image: url('../img/image-demo.jpg');")
+                .item__info
+                    .item__title Новая миссия в категории «Путеводитель»
+                    .item__introtext новые миссии
+            a.item.item_image-full(href="#")
+                .item__image
+                .item__title Опубликовано 3 новых миссии
+                .item__introtext новости проекта
+            p.item-subtitle.text-small 15 сентября 2019
+            a.item.item_image(href="#")
+                .item__image(style="background-image: url('../img/image-demo.jpg');")
+                .item__info
+                    .item__title Новая миссия в категории «Путеводитель»
+                    .item__introtext новые миссии
+            a.item.item_image(href="#")
+                .item__image
+                .item__info
+                    .item__title Новая миссия в категории «Путеводитель»
+                    .item__introtext новые миссии
+        include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/app.min.js")

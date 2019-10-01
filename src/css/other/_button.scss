@@ -24,6 +24,9 @@
                 background: darken($color: $blue, $amount: 5%);
             }
         }
+        &.active{
+            @extend .btn_border--active;
+        }
     }
     &_message{
         padding: 0;
