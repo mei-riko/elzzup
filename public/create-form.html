@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Cabinet Page</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
+    <link href="./css/datepicker.min.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
   </head>
   <body>
@@ -91,35 +92,80 @@
           </div>
           <div class="title">Создать</div></a></div>
     </div>
-    <div class="cabinet-task cabinet-task_category">
-      <div class="container">
-        <div class="row no-gutters justify-content-between align-items-center">
-          <div class="cabinet-task__icon cabinet-task__icon_camera"></div>
-          <div class="cabinet-task__category cabinet-task__category_choose">Камера</div><a class="btn btn_border">Сохранить</a>
-        </div>
-      </div>
-    </div>
-    <form class="form">
-      <div class="form-group">
+    <form class="form form_cabinet-create">
+      <div class="cabinet-task cabinet-task_category">
         <div class="container">
-          <div class="form-label">УКАЖИТЕ НАЗВАНИЕ </div>
-          <input class="input" type="text" placeholder="Пишите здесь..."/>
+          <div class="row no-gutters justify-content-between align-items-center">
+            <div class="cabinet-task__icon cabinet-task__icon_camera"></div>
+            <div class="cabinet-task__category cabinet-task__category_choose">Камера</div><a class="btn btn_border">Сохранить</a>
+          </div>
         </div>
       </div>
       <div class="form-group">
         <div class="container">
-          <div class="form-label">ДЕТАЛИ </div>
-          <textarea class="textarea" rows="2" placeholder="Описание..."></textarea>
+          <div class="form-label">УКАЖИТЕ НАЗВАНИЕ</div>
+        </div>
+        <div class="form-input">
+          <div class="container">
+            <input class="input" type="text" placeholder="Пишите здесь..."/>
+          </div>
         </div>
       </div>
       <div class="form-group">
         <div class="container">
-          <input class="input" type="text" placeholder="Размер вознаграждения"/>
+          <div class="form-label">ДЕТАЛИ</div>
+        </div>
+        <div class="form-input">
+          <div class="container">
+            <textarea class="textarea" rows="2" placeholder="Описание..."></textarea>
+          </div>
         </div>
       </div>
+      <div class="form-group bg-white">
+        <div class="container">
+          <div class="radio-group">
+            <div class="radio">
+              <input class="radio__input" id="type1" name="type" type="radio" value="Денежная награда"/>
+              <label class="radio__label" for="type1">Денежная награда</label>
+            </div>
+            <div class="radio">
+              <input class="radio__input" checked="checked" id="type2" name="type" type="radio" value="Внутренняя валюта"/>
+              <label class="radio__label" for="type2">Валюта ZZ</label>
+            </div>
+            <div class="radio">
+              <input class="radio__input" id="type3" name="type" type="radio" value="Очки опыта"/>
+              <label class="radio__label" for="type3">Опыт</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group bg-white">
+        <div class="container">
+          <input class="input" type="number" placeholder="Размер вознаграждения"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-input">
+          <div class="container">
+            <div class="form-input__date">
+              <input class="input input_date" id="datepicker" autocomplete="off" type="text" placeholder="Укажите дату завершения миссии"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-input">
+          <div class="container">
+            <div class="form-input__place">
+              <input class="input input_place" type="text" placeholder="Укажите место выполнения миссии"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn_cta btn_cabinet-create">Опубликовать</button>
     </form>
-    <button class="btn btn_cta">Опубликовать</button>
     <script src="./js/jquery.inputmask.js"></script>
+    <script src="./js/datepicker.min.js"></script>
     <script src="./js/app.min.js"></script>
   </body>
 </html>

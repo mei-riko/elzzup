@@ -5,6 +5,7 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Cabinet Page
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href='./css/datepicker.min.css', rel='stylesheet')
         link(href='./css/style.css', rel='stylesheet')
 
     body
@@ -64,25 +65,52 @@ html(lang="ru")
                             <path d="M0 7V6H6V0H7V6H13V7H7V13H6V7H0Z" class="path"/>
                         </svg>
                     .title Создать
-        .cabinet-task.cabinet-task_category
-            .container
-                .row.no-gutters.justify-content-between.align-items-center
-                    .cabinet-task__icon.cabinet-task__icon_camera
-                    .cabinet-task__category.cabinet-task__category_choose Камера
-                    a.btn.btn_border Сохранить
-        form.form
+        form.form.form_cabinet-create
+            .cabinet-task.cabinet-task_category
+                .container
+                    .row.no-gutters.justify-content-between.align-items-center
+                        .cabinet-task__icon.cabinet-task__icon_camera
+                        .cabinet-task__category.cabinet-task__category_choose Камера
+                        a.btn.btn_border Сохранить
             .form-group
                 .container
-                    .form-label УКАЖИТЕ НАЗВАНИЕ 
-                    input.input(type="text" placeholder="Пишите здесь...")
+                    .form-label УКАЖИТЕ НАЗВАНИЕ
+                .form-input
+                    .container
+                        input.input(type="text" placeholder="Пишите здесь...")
             .form-group
                 .container
-                    .form-label ДЕТАЛИ 
-                    textarea.textarea(rows="2" placeholder="Описание...")
-            .form-group
+                    .form-label ДЕТАЛИ
+                .form-input
+                    .container
+                        textarea.textarea(rows="2" placeholder="Описание...")
+            .form-group.bg-white
                 .container
-                    input.input(type="text" placeholder="Размер вознаграждения")
-        button.btn.btn_cta Опубликовать
+                    .radio-group
+                        .radio
+                            input.radio__input(id="type1" name="type" type="radio" value="Денежная награда")
+                            label.radio__label(for="type1") Денежная награда
+                        .radio
+                            input.radio__input(checked id="type2" name="type" type="radio" value="Внутренняя валюта")
+                            label.radio__label(for="type2") Валюта ZZ
+                        .radio
+                            input.radio__input(id="type3" name="type" type="radio" value="Очки опыта")
+                            label.radio__label(for="type3") Опыт
+            .form-group.bg-white
+                .container
+                    input.input(type="number" placeholder="Размер вознаграждения")
+            .form-group
+                .form-input
+                    .container
+                        .form-input__date
+                            input.input.input_date#datepicker(autocomplete="off" type="text" placeholder="Укажите дату завершения миссии")  
+            .form-group
+                .form-input
+                    .container
+                        .form-input__place
+                            input.input.input_place(type="text" placeholder="Укажите место выполнения миссии")                                
+            button.btn.btn_cta.btn_cabinet-create Опубликовать
         include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
+        script(src="./js/datepicker.min.js")
         script(src="./js/app.min.js")

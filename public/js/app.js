@@ -76,7 +76,15 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _jquery2.default)(document).ready(function () {});
+(0, _jquery2.default)(document).ready(function () {
+    (0, _jquery2.default)("#datepicker").datepicker({
+        beforeShow: function beforeShow(input, inst) {
+            _jquery2.default.datepicker._pos = _jquery2.default.datepicker._findPos(input); //this is the default position
+            // $.datepicker._pos[0] = 0; //left
+            _jquery2.default.datepicker._pos[1] = (0, _jquery2.default)(window).height() - 270; //top
+        }
+    });
+});
 
 /***/ }),
 /* 1 */

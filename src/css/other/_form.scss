@@ -1,12 +1,96 @@
 .form{
+    position: relative;
+
     margin: 0;
     padding: 0;
-    position: relative;
+    
+    .form-input{
+        .form-input__date{
+            position: relative;
+            padding-left: 50px;
+            &:before{
+                position: absolute;
+                left: 0;
+                top: calc(50% - 20px);
+
+                content:'';
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                background: $body-bg url("../img/calendar.svg") no-repeat center / 20px;
+            }
+        }
+        .form-input__place{
+            position: relative;
+            padding-left: 50px;
+            &:before{
+                position: absolute;
+                left: 0;
+                top: calc(50% - 20px);
+
+                content:'';
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                background: $body-bg url("../img/map-marker.svg") no-repeat center / 20px;
+            }
+        }
+    }
+
+    &_cabinet-create{
+        padding: 0 0 44px;
+        .form-group{
+            & + .form-group{
+                border-top: 1px solid $grey;
+            }
+            .form-label{
+                text-transform: uppercase;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .form-input{
+                background: $white;
+            }
+            .radio-group{
+                padding: 10px 0 0;
+            }
+            .input,
+            .textarea{
+                padding: 20px 0;
+            }
+            .input_place,
+            .input_date{
+                padding: 26px 10px;
+            }
+        }
+    }
+}
+.input{
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    outline: none;
+    &:focus{
+        &::placeholder{
+            opacity: 0;
+        }
+    }
+    &.input_place,
+    &.input_date{
+        padding: 20px 10px;
+        &::placeholder{
+            font-size: 10px;
+        }
+    }
 }
 .textarea{
     width: 100%;
     border: none;
     margin: 0;
+    padding: 10px;
     outline: none;
     &_message{
         padding: 20px;
@@ -18,7 +102,6 @@
         }
     }
 }
-
 .checkbox{
     display: flex;
     flex-wrap: nowrap;
@@ -64,31 +147,33 @@
     &__link{
         text-decoration: underline;
     }
+}
+.radio{
+    &__input{
+        display: none;
 
-    &_large{
-        .checkbox__label{
-            line-height: 22px;
-            &:before{
-                width: 18px;
-                height: 18px;
-            }
+        &:checked + .radio__label {
+            background-color: $black;
+            color: $white;
         }
-        .checkbox__input{
-            &:checked + .checkbox__label:after {
-                width: 9px;
-                height: 9px;
-
-                left: 5px;
-                top: 4px;
-            }
-        }
+    }
+    &__label{
+        @extend .btn;
+        @extend .btn_border;
+        cursor: pointer;
+    }
+}
+.radio-group{
+    display: flex;
+    flex-wrap: wrap;
+    .radio{
+        margin-right: 10px;
     }
 }
 
 .jGrowl {
     font-family: "Noto Sans"
 }
-
 .jGrowl#jGrowl {
     top: 50%;
     left: 50%;
