@@ -81,13 +81,11 @@
         }
     }
 }
-
-@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+@media all and (min-width: map-get($grid-breakpoints, 'md')){
     .cabinet-info{
-        border: 1px solid $grey;
         padding: 20px;
         margin: 20px 0;
-
+        border: 1px solid $grey;
         // column
         .cabinet-info__image{
             flex: 0 0 100%;
@@ -95,6 +93,9 @@
             .cabinet-info__pay{
                 top: 0;
                 left: 15px;
+            }
+            .img-fluid{
+                width: 140px;
             }
         }
         .cabinet-info__pay{
@@ -109,8 +110,8 @@
 
         &_full{
             .cabinet-info__bio{
-                font-size: 14px;
-                line-height: 18px;
+                font-size: 12px;
+                line-height: 16px;
             }
         }
         .btn{

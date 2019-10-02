@@ -10,15 +10,8 @@ $(document).ready(() =>{
         return false;
     });
 
-    if ( $("#datepicker").lenght ){
-        $("#datepicker").datepicker({
-            beforeShow: function(input, inst)
-            {
-                $.datepicker._pos = $.datepicker._findPos(input); //this is the default position
-                // $.datepicker._pos[0] = 0; //left
-                $.datepicker._pos[1] = $(window).height() - 270; //top
-            }
-        });
+    if ( $("#datepicker").length > 0 ){
+        $("#datepicker").datepicker();
     }
 
     // Slider
@@ -33,17 +26,24 @@ $(document).ready(() =>{
             infinite: false,
             responsive: [
                 {
-                  breakpoint: 993,
+                    breakpoint: 992,
+                    settings: {
+                      slidesToShow: 4,
+                      slidesToScroll: 2,
+                    }
+                },
+                {
+                  breakpoint: 768,
                   settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 2,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
                   }
                 },
                 {
                   breakpoint: 576,
                   settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                   }
                 }
             ]

@@ -1,8 +1,37 @@
+.cabinet-subtitle{
+    margin: 20px 0;
+}
+.cabinet-sidebar{
+    padding: 0;
+}
+.cabinet-content{
+    .cabinet-block{
+        &:last-child{
+            margin-bottom: 20px;
+        }
+        &_alert{
+            margin: 0 -20px;
+        }
+    }
+    .form_cabinet-create{
+        margin: 0 -20px;
+        .form-label{
+            padding: 0 20px;
+        }
+    }
+    .navigation-scroll{
+        margin: 0 -20px;
+        padding: 0 20px;
+        max-width: calc(100% + 40px);
+    }
+}
+
 .cabinet-block{
     background: $white;
     border-bottom: 1px solid $grey;
     display: block;
 
+    margin: 0 -20px;
     padding: 20px 0;
 
     .cabinet-block__col-image{
@@ -12,7 +41,6 @@
         flex: 0 0 calc(100% - 100px);
         padding-left: 0;
     }
-
     .cabinet-block__image{
         width: 60px;
         height: 60px;
@@ -183,8 +211,7 @@
         margin-bottom: 10px;
         .tabs-content{
             flex-wrap: wrap;
-            justify-content: space-between;
-
+            justify-content: center;
             padding-top: 10px;
             padding-bottom: 0;
             
@@ -193,7 +220,7 @@
             }
             
             .btn{
-                margin-top: 10px;
+                margin: 10px 5px 0;
                 &--active{
                     background: $black;
                     color: $white;
@@ -202,7 +229,6 @@
         }
     }
 }
-
 a.cabinet-block{
     &:hover{
         color: $link-color;
@@ -212,15 +238,32 @@ a.cabinet-block{
         }
     }
 }
-
-.cabinet-subtitle{
-    margin: 20px 0;
-}
-
-@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+@media all and (min-width: map-get($grid-breakpoints, 'md')){
+    .cabinet-sidebar{
+        padding-left: 20px;
+    }
     .cabinet-content{
         margin: 20px 0;
+        .cabinet-subtitle{
+            margin-top: 0;
+            font-size: 12px;
+        }
+        .cabinet-task{
+            margin: 0;
+            width: 100%;
+        }
+        .cabinet-block{
+            &_alert{
+                margin: 0;
+                & + .cabinet-subtitle{
+                    margin-top: 20px;
+                }
+            }
+        }
+
         .navigation-scroll{
+            margin: 0 0 20px;
+            max-width: 100%;
             border: 1px solid $grey;
         }
         .request-block{
@@ -229,13 +272,19 @@ a.cabinet-block{
             .request:not(.request_last) {
                 border-bottom: 1px solid #bbbbbb;
             }
-        }
-        .cabinet-subtitle{
-            margin-top: 0;
-            font-size: 12px;
+        } 
+        .form_cabinet-create{
+            margin: 0;
+            .form-label{
+                padding: 0;
+            }
+            .cabinet-task.cabinet-task_category{
+                border: 1px solid $grey;
+            }
         }
     }
     .cabinet-block{
+        margin: 0;
         border: 1px solid $grey;
         border-bottom: none;
         &:last-child{
@@ -246,12 +295,7 @@ a.cabinet-block{
         }
         &_filter{
             border-bottom: 1px solid $grey;
-            .tabs-content{
-                justify-content: center;
-                .btn{
-                    margin: 10px 5px 0;
-                }
-            }
+            margin-bottom: 20px;
         }
     }
 }

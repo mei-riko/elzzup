@@ -75,10 +75,16 @@
             color: $grey;
         }
     }
+    &_category{
+        margin: 0 -20px;
+        width: calc(100% + 40px);
+    }
 }
 
 .container_cabinet-task{
+    margin: 0 -20px;
     padding: 0;
+    width: calc(100% + 40px);
 
     .col-6:nth-child(2n){
         .cabinet-task{
@@ -87,13 +93,16 @@
     }
 }
 
-@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+@media all and (min-width: map-get($grid-breakpoints, 'md')){
     .container_cabinet-task{
+        margin: 0;
+        width: 100%;
         border: 1px solid $grey;
         border-bottom: none;
     }
     .cabinet-task{
         &_category{
+            margin: 0;
             padding: 10px 20px;
         }
     }

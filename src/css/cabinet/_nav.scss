@@ -73,12 +73,12 @@
     background: $white;
     border-bottom: 1px solid $grey;
 }
-
-@media all and (min-width: map-get($grid-breakpoints, 'xl')){
-    .cabinet-navigation-scroll{
-        border: 1px solid $grey;
-        margin: 0 0 20px;
+@media all and (min-width: map-get($grid-breakpoints, 'sm')){
+    .cabinet-navigation{
+        justify-content: space-around;
     }
+}
+@media all and (min-width: map-get($grid-breakpoints, 'md')){
     .cabinet-navigation{
         flex-wrap: wrap;
         padding: 20px 0;
@@ -119,5 +119,9 @@
                 margin-left: 0px;
             }
         }
+    }
+    .cabinet-navigation-scroll{
+        border: 1px solid $grey;
+        margin: 0 0 20px;
     }
 }

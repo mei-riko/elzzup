@@ -87,14 +87,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         return false;
     });
 
-    if ((0, _jquery2.default)("#datepicker").lenght) {
-        (0, _jquery2.default)("#datepicker").datepicker({
-            beforeShow: function beforeShow(input, inst) {
-                _jquery2.default.datepicker._pos = _jquery2.default.datepicker._findPos(input); //this is the default position
-                // $.datepicker._pos[0] = 0; //left
-                _jquery2.default.datepicker._pos[1] = (0, _jquery2.default)(window).height() - 270; //top
-            }
-        });
+    if ((0, _jquery2.default)("#datepicker").length > 0) {
+        (0, _jquery2.default)("#datepicker").datepicker();
     }
 
     // Slider
@@ -108,16 +102,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
             dots: false,
             infinite: false,
             responsive: [{
-                breakpoint: 993,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 2
                 }
             }, {
-                breakpoint: 576,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                 }
             }]
         });

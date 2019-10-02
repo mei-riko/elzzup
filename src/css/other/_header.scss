@@ -30,10 +30,7 @@
     }
 }
 
-@media all and (min-width: map-get($grid-breakpoints, 'sm')){}
-@media all and (min-width: map-get($grid-breakpoints, 'md')){}
-@media all and (min-width: map-get($grid-breakpoints, 'lg')){}
-@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+@media all and (min-width: map-get($grid-breakpoints, 'lg')){
     .header{
         padding: 12px 0;
         .header__info{

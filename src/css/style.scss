@@ -20,8 +20,9 @@ body{
     min-height: 100vh;
 
     padding: 0 0 56px;
+    min-width: 300px;
 }
-@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+@media all and (min-width: map-get($grid-breakpoints, 'lg')){
     body{
         padding: 0;
     }

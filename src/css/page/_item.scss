@@ -125,14 +125,20 @@ a.item{
         width: 100%;
     }
 }
-
+@media all and (min-width: map-get($grid-breakpoints, 'md')){
+    .item{
+        .item__data{
+            display: block;
+        }
+    }
+    .item-columns {
+        column-count: 2;
+    }
+}
 @media all and (min-width: map-get($grid-breakpoints, 'xl')){
     .item{
         .item__title{
             font-size: 16px;
-        }
-        .item__data{
-            display: block;
         }
         &_image{
             padding: 20px;

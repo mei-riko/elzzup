@@ -127,7 +127,7 @@
     }
 }
 
-@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+@media all and (min-width: map-get($grid-breakpoints, 'lg')){
     .navbar-mobile,
     .navbar-fullscreen{
         display: none;

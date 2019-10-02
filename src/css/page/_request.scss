@@ -1,6 +1,7 @@
 .request-block{
     background: $white;
-    padding: 20px 0;
+    padding: 20px;
+    margin: 0 -20px;
 }
 
 .request{
@@ -167,9 +168,9 @@
     }
 }
 
-@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+@media all and (min-width: map-get($grid-breakpoints, 'md')){
     .request-link{
-        height: 270px;
+        height: 220px;
         padding: 20px;
         margin: 0;
 
@@ -183,6 +184,20 @@
             background-size: 22px;
         }
     }
+    .request-column{
+        column-count: 2;
+    }
+    .request-block{
+        margin: 0;
+    }
+    .request{
+        border: none;
+    }    
+}
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .request-link{
+        height: 270px;
+    }    
     .request-block{
         padding: 40px 0;
     }
@@ -190,7 +205,6 @@
         column-count: 3;
     }
     .request{
-        border: none;
         .request__image-preview{
             margin-bottom: 20px;
         }
