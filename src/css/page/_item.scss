@@ -17,6 +17,7 @@
     .item__title{
         color: $black;
         font-size: 14px;
+        line-height: 1.2;
         font-weight: bold;
         margin-bottom: 6px;
 
@@ -25,12 +26,19 @@
     .item__introtext{
         color: $dark-grey;
     }
+    .item__data{
+        display: none;
+
+        color: $grey;
+        margin-top: 12px;
+    }
 
     &_image{
         position: relative;
         padding: 10px;
         padding-left: 110px;
         min-height: 100px;
+        margin: 0 0 20px;
         .item__image{
             position: absolute;
             top: 10px;
@@ -45,6 +53,7 @@
         position: relative;
         padding: 20px;
         padding-top: 180px;
+        margin: 0 0 20px;
         .item__image{
             position: absolute;
             top: 0px;
@@ -102,6 +111,50 @@ a.item{
         text-decoration: none;
         .item__title{
             color: $red;
+        }
+    }
+}
+
+.item-columns {
+    column-count: 1;
+    column-gap: 30px;
+    orphans: 1;
+    widows: 1;
+    .item{
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .item{
+        .item__title{
+            font-size: 16px;
+        }
+        .item__data{
+            display: block;
+        }
+        &_image{
+            padding: 20px;
+            padding-left: 120px;
+            min-height: 120px;
+            .item__image {
+                top: 20px;
+                left: 20px;
+            }
+            .item__title{
+                margin-bottom: 12px;
+            }
+        }
+        &_collapse {
+            padding: 26px;
+        }
+    }
+    .item-columns {
+        padding: 40px 0 20px;
+        column-count: 2;
+        .item{
+            margin-bottom: 30px;
         }
     }
 }

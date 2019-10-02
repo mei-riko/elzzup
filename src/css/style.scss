@@ -21,7 +21,11 @@ body{
 
     padding: 0 0 56px;
 }
-
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    body{
+        padding: 0;
+    }
+}
 @import "cabinet/info.scss";
 @import "cabinet/nav.scss";
 @import "cabinet/block.scss";
@@ -35,6 +39,7 @@ body{
 @import "page/navigation.scss";
 @import "page/tab.scss";
 @import "page/request.scss";
+@import "page/slider.scss";
 
 @import "page/step.scss";
 

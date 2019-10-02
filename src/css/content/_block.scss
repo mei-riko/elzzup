@@ -7,3 +7,17 @@
         margin-top: 10px;
     }
 }
+
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .content-block{
+        padding: 40px 0;
+        &.cabinet-task{
+            .cabinet-task__category{
+                font-size: 1.5rem;
+            }
+        }
+        & + .content-block{
+            margin-top: 20px;
+        }
+    }
+}

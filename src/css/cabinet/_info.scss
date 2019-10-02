@@ -5,7 +5,7 @@
     background: $white;
     border-bottom: 1px solid $grey;
     
-    padding: 30px 0 20px;
+    padding: 30px 20px 20px;
     margin-bottom: 10px;
     // column
     .cabinet-info__image{
@@ -78,6 +78,43 @@
         }
         .cabinet-info__data{
             flex: 0 0 calc(100% - 140px);
+        }
+    }
+}
+
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .cabinet-info{
+        border: 1px solid $grey;
+        padding: 20px;
+        margin: 20px 0;
+
+        // column
+        .cabinet-info__image{
+            flex: 0 0 100%;
+            margin-bottom: 20px;
+            .cabinet-info__pay{
+                top: 0;
+                left: 15px;
+            }
+        }
+        .cabinet-info__pay{
+            top: 20px;
+            left: 20px;
+        }
+        .cabinet-info__data{
+            flex: 0 0 100%;
+            padding-left: 15px;
+            overflow-x: hidden;      
+        }
+
+        &_full{
+            .cabinet-info__bio{
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+        .btn{
+            padding: 6px 12px;
         }
     }
 }

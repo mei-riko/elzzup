@@ -20,27 +20,32 @@ html(lang="ru")
                     a.btn.btn_border.btn_border--active.navigation__btn-small(href="#") Тип заявки · СЮРПРИЗ
                     a.btn.btn_border.navigation__btn-small(href="#") Статус заявки
         .container        
-            p.item-subtitle.text-small сегодня
-            a.item.item_image(href="#")
-                .item__image(style="background-image: url('../img/image-demo.jpg');")
-                .item__info
-                    .item__title Новая миссия в категории «Путеводитель»
-                    .item__introtext новые миссии
-            a.item.item_image-full(href="#")
-                .item__image
-                .item__title Опубликовано 3 новых миссии
-                .item__introtext новости проекта
-            p.item-subtitle.text-small 15 сентября 2019
-            a.item.item_image(href="#")
-                .item__image(style="background-image: url('../img/image-demo.jpg');")
-                .item__info
-                    .item__title Новая миссия в категории «Путеводитель»
-                    .item__introtext новые миссии
-            a.item.item_image(href="#")
-                .item__image
-                .item__info
-                    .item__title Новая миссия в категории «Путеводитель»
-                    .item__introtext новые миссии
+            .item-columns
+                p.item-subtitle.text-small.d-xl-none сегодня
+                a.item.item_image(href="#")
+                    .item__image(style="background-image: url('../img/image-demo.jpg');")
+                    .item__info
+                        .item__title Новая миссия в категории «Путеводитель»
+                        .item__introtext Impedit, quo voluptas assumenda est, omnis voluptas nulla. Rem aperiam eaque ipsa, quae ab illo inventore veritatis.
+                        .item__data.text-small Опубликовано сегодня
+                a.item.item_image-full(href="#")
+                    .item__image
+                    .item__title Опубликовано 3 новых миссии
+                    .item__introtext новости проекта
+                    .item__data.text-small Опубликовано сегодня
+                p.item-subtitle.text-small.d-xl-none 15 сентября 2019
+                a.item.item_image(href="#")
+                    .item__image(style="background-image: url('../img/image-demo.jpg');")
+                    .item__info
+                        .item__title Новая миссия в категории «Путеводитель»
+                        .item__introtext новые миссии
+                        .item__data.text-small Опубликовано 15 сентября 2019
+                a.item.item_image(href="#")
+                    .item__image
+                    .item__info
+                        .item__title Новая миссия в категории «Путеводитель»
+                        .item__introtext новые миссии
+                        .item__data.text-small Опубликовано15 сентября 2019
         include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js")

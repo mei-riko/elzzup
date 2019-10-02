@@ -97,6 +97,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         });
     }
 
+    // Slider
+    if ((0, _jquery2.default)('.slider_request').length > 0) {
+        var $slickElementLogo = (0, _jquery2.default)('.slider.slider_request');
+        $slickElementLogo.slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            infinite: false,
+            responsive: [{
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            }]
+        });
+    }
+
     // Collapse Item
     (0, _jquery2.default)(".item.item_collapse").on("click", function () {
         (0, _jquery2.default)(this).toggleClass("item_collapse--active");

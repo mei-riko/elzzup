@@ -21,6 +21,35 @@ $(document).ready(() =>{
         });
     }
 
+    // Slider
+    if( $('.slider_request').length > 0 ){
+        let $slickElementLogo = $('.slider.slider_request');
+        $slickElementLogo.slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            infinite: false,
+            responsive: [
+                {
+                  breakpoint: 993,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                  }
+                },
+                {
+                  breakpoint: 576,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                  }
+                }
+            ]
+        });
+      }
+
     // Collapse Item
     $(".item.item_collapse").on("click", function(){
         $(this).toggleClass("item_collapse--active");

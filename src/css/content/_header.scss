@@ -20,3 +20,20 @@
         color: $light-grey;
     }
 }
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .header-block{
+        background: $white;
+        color: $black;
+        .header-block__subtitle{
+            text-align: left;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .header-block__title{
+            text-align: left;
+            color: $black;
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+}

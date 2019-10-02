@@ -86,3 +86,15 @@
         }
     }
 }
+
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .container_cabinet-task{
+        border: 1px solid $grey;
+        border-bottom: none;
+    }
+    .cabinet-task{
+        &_category{
+            padding: 10px 20px;
+        }
+    }
+}

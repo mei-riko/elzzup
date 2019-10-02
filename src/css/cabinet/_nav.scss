@@ -3,7 +3,7 @@
     flex-wrap: nowrap;
 
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
     padding: 20px 0;
 
     .cabinet-navigation__link{
@@ -72,4 +72,52 @@
 
     background: $white;
     border-bottom: 1px solid $grey;
+}
+
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .cabinet-navigation-scroll{
+        border: 1px solid $grey;
+        margin: 0 0 20px;
+    }
+    .cabinet-navigation{
+        flex-wrap: wrap;
+        padding: 20px 0;
+
+        .cabinet-navigation__link{
+            width: 100%;
+            text-align: left;
+
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: flex-start;
+
+            .icon{
+                margin: 0 20px 0 0px;
+                width: 30px;
+                height: 30px;
+
+                svg{
+                    width: 14px;
+                }
+
+                & + .title{
+                    margin: 0;
+                }
+            }
+            .title{
+                font-size: 12px;
+                font-weight: bold;
+                margin: 0;
+            }
+            .alert{
+                font-size: 10px;
+            }
+
+            & + .cabinet-navigation__link {
+                margin-top: 15px;
+                margin-left: 0px;
+            }
+        }
+    }
 }

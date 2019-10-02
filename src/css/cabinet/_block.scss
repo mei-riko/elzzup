@@ -216,3 +216,42 @@ a.cabinet-block{
 .cabinet-subtitle{
     margin: 20px 0;
 }
+
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .cabinet-content{
+        margin: 20px 0;
+        .navigation-scroll{
+            border: 1px solid $grey;
+        }
+        .request-block{
+            padding: 20px;
+            border: 1px solid $grey;
+            .request:not(.request_last) {
+                border-bottom: 1px solid #bbbbbb;
+            }
+        }
+        .cabinet-subtitle{
+            margin-top: 0;
+            font-size: 12px;
+        }
+    }
+    .cabinet-block{
+        border: 1px solid $grey;
+        border-bottom: none;
+        &:last-child{
+            border-bottom: 1px solid $grey;
+        }
+        &_alert{
+            border: none;
+        }
+        &_filter{
+            border-bottom: 1px solid $grey;
+            .tabs-content{
+                justify-content: center;
+                .btn{
+                    margin: 10px 5px 0;
+                }
+            }
+        }
+    }
+}
