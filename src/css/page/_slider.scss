@@ -5,4 +5,9 @@
 .slick-slide{
     height: auto;
     margin: 0 10px;
+    outline: none;
+
+    &:hover, &:focus{
+        outline: none;
+    }
 }

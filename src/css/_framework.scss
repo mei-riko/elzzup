@@ -69,7 +69,9 @@ a{
 .d-none{display: none;}
 .d-block{display: block;}
 
-.bg-white{background: $white;}
+.bg-white{background: $white!important;}
+.bg-light-blue{background: $body-bg!important;}
+.bg-dark{background: $black!important; color: $white;}
 
 .text-white{color: $white;}
 .text-black{color: $black;}
@@ -142,6 +144,10 @@ a{
     
     .d-md-none{display: none;}
     .d-md-block{display: block;}
+
+    .text-md-left{text-align: left;}
+    .text-md-center{text-align: center;}
+    .text-md-right{text-align: right;}
     
     .mt-md-0{margin-top: 0px;}
     .mt-md-30{margin-top: 30px;}
@@ -177,4 +183,8 @@ a{
     }
     .d-xl-none{display: none;}
     .d-xl-block{display: block;}
+
+    .text-xl-left{text-align: left;}
+    .text-xl-center{text-align: center;}
+    .text-xl-right{text-align: right;}
 }

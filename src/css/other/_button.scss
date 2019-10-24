@@ -44,6 +44,24 @@
             background: $light-blue url("../img/redo-variant.svg") no-repeat center/contain;
         }
     }
+    &_white{
+        background: $white;
+        color: $dark-grey;
+
+        &:hover{
+            background: $light-grey;
+            color: $dark-grey;
+        }
+    }
+    &_primary{
+        background: $blue;
+        color: $dark-grey;
+
+        &:hover{
+            background: darken($color: $blue, $amount: 5%);
+            color: $dark-grey;
+        }
+    }
     &_cta{
         background: $red;
         color: $white;
@@ -95,6 +113,10 @@
             position: unset;
             border-radius: 0px;
             padding: 20px;
+        }
+
+        &_large-xl{
+            padding: 12px 26px 13px;
         }
     }
 }

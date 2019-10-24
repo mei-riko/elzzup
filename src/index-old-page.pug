@@ -1,0 +1,108 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Cabinet Page
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+        .header-block
+            .container
+                p.header-block__subtitle ЗАЧЕМ НУЖЕН ELZZUP
+                p.header-block__title Границы, адреса, визы — не имеют значения
+                .slider.mt-30.slider_request
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-1.jpg');") Сделать фото заката над морем
+                            .icon-category.icon-category_camera
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo.jpg');") Миссия «Начало»
+                            .icon-category.icon-category_heart
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
+                            .icon-category.icon-category_gift
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-3.jpg');") Мастер-класс по food-фото
+                            .icon-category.icon-category_plate
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-4.jpg');") Праздник Холли
+                            .icon-category.icon-category_mask
+        .content-block
+            .container
+                .row
+                    .col-12.col-md-6
+                        h2.content-title.text-bold Окей, а что теперь?
+                        p.content-offer.d-md-none Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
+                    .col-12.col-md-6.text-right.d-none.d-md-block
+                        a.btn.btn_cta(href="#") Присоединится к команде
+                .row.step#indexStep.mt-30
+                    .col-12.col-md-4.step__item
+                        .step__col
+                            .step__number 01
+                        .step__content
+                            p.step__title Регистрация
+                            p Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
+                    .col-12.col-md-4.step__item
+                        .step__col
+                            .step__number 02
+                        .step__content
+                            p.step__title Миссии за ZZ
+                            p Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
+                    .col-12.col-md-4.step__item
+                        .step__col
+                            .step__number 03
+                        .step__content
+                            p.step__title Рост рейтинга
+                            p Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
+                a.btn.btn_cta.btn_fullwidth.d-md-none(href="#") Присоединится к команде
+        .content-block.cabinet-task.cabinet-task_category
+            .container
+                .row.no-gutters.justify-content-between.align-items-center
+                    .cabinet-task__category.cabinet-task__category_choose.text-bold Категория «Камера»
+                    a.btn.btn_border(href="page-request.html") Все заявки
+                .slider.mt-30.slider_request
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-1.jpg');") Сделать фото заката над морем
+                            .icon-category.icon-category_camera
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo.jpg');") Миссия «Начало»
+                            .icon-category.icon-category_camera
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
+                            .icon-category.icon-category_camera
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-3.jpg');") Мастер-класс по food-фото
+                            .icon-category.icon-category_camera
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-4.jpg');") Праздник Холли
+                            .icon-category.icon-category_camera
+        .content-block.cabinet-task.cabinet-task_category
+            .container
+                .row.no-gutters.justify-content-between.align-items-center
+                    .cabinet-task__category.cabinet-task__category_choose.text-bold Категория «Сердце»
+                    a.btn.btn_border(href="page-request.html") Все заявки
+                .slider.mt-30.slider_request
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-1.jpg');") Сделать фото заката над морем
+                            .icon-category.icon-category_heart
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo.jpg');") Миссия «Начало»
+                            .icon-category.icon-category_heart
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
+                            .icon-category.icon-category_heart
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-3.jpg');") Мастер-класс по food-фото
+                            .icon-category.icon-category_heart
+                    .slider__item
+                        a.request-link(href="#" style="background-image:url('../img/image-demo-4.jpg');") Праздник Холли
+                            .icon-category.icon-category_heart        
+        include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/slick.min.js")
+        script(src="./js/app.min.js")

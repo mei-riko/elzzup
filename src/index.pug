@@ -3,7 +3,7 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Cabinet Page
+        title Index Page
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
         link(href='./css/slick.css', rel='stylesheet')
         link(href='./css/slick-theme.css', rel='stylesheet')
@@ -12,90 +12,94 @@ html(lang="ru")
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-        .header-block
-            .container
-                p.header-block__subtitle ЗАЧЕМ НУЖЕН ELZZUP
-                p.header-block__title Границы, адреса, визы — не имеют значения
-                .slider.mt-30.slider_request
-                    .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-1.jpg');") Сделать фото заката над морем
-                            .icon-category.icon-category_camera
-                    .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo.jpg');") Миссия «Начало»
-                            .icon-category.icon-category_heart
-                    .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
-                            .icon-category.icon-category_gift
-                    .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-3.jpg');") Мастер-класс по food-фото
-                            .icon-category.icon-category_plate
-                    .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-4.jpg');") Праздник Холли
-                            .icon-category.icon-category_mask
-        .content-block
-            .container
+        .header-block.header-block_bg
+            .container.text-center
+                .row.justify-content-center
+                    .col-12.col-lg-9
+                        p.header-block__title Регистрируйся, выполняй задания и получай награду!
+                        p.header-block__content Maiores alias consequatur aut officiis debitis aut odit aut reiciendis voluptatibus. Velit esse, quam nihil molestiae. Quis nostrum exercitationem ullam corporis suscipit laboriosam.
+                        .btn-group.justify-content-center
+                            a.btn.btn_primary.btn_large-xl.text-bold(href="#") Создать аккаунт
+                            a.btn.btn_white.btn_large-xl.scroll(href="#howitwork") Как это работает?
+        .bg-light-blue.content-category
+            .container-fluid
                 .row
-                    .col-12.col-md-6
-                        h2.content-title.text-bold Окей, а что теперь?
-                        p.content-offer.d-md-none Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
-                    .col-12.col-md-6.text-right.d-none.d-md-block
-                        a.btn.btn_cta(href="#") Присоединится к команде
-                .row.step#indexStep.mt-30
-                    .col-12.col-md-4.step__item
+                    .col-12.col-lg-3.col-sm-6
+                        a(href="#").content-category__item.content-category__item_photo-1
+                            .content-category__title Фотография
+                    .col-12.col-lg-3.col-sm-6
+                        a(href="#").content-category__item.content-category__item_photo-2
+                            .content-category__title Путешествия
+                    .col-12.col-lg-3.col-sm-6
+                        a(href="#").content-category__item.content-category__item_photo-3
+                            .content-category__title Еда
+                    .col-12.col-lg-3.col-sm-6
+                        a(href="#").content-category__item.content-category__item_photo-4
+                            .content-category__title Любовь
+                .row
+                    .col-12.col-lg-3.col-sm-6
+                        a(href="#").content-category__item.content-category__item_photo-5
+                            .content-category__title Встречи
+                    .col-12.col-lg-3.col-sm-6
+                        a(href="#").content-category__item.content-category__item_photo-6
+                            .content-category__title Покупки
+                    .col-12.col-lg-3.col-sm-6
+                        a(href="#").content-category__item.content-category__item_photo-7
+                            .content-category__title Танцы
+                    .col-12.col-lg-3.col-sm-6
+                        a(href="#").content-category__item.content-category__item_photo-8
+                            .content-category__title Маски
+        .content-block.content-block_large
+            .container.text-center
+                h2.content-title.text-bold Что такое Elzzup?
+                .row.justify-content-center.step
+                    .col-6.col-md-6.col-xl-3.step__item.mb-30.mb-xl-0
                         .step__col
                             .step__number 01
                         .step__content
-                            p.step__title Регистрация
-                            p Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
-                    .col-12.col-md-4.step__item
+                            p.step__title Заголовок 1
+                            p Пункт для примера, точно не знаю какие надо выделить ключевые моменты
+                    .col-6.col-md-6.col-xl-3.step__item.mb-30.mb-xl-0
                         .step__col
                             .step__number 02
                         .step__content
-                            p.step__title Миссии за ZZ
-                            p Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
-                    .col-12.col-md-4.step__item
+                            p.step__title Заголовок 2
+                            p Пункт для примера, точно не знаю какие надо выделить ключевые моменты
+                    .col-6.col-md-6.col-xl-3.step__item
                         .step__col
                             .step__number 03
                         .step__content
-                            p.step__title Рост рейтинга
-                            p Зарегистрируйтесь в два клика, чтобы начать самое удивительное путешествие в жизни.
-                a.btn.btn_cta.btn_fullwidth.d-md-none(href="#") Присоединится к команде
-        .content-block.cabinet-task.cabinet-task_category
+                            p.step__title Заголовок 3
+                            p Пункт для примера, точно не знаю какие надо выделить ключевые моменты
+                    .col-6.col-md-6.col-xl-3.step__item
+                        .step__col
+                            .step__number 04
+                        .step__content
+                            p.step__title Заголовок 4
+                            p Пункт для примера, точно не знаю какие надо выделить ключевые моменты
+        .content-block.content-block_large.bg-dark.mt-0#howitwork
+            .container
+                .row.align-items-center.text-center.text-md-left
+                    .col-12.col-md-7.col-xl-6
+                        p.content-title.text-bold.mb-xl-30 Как это работает?
+                        p Maiores alias consequatur aut officiis debitis aut odit aut reiciendis voluptatibus. Velit esse, quam nihil molestiae. Quis nostrum exercitationem ullam corporis suscipit laboriosam.Maiores alias consequatur aut officiis debitis aut odit aut reiciendis voluptatibus. Velit esse, quam nihil molestiae. Quis nostrum exercitationem ullam corporis suscipit laboriosam.Maiores alias consequatur aut officiis debitis aut odit aut reiciendis voluptatibus. Velit esse, quam nihil molestiae. Quis nostrum exercitationem ullam corporis suscipit laboriosam.
+                    .col-12.col-md-5.col-xl-6.mt-30.mt-md-0
+                        img.img-fluid(src="../img/schema-test.png")
+        .content-block.cabinet-task.cabinet-task_category.bg-light-blue.mt-0
             .container
                 .row.no-gutters.justify-content-between.align-items-center
-                    .cabinet-task__category.cabinet-task__category_choose.text-bold Категория «Камера»
-                    a.btn.btn_border(href="page-request.html") Все заявки
-                .slider.mt-30.slider_request
-                    .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-1.jpg');") Сделать фото заката над морем
-                            .icon-category.icon-category_camera
-                    .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo.jpg');") Миссия «Начало»
-                            .icon-category.icon-category_camera
-                    .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
-                            .icon-category.icon-category_camera
-                    .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-3.jpg');") Мастер-класс по food-фото
-                            .icon-category.icon-category_camera
-                    .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-4.jpg');") Праздник Холли
-                            .icon-category.icon-category_camera
-        .content-block.cabinet-task.cabinet-task_category
-            .container
-                .row.no-gutters.justify-content-between.align-items-center
-                    .cabinet-task__category.cabinet-task__category_choose.text-bold Категория «Сердце»
-                    a.btn.btn_border(href="page-request.html") Все заявки
+                    .cabinet-task__category.cabinet-task__category_choose.text-bold Актуальное в блоге
+                    a.btn.btn_white(href="page-request.html") Все статьи
                 .slider.mt-30.slider_request
                     .slider__item
                         a.request-link(href="#" style="background-image:url('../img/image-demo-1.jpg');") Сделать фото заката над морем
                             .icon-category.icon-category_heart
                     .slider__item
                         a.request-link(href="#" style="background-image:url('../img/image-demo.jpg');") Миссия «Начало»
-                            .icon-category.icon-category_heart
+                            .icon-category.icon-category_gift
                     .slider__item
                         a.request-link(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
-                            .icon-category.icon-category_heart
+                            .icon-category.icon-category_mask
                     .slider__item
                         a.request-link(href="#" style="background-image:url('../img/image-demo-3.jpg');") Мастер-класс по food-фото
                             .icon-category.icon-category_heart

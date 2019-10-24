@@ -1,11 +1,4 @@
 .step{
-    .step__item{
-        display: flex;
-        flex-wrap: nowrap;
-        .step__col{
-            padding-right: 20px;
-        }
-    }
     .step__number{
         width: 40px;
         height: 40px;
@@ -16,18 +9,33 @@
         line-height: 40px;
 
         text-align: center;
+        margin: 0 auto;
 
         background: $body-bg;
-        color: darken($color: $body-bg, $amount: 20%);
-    }
-    .step__content{
-        color: $dark-grey;
-        margin-bottom: 20px;
+        color: #AFC5BE;
     }
     .step__title{
         color: $black;
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         font-weight: bold;
-        margin-bottom: 5px;
+        margin: 14px 0 6px;
+    }
+    .step__content{
+        color: $dark-grey;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }   
+}
+
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .step{
+        .step__number{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+
+            font-size: 48px;
+            line-height: 100px;
+        }
     }
 }

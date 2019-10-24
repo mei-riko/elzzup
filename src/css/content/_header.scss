@@ -1,7 +1,7 @@
 .header-block{
-    padding: 50px 0 20px;
-    background: $black;
+    padding: 40px 0;
     color: $white;
+
     .header-block__subtitle{
         font-weight: bold;
         font-size: 10px;
@@ -13,26 +13,66 @@
     }
     .header-block__title{
         font-weight: bold;
-        font-size: 26px;
+        font-size: 24px;
         line-height: 32px;
         text-align: center;
 
-        color: $light-grey;
+        position: relative;
+        z-index: 11;
+    }
+    .header-block__content{
+        position: relative;
+        z-index: 11;        
+    }
+
+    .btn-group{
+        .btn{
+            width: 100%;
+            padding: 12px 10px;
+            & + .btn {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &_bg{
+        background: $black url("../img/bg-demo.jpg") no-repeat center / cover;
+        position: relative;
+        &:before{
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+            display: block;
+
+            background: rgba(0,0,0,0.5);
+        }
     }
 }
-@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+@media all and (min-width: map-get($grid-breakpoints, 'sm')){
     .header-block{
-        background: $white;
-        color: $black;
+        .btn-group{
+            .btn{
+                width: auto;
+                & + .btn{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+@media all and (min-width: map-get($grid-breakpoints, 'lg')){
+    .header-block{
+        padding: 80px 0;
         .header-block__subtitle{
-            text-align: left;
             font-size: 12px;
             line-height: 14px;
         }
         .header-block__title{
-            text-align: left;
-            color: $black;
-            font-size: 36px;
+            font-size: 42px;
             line-height: 44px;
         }
     }
