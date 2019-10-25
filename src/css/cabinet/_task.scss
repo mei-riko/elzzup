@@ -3,7 +3,7 @@
     width: 100%;
     padding: 20px;
     background: $white;
-    border-bottom: 1px solid $grey;
+    border-bottom: 1px solid $border-color;
     .cabinet-task__title{
         font-weight: bold;
         font-size: 16px;
@@ -13,6 +13,7 @@
     }
     .cabinet-task__offer{
         color: $dark-grey;
+        font-size: 12px;
     }
     .cabinet-task__reward{
         position: absolute;
@@ -32,6 +33,7 @@
         &.cabinet-task__category_choose{
             flex: 0 0 calc(100% - 180px);
             max-width: calc(100% - 180px);
+            padding: 0 10px;
         }
     }
     .cabinet-task__icon{
@@ -68,9 +70,6 @@
     }
 
     &_locked{
-        background: $body-bg;
-        .cabinet-task__title,
-        .cabinet-task__offer,
         .cabinet-task__reward{
             color: $grey;
         }
@@ -88,7 +87,7 @@
 
     .col-6:nth-child(2n){
         .cabinet-task{
-            border-left: 1px solid $grey;
+            border-left: 1px solid $border-color;
         }
     }
 }
@@ -97,7 +96,7 @@
     .container_cabinet-task{
         margin: 0;
         width: 100%;
-        border: 1px solid $grey;
+        border: 1px solid $border-color;
         border-bottom: none;
     }
     .cabinet-task{

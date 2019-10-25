@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Blog</title>
+    <title>Enter Page</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
   </head>
@@ -78,68 +78,38 @@
         </div>
       </div>
       <main class="content">
-        <div class="title-block bg-white">
-          <div class="container">
-            <h1 class="text-bold mb-0">Блог</h1>
+        <div class="container pt-60 pb-60">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+              <p class="mb-30">Зарегистрируйтесь с помощью <a class="text-bold" href="#">Facebook </a> или <a class="text-bold" href="#">ВКонтакте</a></p>
+              <form class="form form_user">
+                <div class="form-group form-group_first">
+                  <div class="form-label">ИМЯ*</div>
+                  <div class="form-input">
+                    <input class="input" type="text" placeholder="Укажите ваше имя"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-label">E-MAIL*</div>
+                  <div class="form-input">
+                    <input class="input" type="email" placeholder="Используется как логин"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-label">ПАРОЛЬ*</div>
+                  <div class="form-input">
+                    <input class="input" type="password"/>
+                  </div>
+                </div>
+                <button class="btn btn_cta btn_large-xl btn_fullwidth mt-30" type="submit">Зарегистироваться</button>
+                <div class="form__agree checkbox text-small">
+                  <input class="checkbox__input" id="policy" type="checkbox" checked=""/>
+                  <label class="checkbox__label" for="policy">согласен с обработкой <a class="checkbox__link" href="/privacy.pdf" title="Соглашение на обработку персональных данных">персональных данных</a></label>
+                </div>
+              </form>
+              <p class="mt-30">Уже есть аккаунт на Elzzup? <a class="text-bold" href="#">Войти</a></p>
+            </div>
           </div>
-        </div>
-        <div class="navigation-scroll">
-          <div class="container">
-            <div class="navigation btn-group"><a class="btn btn_border navigation__btn-small btn_border--active" href="#">Показать все</a><a class="btn btn_border navigation__btn-small" href="#">Еда</a><a class="btn btn_border navigation__btn-small" href="#">Сюрприз</a><a class="btn btn_border navigation__btn-small" href="#">Фото</a></div>
-          </div>
-        </div>
-        <div class="container">       
-          <div class="item-columns"><a class="item item_image-full" href="#">
-              <div class="item__image"></div>
-              <div class="item__title">Опубликовано 3 новых миссии</div>
-              <div class="item__introtext">новости проекта</div>
-              <div class="item__data text-small">Опубликовано сегодня</div></a><a class="item item_image" href="#">
-              <div class="item__image" style="background-image: url('../img/image-demo.jpg');"></div>
-              <div class="item__info">
-                <div class="item__title">Новая миссия в категории «Путеводитель»</div>
-                <div class="item__introtext">новые миссии</div>
-                <div class="item__data text-small">Опубликовано 15 сентября 2019</div>
-              </div></a><a class="item item_image" href="#">
-              <div class="item__image"></div>
-              <div class="item__info">
-                <div class="item__title">Новая миссия в категории «Путеводитель»</div>
-                <div class="item__introtext">новые миссии</div>
-                <div class="item__data text-small">Опубликовано 15 сентября 2019</div>
-              </div></a><a class="item item_image-full" href="#">
-              <div class="item__image" style="background-image: url('../img/image-demo.jpg');"></div>
-              <div class="item__title">Опубликовано 3 новых миссии</div>
-              <div class="item__introtext">новости проекта</div>
-              <div class="item__data text-small">Опубликовано сегодня</div></a><a class="item item_image" href="#">
-              <div class="item__image" style="background-image: url('../img/image-demo.jpg');"></div>
-              <div class="item__info">
-                <div class="item__title">Новая миссия в категории «Путеводитель»</div>
-                <div class="item__introtext">Impedit, quo voluptas assumenda est, omnis voluptas nulla. Rem aperiam eaque ipsa, quae ab illo inventore veritatis.</div>
-                <div class="item__data text-small">Опубликовано сегодня</div>
-              </div></a><a class="item item_image" href="#">
-              <div class="item__image" style="background-image: url('../img/image-demo.jpg');"></div>
-              <div class="item__info">
-                <div class="item__title">Новая миссия в категории «Путеводитель»</div>
-                <div class="item__introtext">новые миссии</div>
-                <div class="item__data text-small">Опубликовано 15 сентября 2019</div>
-              </div></a><a class="item item_image-full" href="#">
-              <div class="item__image" style="background-image: url('../img/bg-demo.jpg');"></div>
-              <div class="item__info">
-                <div class="item__title">Новая миссия в категории «Путеводитель»</div>
-                <div class="item__introtext">новые миссии</div>
-                <div class="item__data text-small">Опубликовано 15 сентября 2019                </div>
-              </div></a><a class="item item_image" href="#">
-              <div class="item__image" style="background-image: url('../img/image-demo.jpg');"></div>
-              <div class="item__info">
-                <div class="item__title">Новая миссия в категории «Путеводитель»</div>
-                <div class="item__introtext">Impedit, quo voluptas assumenda est, omnis voluptas nulla. Rem aperiam eaque ipsa, quae ab illo inventore veritatis.</div>
-                <div class="item__data text-small">Опубликовано сегодня</div>
-              </div></a></div>
-          <ul class="pagination">
-            <li class="pagination__item pagination__item--active"><a class="pagination__link pagination__link--active" href="#1">1</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#2">2</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#3">3</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#4">4</a></li>
-          </ul>
         </div>
       </main>
       <footer class="footer">
@@ -165,6 +135,8 @@
         </div>
       </footer>
     </div>
+    <script src="./js/util.js"></script>
+    <script src="./js/tab.js"></script>
     <script src="./js/jquery.inputmask.js"></script>
     <script src="./js/app.min.js"></script>
   </body>

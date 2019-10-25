@@ -5,9 +5,10 @@
 }
 
 .request{
+    position: relative;
+
     border-bottom: 1px solid $grey;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     .request__image-preview{
         width: 100%;
@@ -32,8 +33,10 @@
             position: absolute;
             right: 20px;
             top: 0;
-            width: 24px;
+            width: 20px;
             height: 20px;
+            background: none;
+            border-radius: 0;
         }
     }
     .request__content{
@@ -58,7 +61,7 @@
             background: $light-blue;
             color: $blue;
 
-            font-size: 26px;
+            font-size: 24px;
             font-weight: bold;
             line-height: 60px;
             text-align: center;
@@ -85,9 +88,34 @@
         border-radius: 2px;
         padding: 4px 10px;
     }
-    .request__rating,
-    .request__duration{
+
+    .request__rating{
         color: $dark-grey;
+    }
+    .request__duration{
+        color: $grey;
+        padding-right: 30px;
+    }
+    .request__favorites{
+        width: 20px;
+        height: 20px;
+
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+
+        cursor: pointer;
+        
+        .path{
+            fill: $body-bg;
+            transition: .3s;
+        }
+        &:hover,
+        &--active{
+            .path{
+                fill: $red;
+            }
+        }
     }
 
     .request__location{
@@ -103,22 +131,21 @@
     .request__introtext{
         margin-bottom: 20px;
     }
-
+    // без картинки
     &.request_no-preview{
         .request__duration{
+            margin-bottom: 10px;
+        }
+        .request__price{
             position: relative;
-            padding-right: 100px;
-            .request__price{
-                right: 0;
-                bottom: 0;
-            }
+            width: auto;
+            display: inline-block;
         }
     }
-
+    // последний элемент
     &.request_last{
         border: none;
         margin-bottom: 0;
-        padding-bottom: 0;
     }
 }
 
@@ -217,7 +244,7 @@
             font-size: 1rem;
         }
         .request__introtext {
-            font-size: 13px;
+            font-size: 12px;
             line-height: 18px;
         }
     }

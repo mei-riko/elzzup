@@ -46,7 +46,7 @@
             background: $light-blue;
             color: $blue;
 
-            font-size: 26px;
+            font-size: 24px;
             font-weight: bold;
             line-height: 60px;
             text-align: center;
@@ -91,6 +91,11 @@
     .message__introtext{
         color: $dark-grey;
     }
+    .message__task-name{
+        font-size: 12px;
+        color: $grey;
+        margin-top: 10px;
+    }
     .message__item{
         padding: 10px;
         background: $body-bg;
@@ -107,6 +112,8 @@
 
     &_inside{
         background: $white;
+        border-right: 1px solid $border-color;
+        border-left: 1px solid $border-color;
         box-shadow: none;
         padding: 20px;
         margin: 0 -20px;
@@ -129,6 +136,13 @@
 
     &_alert{
         padding: 16px;
+        .message__data{
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            line-height: 1;
+        }
+
         &_viewed{
             .message__name,
             .message__introtext{
@@ -138,9 +152,6 @@
     }
 }
 .message-answer{
-    // position: fixed;
-    // bottom: 50px;
-    // left: 0;
     width: calc(100% + 40px);
     margin: 0 -20px;
 
@@ -176,6 +187,6 @@
     }
     .message-answer{
         position: unset;
-        border-top: 1px solid $grey;
+        border-top: 1px solid $border-color;
     }
 }

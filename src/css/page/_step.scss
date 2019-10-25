@@ -24,9 +24,8 @@
         color: $dark-grey;
         line-height: 1.2;
         margin-bottom: 0;
-    }   
+    }
 }
-
 @media all and (min-width: map-get($grid-breakpoints, 'xl')){
     .step{
         .step__number{

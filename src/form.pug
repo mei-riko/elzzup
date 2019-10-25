@@ -1,0 +1,46 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Enter Page
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        .wrapper
+            include chunks/header.pug
+            main.content
+                .container.pt-60.pb-60
+                    .row.justify-content-center
+                        .col-12.col-lg-6
+                            p.mb-30 Зарегистрируйтесь с помощью 
+                                a.text-bold(href="#") Facebook 
+                                |  или 
+                                a.text-bold(href="#") ВКонтакте
+                            form.form.form_user
+                                .form-group.form-group_first
+                                    .form-label ИМЯ*
+                                    .form-input
+                                        input.input(type="text" placeholder="Укажите ваше имя")
+                                .form-group
+                                    .form-label E-MAIL*
+                                    .form-input
+                                        input.input(type="email" placeholder="Используется как логин")
+                                .form-group
+                                    .form-label ПАРОЛЬ*
+                                    .form-input
+                                        input.input(type="password")
+                                button.btn.btn_cta.btn_large-xl.btn_fullwidth.mt-30(type="submit") Зарегистироваться
+                                .form__agree.checkbox.text-small
+                                    input.checkbox__input#policy(type="checkbox" checked="")
+                                    label.checkbox__label(for="policy") согласен с обработкой 
+                                        a.checkbox__link(href="/privacy.pdf" title="Соглашение на обработку персональных данных") персональных данных
+                            p.mt-30 Уже есть аккаунт на Elzzup? 
+                                a.text-bold(href="#") Войти
+            include chunks/footer.pug
+        script(src="./js/util.js")
+        script(src="./js/tab.js")
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/app.min.js")

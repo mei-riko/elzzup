@@ -9,33 +9,35 @@ html(lang="ru")
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
-        include chunks/header.pug
-        .title-block.bg-white
-            .container
-                h1.text-bold.mb-0 Популярные вопросы
-        .navigation-scroll
-            .container
-                .nav.navigation.btn-group#faqTab(role="tablist")
-                    a.nav__link.btn.btn_border.active.navigation__btn-small(id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true") Регистрация
-                    a.nav__link.btn.btn_border.navigation__btn-small(id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false") Выполнение миссий
-                    a.nav__link.btn.btn_border.navigation__btn-small(id="type3-tab" data-toggle="tab" href="#type3" role="tab" aria-controls="type3" aria-selected="false") Валюта проекта
-                    a.nav__link.btn.btn_border.navigation__btn-small(id="type4-tab" data-toggle="tab" href="#type4" role="tab" aria-controls="type4" aria-selected="false") Статус заявки        
-        .container
-            .tab-content#faqContent
-                .tab-pane.fade.active.show#type1(role="tabpanel" aria-labelledby="type1-tab")
-                    .item.item_collapse
-                        .item__title Как можно использовать награду полученную за выполнение миссий?
-                        .item__content
-                            p Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
-                            p Id est laborum et molestiae non provident, similique sunt in ea commodi. Qui ratione voluptatem sequi nesciunt, neque porro. Voluptatibus maiores alias consequatur. Dolor repellendus molestiae consequatur, vel eum fugiat, quo voluptas assumenda.
-                            p Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
-                .tab-pane.fade#type2(role="tabpanel" aria-labelledby="type2-tab")
-                    p 2 
-                .tab-pane.fade#type3(role="tabpanel" aria-labelledby="type3-tab")
-                    p 3
-                .tab-pane.fade#type4(role="tabpanel" aria-labelledby="type4-tab")
-                    p 4        
-        include chunks/footer.pug
+        .wrapper
+            include chunks/header.pug
+            main.content
+                .title-block.bg-white
+                    .container
+                        h1.text-bold.mb-0 Популярные вопросы
+                .navigation-scroll
+                    .container
+                        .nav.navigation.btn-group#faqTab(role="tablist")
+                            a.nav__link.btn.btn_border.active.navigation__btn-small(id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true") Регистрация
+                            a.nav__link.btn.btn_border.navigation__btn-small(id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false") Выполнение миссий
+                            a.nav__link.btn.btn_border.navigation__btn-small(id="type3-tab" data-toggle="tab" href="#type3" role="tab" aria-controls="type3" aria-selected="false") Валюта проекта
+                            a.nav__link.btn.btn_border.navigation__btn-small(id="type4-tab" data-toggle="tab" href="#type4" role="tab" aria-controls="type4" aria-selected="false") Статус заявки        
+                .container
+                    .tab-content#faqContent
+                        .tab-pane.fade.active.show#type1(role="tabpanel" aria-labelledby="type1-tab")
+                            .item.item_collapse
+                                .item__title Как можно использовать награду полученную за выполнение миссий?
+                                .item__content
+                                    p Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
+                                    p Id est laborum et molestiae non provident, similique sunt in ea commodi. Qui ratione voluptatem sequi nesciunt, neque porro. Voluptatibus maiores alias consequatur. Dolor repellendus molestiae consequatur, vel eum fugiat, quo voluptas assumenda.
+                                    p Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
+                        .tab-pane.fade#type2(role="tabpanel" aria-labelledby="type2-tab")
+                            p 2 
+                        .tab-pane.fade#type3(role="tabpanel" aria-labelledby="type3-tab")
+                            p 3
+                        .tab-pane.fade#type4(role="tabpanel" aria-labelledby="type4-tab")
+                            p 4        
+            include chunks/footer.pug
         script(src="./js/util.js")
         script(src="./js/tab.js")
         script(src="./js/jquery.inputmask.js")

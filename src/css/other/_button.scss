@@ -11,8 +11,9 @@
 
     transition: .4s;
 
-    &:hover{
+    &:hover, &:focus{
         text-decoration: none;
+        outline: none;
     }
 
     &_border{
@@ -26,6 +27,8 @@
         &--active{
             color: $white;
             background: $blue;
+            border-color: $blue;
+            font-weight: bold;
             &:hover{
                 color: $white;
                 background: darken($color: $blue, $amount: 5%);
@@ -41,7 +44,7 @@
         height: 30px;
         background: url("../img/redo-variant.svg") no-repeat center/contain;
         &:hover{
-            background: $light-blue url("../img/redo-variant.svg") no-repeat center/contain;
+            background: $light-grey url("../img/redo-variant.svg") no-repeat center/contain;
         }
     }
     &_white{

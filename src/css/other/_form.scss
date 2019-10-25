@@ -44,6 +44,22 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .form-group{
+        &_first{
+            .form-label{
+                margin-top: 0px;
+            }
+        }
+
+        & + .form-group{
+            margin-top: 20px;
+        }
+    }
+
+    .btn + .checkbox{
+        margin-top: 10px;
+    }
+
     &_cabinet-create{
         // padding: 0 0 44px;
         .form-group{
@@ -69,6 +85,12 @@
         .btn{
             border-radius: 0px;
         }
+    }
+    &_user{
+        background: $dark-grey;
+        color: $white;
+        border: 1px solid $border-color;
+        padding: 20px;
     }
 }
 .input{
@@ -116,10 +138,10 @@
         &:checked + .checkbox__label:after {
             content: '';
             display: block;
-            background-color: $red;
+            background-color: $blue;
 
             width: 5px;
-            height: 5px;
+            height: 6px;
 
             position: absolute;
             left: 4px;
@@ -138,7 +160,8 @@
             content:'';
             display: block;
 
-            border: 1px solid $light-grey;
+            border: 1px solid $border-color;
+            background: $white;
 
             width: 13px;
             height: 13px;

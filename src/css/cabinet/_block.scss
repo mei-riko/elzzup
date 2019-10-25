@@ -24,11 +24,20 @@
         padding: 0 20px;
         max-width: calc(100% + 40px);
     }
+    .request-block{
+        .request{
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            &.request_last{
+                margin-bottom: 0px;
+            }
+        }
+    }
 }
 
 .cabinet-block{
     background: $white;
-    border-bottom: 1px solid $grey;
+    border-bottom: 1px solid $border-color;
     display: block;
 
     margin: 0 -20px;
@@ -187,13 +196,13 @@
             width: 100%;
             height: 100%;
 
-            background: $light-grey;
+            background: $light-blue;
 
             position: absolute;
             top: 0;
             left: 0;
 
-            opacity: .7;
+            opacity: .5;
 
             z-index: 11;
         }
@@ -264,13 +273,16 @@ a.cabinet-block{
         .navigation-scroll{
             margin: 0 0 20px;
             max-width: 100%;
-            border: 1px solid $grey;
+            border: 1px solid $border-color;
         }
+        
         .request-block{
             padding: 20px;
-            border: 1px solid $grey;
-            .request:not(.request_last) {
-                border-bottom: 1px solid #bbbbbb;
+            border: 1px solid $border-color;
+            .request{
+                &:not(.request_last) {
+                    border-bottom: 1px solid #bbbbbb;
+                }
             }
         } 
         .form_cabinet-create{
@@ -279,22 +291,22 @@ a.cabinet-block{
                 padding: 0;
             }
             .cabinet-task.cabinet-task_category{
-                border: 1px solid $grey;
+                border: 1px solid $border-color;
             }
         }
     }
     .cabinet-block{
         margin: 0;
-        border: 1px solid $grey;
+        border: 1px solid $border-color;
         border-bottom: none;
         &:last-child{
-            border-bottom: 1px solid $grey;
+            border-bottom: 1px solid $border-color;
         }
         &_alert{
             border: none;
         }
         &_filter{
-            border-bottom: 1px solid $grey;
+            border-bottom: 1px solid $border-color;
             margin-bottom: 20px;
         }
     }
