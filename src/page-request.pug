@@ -5,6 +5,7 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Cabinet Page
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css", rel="stylesheet")        
         link(href='./css/style.css', rel='stylesheet')
 
     body
@@ -18,7 +19,10 @@ html(lang="ru")
                 .navigation-scroll
                     .container
                         .navigation.btn-group
-                            a.btn.btn_border.navigation__btn-small(href="#") Любой город
+                            select.basic-select(name="place")
+                                option(value="Любой город") Любой город
+                                option(value="1") Москва
+                                option(value="2") Санкт-Петербург
                             a.btn.btn_border.btn_border--active.navigation__btn-small(href="#") Тип заявки · СЮРПРИЗ
                             a.btn.btn_border.navigation__btn-small(href="#") Статус заявки    
                 .request-block
@@ -196,4 +200,5 @@ html(lang="ru")
                                     </svg>
             include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js")
         script(src="./js/app.min.js")

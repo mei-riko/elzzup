@@ -12,33 +12,34 @@ html(lang="ru")
         .wrapper
             include chunks/header.pug
             main.content
-                .container.pt-60.pb-60
-                    .row.justify-content-center
-                        .col-12.col-lg-6
-                            p.mb-30 Зарегистрируйтесь с помощью 
-                                a.text-bold(href="#") Facebook 
-                                |  или 
-                                a.text-bold(href="#") ВКонтакте
-                            form.form.form_user
-                                .form-group.form-group_first
-                                    .form-label ИМЯ*
-                                    .form-input
-                                        input.input(type="text" placeholder="Укажите ваше имя")
-                                .form-group
-                                    .form-label E-MAIL*
-                                    .form-input
-                                        input.input(type="email" placeholder="Используется как логин")
-                                .form-group
-                                    .form-label ПАРОЛЬ*
-                                    .form-input
-                                        input.input(type="password")
-                                button.btn.btn_cta.btn_large-xl.btn_fullwidth.mt-30(type="submit") Зарегистироваться
-                                .form__agree.checkbox.text-small
-                                    input.checkbox__input#policy(type="checkbox" checked="")
-                                    label.checkbox__label(for="policy") согласен с обработкой 
-                                        a.checkbox__link(href="/privacy.pdf" title="Соглашение на обработку персональных данных") персональных данных
-                            p.mt-30 Уже есть аккаунт на Elzzup? 
-                                a.text-bold(href="#") Войти
+                .header-block.header-block_bg
+                    .container
+                        .row.justify-content-center
+                            .col-12.col-lg-6
+                                p.mb-30 Зарегистрируйтесь с помощью 
+                                    a.text-bold(href="#") Facebook 
+                                    |  или 
+                                    a.text-bold(href="#") ВКонтакте
+                                form.form.form_user
+                                    .form-group.form-group_first
+                                        .form-label ИМЯ*
+                                        .form-input
+                                            input.input(type="text" placeholder="Укажите ваше имя")
+                                    .form-group
+                                        .form-label E-MAIL*
+                                        .form-input
+                                            input.input(type="email" placeholder="Используется как логин")
+                                    .form-group
+                                        .form-label ПАРОЛЬ*
+                                        .form-input
+                                            input.input(type="password")
+                                    button.btn.btn_cta.btn_large-xl.btn_fullwidth.mt-30(type="submit") Зарегистироваться
+                                    .form__agree.checkbox.text-small
+                                        input.checkbox__input#policy(type="checkbox" checked="")
+                                        label.checkbox__label(for="policy") согласен с обработкой 
+                                            a.checkbox__link(href="/privacy.pdf" title="Соглашение на обработку персональных данных") персональных данных
+                                p.mt-30 Уже есть аккаунт на Elzzup? 
+                                    a.text-bold(href="#") Войти
             include chunks/footer.pug
         script(src="./js/util.js")
         script(src="./js/tab.js")

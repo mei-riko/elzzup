@@ -25,6 +25,13 @@
         z-index: 11;        
     }
 
+    a{
+        color: $white;
+        &:hover{
+            color: $blue;
+        }
+    }
+
     .btn-group{
         .btn{
             width: 100%;
@@ -38,6 +45,7 @@
     &_bg{
         background: $black url("../img/bg-demo.jpg") no-repeat center / cover;
         position: relative;
+        
         &:before{
             content:'';
             position: absolute;

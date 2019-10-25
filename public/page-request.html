@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Cabinet Page</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
   </head>
   <body>
@@ -85,7 +86,13 @@
         </div>
         <div class="navigation-scroll">
           <div class="container">
-            <div class="navigation btn-group"><a class="btn btn_border navigation__btn-small" href="#">Любой город</a><a class="btn btn_border btn_border--active navigation__btn-small" href="#">Тип заявки · СЮРПРИЗ</a><a class="btn btn_border navigation__btn-small" href="#">Статус заявки    </a></div>
+            <div class="navigation btn-group">
+              <select class="basic-select" name="place">
+                <option value="Любой город">Любой город</option>
+                <option value="1">Москва</option>
+                <option value="2">Санкт-Петербург</option>
+              </select><a class="btn btn_border btn_border--active navigation__btn-small" href="#">Тип заявки · СЮРПРИЗ</a><a class="btn btn_border navigation__btn-small" href="#">Статус заявки    </a>
+            </div>
           </div>
         </div>
         <div class="request-block">
@@ -297,6 +304,7 @@
       </footer>
     </div>
     <script src="./js/jquery.inputmask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
     <script src="./js/app.min.js"></script>
   </body>
 </html>

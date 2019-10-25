@@ -2332,6 +2332,7 @@ a.link-inverse:hover {
 }
 
 .form_cabinet-create .form-group + .form-group {
+  margin-top: 0;
   border-top: 1px solid #bcbcbc;
 }
 
@@ -2362,6 +2363,14 @@ a.link-inverse:hover {
   color: #ffffff;
   border: 1px solid #cedfda;
   padding: 20px;
+}
+
+.form_user .checkbox .checkbox__link {
+  color: #ffffff;
+}
+
+.form_user .checkbox .checkbox__link:hover {
+  color: #00F3D4;
 }
 
 .input {
@@ -2573,6 +2582,35 @@ a.link-inverse:hover {
 
 .jGrowl#jGrowl .jGrowl-notification.af-message-error .jGrowl-close {
   background: #df0a0a;
+}
+
+.select2 .select2-selection--single {
+  border: 1px solid #C4C4C4;
+  border-radius: 4px;
+  height: 30px;
+}
+
+.select2 .select2-selection--single:focus {
+  outline: none;
+}
+
+.select2 .select2-selection .select2-selection__rendered {
+  font-size: 12px;
+  line-height: 28px;
+  color: #969696;
+}
+
+.select2-container {
+  font-size: 12px;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background: #E3F7F0;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background: #00F3D4;
+  color: #484848;
 }
 
 .btn, .radio__label {
@@ -4356,6 +4394,14 @@ a.item:hover .item__title {
 .header-block .header-block__content {
   position: relative;
   z-index: 11;
+}
+
+.header-block a {
+  color: #ffffff;
+}
+
+.header-block a:hover {
+  color: #00F3D4;
 }
 
 .header-block .btn-group .btn, .header-block .btn-group .radio__label {

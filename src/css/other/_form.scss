@@ -64,6 +64,7 @@
         // padding: 0 0 44px;
         .form-group{
             & + .form-group{
+                margin-top: 0;
                 border-top: 1px solid $grey;
             }
             
@@ -91,6 +92,15 @@
         color: $white;
         border: 1px solid $border-color;
         padding: 20px;
+
+        .checkbox{
+            .checkbox__link{
+                color: $white;
+                &:hover{
+                    color: $blue;
+                }
+            }
+        }
     }
 }
 .input{
@@ -244,6 +254,36 @@
             .jGrowl-close {
                 background: #df0a0a;
             }
+        }
+    }
+}
+
+.select2{
+    .select2-selection{
+        &--single{
+            border: 1px solid #C4C4C4;
+            border-radius: 4px;
+            height: 30px;
+            &:focus{
+                outline: none;
+            }
+        }
+        .select2-selection__rendered{
+            font-size: 12px;
+            line-height: 28px;
+            color: #969696;
+        }
+    }
+}
+.select2-container{
+    font-size: 12px;
+    &--default{
+        .select2-results__option[aria-selected=true]{
+            background: $light-blue;
+        }
+        .select2-results__option--highlighted[aria-selected]{
+            background: $blue;
+            color: $dark-grey;
         }
     }
 }

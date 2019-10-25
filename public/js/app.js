@@ -122,7 +122,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
             }]
         });
     }
-
+    // Select2
+    if ((0, _jquery2.default)('.basic-select').length > 0) {
+        (0, _jquery2.default)('.basic-select').select2();
+    };
     // Collapse Item
     (0, _jquery2.default)(".item.item_collapse").on("click", function () {
         (0, _jquery2.default)(this).toggleClass("item_collapse--active");

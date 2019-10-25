@@ -49,7 +49,10 @@ $(document).ready(() =>{
             ]
         });
       }
-
+    // Select2
+    if( $('.basic-select').length > 0 ) {
+      $('.basic-select').select2();
+    };
     // Collapse Item
     $(".item.item_collapse").on("click", function(){
         $(this).toggleClass("item_collapse--active");
