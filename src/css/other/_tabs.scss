@@ -50,3 +50,13 @@
         display: block;
     }
 }
+// bootstrap-tabs
+.tab-pane{
+    .message_inside{
+        padding: 0;
+        border: none;
+        & + .message_inside{
+            margin-top: 30px;
+        }
+    }
+}

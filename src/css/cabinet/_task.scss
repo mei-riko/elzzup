@@ -33,7 +33,7 @@
         &.cabinet-task__category_choose{
             flex: 0 0 calc(100% - 180px);
             max-width: calc(100% - 180px);
-            padding: 0 10px;
+            // padding: 0 10px;
         }
     }
     .cabinet-task__icon{
@@ -52,6 +52,10 @@
         &_gift{background: $body-bg url("../img/gift.svg") no-repeat center / 28px;}
         &_mask{background: $body-bg url("../img/mask.svg") no-repeat center / 28px;}
         &_heart{background: $body-bg url("../img/heart.svg") no-repeat center / 28px;}
+
+        & + .cabinet-task__category{
+            padding-left: 10px;
+        }
     }
     .cabinet-task__info{
         background: $black;

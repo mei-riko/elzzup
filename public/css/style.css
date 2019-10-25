@@ -2272,6 +2272,15 @@ a.link-inverse:hover {
   display: block;
 }
 
+.tab-pane .message_inside {
+  padding: 0;
+  border: none;
+}
+
+.tab-pane .message_inside + .message_inside {
+  margin-top: 30px;
+}
+
 .form {
   position: relative;
   margin: 0;
@@ -3168,7 +3177,7 @@ body {
   border-bottom: 1px solid #cedfda;
   display: block;
   margin: 0 -20px;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .cabinet-block .cabinet-block__col-image {
@@ -3486,7 +3495,6 @@ a.cabinet-block:hover .cabinet-block__title {
   -ms-flex: 0 0 calc(100% - 180px);
   flex: 0 0 calc(100% - 180px);
   max-width: calc(100% - 180px);
-  padding: 0 10px;
 }
 
 .cabinet-task .cabinet-task__icon {
@@ -3530,6 +3538,10 @@ a.cabinet-block:hover .cabinet-block__title {
 
 .cabinet-task .cabinet-task__icon_heart {
   background: #E3F6F0 url("../img/heart.svg") no-repeat center/28px;
+}
+
+.cabinet-task .cabinet-task__icon + .cabinet-task__category {
+  padding-left: 10px;
 }
 
 .cabinet-task .cabinet-task__info {
@@ -4396,11 +4408,11 @@ a.item:hover .item__title {
   z-index: 11;
 }
 
-.header-block a {
+.header-block a:not(.btn):not(.radio__label) {
   color: #ffffff;
 }
 
-.header-block a:hover {
+.header-block a:not(.btn):not(.radio__label):hover {
   color: #00F3D4;
 }
 

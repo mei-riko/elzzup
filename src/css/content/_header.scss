@@ -25,7 +25,7 @@
         z-index: 11;        
     }
 
-    a{
+    a:not(.btn){
         color: $white;
         &:hover{
             color: $blue;
