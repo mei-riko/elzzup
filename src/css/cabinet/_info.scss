@@ -25,7 +25,7 @@
         border-radius: 25px;
         padding: 15px 17px;
 
-        right: 20px;
+        right: 0px;
         bottom: -20px;
         z-index: 11;
         .svg{
@@ -79,6 +79,14 @@
         }
         .cabinet-info__data{
             flex: 0 0 calc(100% - 140px);
+        }
+    }
+}
+@media all and (min-width: map-get($grid-breakpoints, 'sm')){
+    .cabinet-info{
+        // elements
+        .cabinet-info__pay{
+            right: 20px;
         }
     }
 }

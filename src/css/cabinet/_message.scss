@@ -57,9 +57,10 @@
         padding-left: 0;
         position: relative;
         .message__data{
-            position: absolute;
-            top: 6px;
-            right: 20px;
+            // position: absolute;
+            // top: 6px;
+            // right: 20px;
+            margin-bottom: 10px;
             line-height: 1;
         }
     }
@@ -84,7 +85,7 @@
     }
     .message__name{
         color: $black;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
         margin-bottom: 6px;
     }
@@ -137,10 +138,11 @@
     &_alert{
         padding: 16px;
         .message__data{
-            position: absolute;
-            top: 16px;
-            right: 20px;
+            // position: absolute;
+            // top: 16px;
+            // right: 20px;
             line-height: 1;
+            margin-bottom: 10px;
         }
 
         &_viewed{
@@ -167,7 +169,29 @@
         top: 0;
     }
 }
-
+@media all and (min-width: map-get($grid-breakpoints, 'sm')){
+    .message{
+        .message__name{
+            font-size: 14px;
+        }
+        .message__info{
+            .message__data{
+                position: absolute;
+                top: 6px;
+                right: 20px;
+                margin-bottom: 0;
+            }
+        }
+        &_alert{
+            .message__data{
+                position: absolute;
+                top: 16px;
+                right: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 @media all and (min-width: map-get($grid-breakpoints, 'md')){
     .message{
         &_inside{

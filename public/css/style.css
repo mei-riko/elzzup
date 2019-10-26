@@ -2894,7 +2894,7 @@ body {
   background: linear-gradient(180deg, #00F3D4 0%, #02A5AE 100%);
   border-radius: 25px;
   padding: 15px 17px;
-  right: 20px;
+  right: 0px;
   bottom: -20px;
   z-index: 11;
 }
@@ -2956,6 +2956,12 @@ body {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 calc(100% - 140px);
   flex: 0 0 calc(100% - 140px);
+}
+
+@media all and (min-width: 576px) {
+  .cabinet-info .cabinet-info__pay {
+    right: 20px;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -3650,9 +3656,7 @@ a.cabinet-block:hover .cabinet-block__title {
 }
 
 .message .message__info .message__data {
-  position: absolute;
-  top: 6px;
-  right: 20px;
+  margin-bottom: 10px;
   line-height: 1;
 }
 
@@ -3675,7 +3679,7 @@ a.cabinet-block:hover .cabinet-block__title {
 
 .message .message__name {
   color: #252526;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   margin-bottom: 6px;
 }
@@ -3735,10 +3739,8 @@ a.cabinet-block:hover .cabinet-block__title {
 }
 
 .message_alert .message__data {
-  position: absolute;
-  top: 16px;
-  right: 20px;
   line-height: 1;
+  margin-bottom: 10px;
 }
 
 .message_alert_viewed .message__name,
@@ -3760,6 +3762,24 @@ a.cabinet-block:hover .cabinet-block__title {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+@media all and (min-width: 576px) {
+  .message .message__name {
+    font-size: 14px;
+  }
+  .message .message__info .message__data {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    margin-bottom: 0;
+  }
+  .message_alert .message__data {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    margin-bottom: 0;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -4076,13 +4096,17 @@ a.item:hover .item__title {
 .request-block {
   background: #ffffff;
   padding: 20px;
+}
+
+.container_cabinet .request-block {
   margin: 0 -20px;
 }
 
 .request {
   position: relative;
   border-bottom: 1px solid #bcbcbc;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .request .request__image-preview {
@@ -4178,7 +4202,7 @@ a.item:hover .item__title {
   width: 20px;
   height: 20px;
   position: absolute;
-  bottom: 0px;
+  bottom: 20px;
   right: 0px;
   cursor: pointer;
 }
