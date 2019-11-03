@@ -74,6 +74,14 @@
             color: $white;
         }
     }
+    &_request{
+        color: $white;
+        background: linear-gradient(0deg, $blue 0%, $blue2 100%);
+
+        &:hover{
+            color: $light-blue;
+        }
+    }
     &_modal-info{
         font-size: 10px;
         background: $dark-grey;
@@ -91,15 +99,14 @@
         font-weight: bold;
         width: 100%;
         padding: 12px 15px;
-
-        // position: fixed;
-        // bottom: 56px;
-        // left: 0;
-        // z-index: 99;
     }
     &_fullwidth{
         width: 100%;
         padding: 10px 20px;
+
+        & + .btn_fullwidth{
+            margin-top: 10px;
+        }
     }
     &.btn_large{
         padding: 14px 26px 15px;

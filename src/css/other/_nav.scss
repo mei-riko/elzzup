@@ -88,6 +88,11 @@
         }
     }
 }
+.wrapper{
+    .footer{
+        margin-bottom: 56px;
+    }
+}
 
 .navbar-fullscreen{
     position: fixed;
@@ -138,5 +143,10 @@
     .navbar-mobile,
     .navbar-fullscreen{
         display: none;
+    }
+    .wrapper{
+        .footer{
+            margin-bottom: 0;
+        }
     }
 }

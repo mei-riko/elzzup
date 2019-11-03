@@ -79,14 +79,14 @@
       </div>
       <main class="content bg-white">
         <div class="container pt-30 pt-xl-60 pb-30 pb-xl-60">
-          <div class="row">
-            <div class="col-12 col-xl-8">
+          <div class="row justify-content-between">
+            <div class="col-12 col-xl-7 col-lg-8 col-md-7">
               <h1 class="text-bold">Спеть песню "Калинка-малинка" возле Эйфелевой башни</h1>
               <div class="person mb-30 mb-xl-60">
                 <div class="person__image"><span class="no-image">AC</span></div>
                 <div class="person__info">
                   <div class="person__author">Анна Старовер</div>
-                  <div class="person__rating">рейтинг пользователя — 4.8</div><a class="btn btn_modal-info" href="#">Схема работы</a>
+                  <div class="person__rating">рейтинг пользователя — 4.8</div>
                 </div>
               </div>
               <p>
@@ -100,17 +100,36 @@
               <div class="request-inside">
                 <p class="text-bold">Требования к исполнителю:</p>
                 <div class="row no-gutters">
-                  <div class="col-12 col-xl-6">
-                    <div class="alert alert_small alert_brnr"><span class="alert__icon alert__icon_star text-bold">Минимальный рейтинг:</span><span>4.2</span></div>
+                  <div class="col-12 col-lg-6">
+                    <div class="alert alert_small alert_brnr-lg"><span class="alert__icon alert__icon_star text-bold">Минимальный рейтинг:</span><span>4.2</span></div>
                   </div>
-                  <div class="col-12 col-xl-6">
-                    <div class="alert alert_small alert_brnl"><span class="alert__icon alert__icon_request text-bold">Исполнено заявок:</span><span>не менее 5</span></div>
+                  <div class="col-12 col-lg-6 mt-15 mt-lg-0">
+                    <div class="alert alert_small alert_brnl-lg"><span class="alert__icon alert__icon_request text-bold">Исполнено заявок:</span><span>не менее 5</span></div>
                   </div>
                   <div class="col-12 col-xl-12 mt-15">
                     <div class="alert alert_active alert_small"><span class="alert__icon alert__icon_person text-bold">Откликнулось на заявку:</span><span class="text-bold">4 исполнителя</span></div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="col-12 col-xl-4 col-lg-4 col-md-5">
+              <div class="request-info"><a class="btn btn_modal-info" href="#">Схема работы</a>
+                <p class="request-info__label text-bold">Бюджет</p>
+                <p class="request-info__price">100zz</p>
+                <p class="request-info__label text-bold">Осталось до окончания</p>
+                <p class="request-info__duration">18 дн. 4 ч.</p>
+                <p class="request-info__label text-bold">Статус заявки</p>
+                <p class="request-info__status request-info__status--active mb-0">активна</p>
+                <p class="request-info__status request-info__status--process mb-0">в процессе</p>
+                <p class="request-info__status request-info__status--check mb-0">на проверке</p>
+                <p class="request-info__status request-info__status--end">завершена</p>
+                <p class="request-info__label text-bold">Место выполнения</p>
+                <p class="request-info__location">Россия, Санкт-Петербург</p><a class="btn btn_cta btn_large btn_fullwidth" href="#">Стать исполнителем</a>
+                <div class="mt-15"><a class="btn btn_border btn_large btn_fullwidth" href="#">Отменить отклик</a></div>
+              </div>
+              <div class="text-center mt-15"><a class="text-small text-grey" href="#">Пожаловаться на заявку</a></div>
+            </div>
+            <div class="col-12 col-xl-7 col-lg-8">
               <div class="request-tabs">
                 <div class="nav navigation" id="requestTab" role="tablist"><a class="nav__link active" id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true">ОБСУЖДЕНИЕ ЗАЯВКИ</a><a class="nav__link" id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false">ВЫБОР ИСПОЛНИТЕЛЯ<span class="alert">4</span></a></div>
                 <div class="tab-content" id="requestContent">
@@ -153,11 +172,41 @@
                     </div>
                     <p class="text-right text-small text-grey mt-15">Принимаются файлы формата: gif, png, jpg, jpeg</p>
                   </div>
-                  <div class="tab-pane fade" id="type2" role="tabpanel" aria-labelledby="type2-tab"></div>
+                  <div class="tab-pane fade" id="type2" role="tabpanel" aria-labelledby="type2-tab">
+                    <div class="person-list">
+                      <div class="row">
+                        <div class="col-12 col-sm-6 col-md-7">
+                          <div class="person">
+                            <div class="person__image"><span class="no-image">AC</span></div>
+                            <div class="person__info">
+                              <div class="person__author">Анна Старовер</div>
+                              <div class="person__rating">рейтинг пользователя: <span class="text-bold">4.8                                                </span></div>
+                              <div class="person__rating">выполнено заявок: <span class="text-bold">21                                                </span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 mt-15 mt-sm-0 col-sm-6 col-md-5 text-small text-bold"><a class="btn btn_border btn_fullwidth" href="#">Написать сообщение</a><a class="btn btn_request btn_fullwidth" href="#">Назначить исполнителем</a></div>
+                      </div>
+                    </div>
+                    <div class="person-list">
+                      <div class="row">
+                        <div class="col-12 col-sm-6 col-md-7">
+                          <div class="person">
+                            <div class="person__image"><span class="no-image">AC</span></div>
+                            <div class="person__info">
+                              <div class="person__author">Анна Старовер</div>
+                              <div class="person__rating">рейтинг пользователя: <span class="text-bold">4.8                                                </span></div>
+                              <div class="person__rating">выполнено заявок: <span class="text-bold">21</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 mt-15 mt-sm-0 col-sm-6 col-md-5 text-small text-bold"><a class="btn btn_border btn_fullwidth" href="#">Написать сообщение</a><a class="btn btn_request btn_fullwidth" href="#">Назначить исполнителем                      </a></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-xl-4 request-info"></div>
           </div>
         </div>
       </main>

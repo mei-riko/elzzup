@@ -28,7 +28,7 @@
         font-size: 12px;
     }
     &_active{
-        background: #00C2A9;
+        background: $blue2;
         color: $white;
 
         .alert__icon{
@@ -44,17 +44,27 @@
         }
     }
 }
+@media all and (min-width: map-get($grid-breakpoints, 'lg')){
+    .alert{
+        &_brnr-lg{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &_brnl-lg{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
 @media all and (min-width: map-get($grid-breakpoints, 'xl')){
-    .col-xl-6{
-        .alert{
-            &_brnr{
-                border-top-right-radius: 0;
-                border-bottom-right-radius: 0;
-            }
-            &_brnl{
-                border-top-left-radius: 0;
-                border-bottom-left-radius: 0;
-            }
+    .alert{
+        &_brnr-xl{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &_brnl-xl{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
         }
     }
 }

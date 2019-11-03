@@ -54,9 +54,16 @@
 .tab-pane{
     .message_inside{
         padding: 20px 0 40px;
+        margin: 0;
         border: none;
         & + .message_inside{
             margin-top: 30px;
         }
+    }
+    .message-answer{
+        border: 1px solid $border-color;
+    }
+    .person-list{
+        margin-top: 20px;
     }
 }
