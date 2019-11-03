@@ -1,0 +1,91 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Request Inside Page
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        .wrapper
+            include chunks/header.pug
+            main.content.bg-white
+                .container.pt-30.pt-xl-60.pb-30.pb-xl-60
+                    .row
+                        .col-12.col-xl-8
+                            h1.text-bold Спеть песню "Калинка-малинка" возле Эйфелевой башни
+                            .person.mb-30.mb-xl-60
+                                .person__image
+                                    span.no-image AC
+                                .person__info
+                                    .person__author Анна Старовер
+                                    .person__rating рейтинг пользователя — 4.8
+                                    a.btn.btn_modal-info(href="#") Схема работы
+                            p Id est laborum et molestiae non provident, similique sunt in ea commodi. Qui ratione voluptatem sequi nesciunt, neque porro. Voluptatibus maiores alias consequatur. Dolor repellendus molestiae consequatur, vel eum fugiat, quo voluptas assumenda.
+                                | Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
+                            ul
+                                li Item 1
+                                li Item 2
+                                li Item 3
+                                li Item 4
+                            .request-inside
+                                p.text-bold Требования к исполнителю:
+                                .row.no-gutters
+                                    .col-12.col-xl-6
+                                        .alert.alert_small.alert_brnr
+                                            span.alert__icon.alert__icon_star.text-bold Минимальный рейтинг:
+                                            span 4.2
+                                    .col-12.col-xl-6
+                                        .alert.alert_small.alert_brnl
+                                            span.alert__icon.alert__icon_request.text-bold Исполнено заявок:
+                                            span не менее 5
+                                    .col-12.col-xl-12.mt-15
+                                        .alert.alert_active.alert_small
+                                            span.alert__icon.alert__icon_person.text-bold Откликнулось на заявку:
+                                            span.text-bold 4 исполнителя
+                            .request-tabs
+                                .nav.navigation#requestTab(role="tablist")
+                                    a.nav__link.active(id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true") ОБСУЖДЕНИЕ ЗАЯВКИ
+                                    a.nav__link(id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false") ВЫБОР ИСПОЛНИТЕЛЯ
+                                        span.alert 4
+                                .tab-content#requestContent
+                                    .tab-pane.fade.active.show#type1(role="tabpanel" aria-labelledby="type1-tab")
+                                        .message.message_inside
+                                            .message__row.row
+                                                .col.message__image
+                                                    img.img-fluid(src="../img/demo-photo.png")
+                                                .col.message__info
+                                                    .message__name Катерина Мельник       
+                                                    .message__data 7 сентября 2019
+                                                    .message__item Самый опасный, и психологическом комфорте ими 
+                                                        | раньше разобраться в привычках взглядах. Во время 
+                                                        | которых супруги привыкают друг к ссоры. Для кого 
+                                                        | не те, что были раньше, значит, они начинают. 
+                                                    .message__item Самый опасный, и психологическом комфорте ими 
+                                                        | раньше разобраться в привычках взглядах. Во время 
+                                                        | которых супруги привыкают друг к ссоры. Для кого 
+                                                        | не те, что были раньше, значит, они начинают. 
+                                                    .message__data 13 сентября 2019
+                                                    .message__item Самый опасный, и психологическом комфорте ими 
+                                                        | раньше разобраться в привычках взглядах.
+                                            .message__row.message__row_answer.row
+                                                .col.message__info
+                                                    .message__name Юрий Мартынов       
+                                                    .message__data 27 сентября 2019
+                                                    .message__item Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатанииdiv
+                                                .col.message__image
+                                                    span.no-image ЮМ
+                                        .message-answer
+                                            form.form
+                                                textarea.textarea.textarea_message(rows="2" placeholder="Сообщение")
+                                                button.btn.btn_message
+                                        p.text-right.text-small.text-grey.mt-15 Принимаются файлы формата: gif, png, jpg, jpeg
+                                    .tab-pane.fade#type2(role="tabpanel" aria-labelledby="type2-tab")
+                        .col-12.col-xl-4.request-info
+            include chunks/footer.pug
+        script(src="./js/util.js")
+        script(src="./js/tab.js")
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/app.min.js")

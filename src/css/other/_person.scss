@@ -1,0 +1,55 @@
+.person{
+    @extend .row;
+    @extend .align-items-center;
+
+    .person__image{
+        @extend .col;
+        flex: 0 0 100px;
+
+        .img-fluid{
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+        }
+        .no-image{
+            display: block;
+            overflow: hidden;
+
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            
+            background: $light-blue;
+            color: $blue;
+
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 60px;
+            text-align: center;
+        }
+    }
+    .person__info{
+        @extend .col;
+        flex: 0 0 calc(100% - 100px);
+        padding-left: 0;
+        position: relative;
+        .btn{
+            &_modal-info{
+                position: absolute;
+                right: 20px;
+                top: 0;
+            }
+        }
+    }
+    .person__author{
+        color: $black;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 16px;
+        margin-bottom: 6px;
+    }
+    .person__rating{
+        font-size: 12px;
+        color: $dark-grey;
+    }
+}

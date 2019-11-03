@@ -7,12 +7,14 @@
 @import "position.scss";
 
 @import "other/header.scss";
-@import "other/nav.scss";
-@import "other/tabs.scss";
-@import "other/form.scss";
+@import "other/alert.scss";
 @import "other/button.scss";
+@import "other/form.scss";
 @import "other/list.scss";
+@import "other/nav.scss";
 @import "other/pagination.scss";
+@import "other/person.scss";
+@import "other/tabs.scss";
 @import "other/footer.scss";
 
 body{
@@ -40,6 +42,7 @@ body{
 @import "page/navigation.scss";
 @import "page/tab.scss";
 @import "page/request.scss";
+@import "page/request-inside.scss";
 @import "page/slider.scss";
 
 @import "page/step.scss";

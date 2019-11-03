@@ -12,18 +12,13 @@
 
     // column
     .message__row{
-        .message__info{
-            padding-right: 40px;
-        }
-
         & + .message__row{
             margin-top: 30px;
         }
-
         &_answer{
             justify-content: flex-end;
             .message__info{
-                padding-left: 40px;
+                padding-left: 20px;
                 padding-right: 0;
             }
         }
@@ -104,9 +99,11 @@
             margin-top: 20px;
         }
     }
+    
     &:hover{
         text-decoration: none;
     }
+
     & + .message{
         margin-top: 0;
     }
@@ -130,17 +127,14 @@
             .message__info{
                 .message__data{
                     position: unset;
+                    margin-bottom: 10px;
                 }
             }
         }
     }
-
     &_alert{
         padding: 16px;
         .message__data{
-            // position: absolute;
-            // top: 16px;
-            // right: 20px;
             line-height: 1;
             margin-bottom: 10px;
         }
@@ -209,8 +203,18 @@
             padding: 20px;
         }
     }
+    .container_cabinet{
+        .message{
+            &_inside{
+                padding: 20px 40px;
+            }
+        }
+        .textarea_message {
+            padding: 20px 40px;
+        }
+    }
     .message-answer{
         position: unset;
-        border-top: 1px solid $border-color;
+        border: 1px solid $border-color;
     }
 }

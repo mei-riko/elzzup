@@ -35,7 +35,7 @@
     .btn-group{
         .btn{
             width: 100%;
-            padding: 12px 10px;
+            padding: 12px 16px;
             & + .btn {
                 margin-top: 10px;
             }
@@ -57,6 +57,22 @@
             display: block;
 
             background: rgba(0,0,0,0.5);
+        }
+    }
+    &_form{
+        min-height: 100vh;
+        
+        display: flex;
+        align-items: center;
+        
+        background: linear-gradient(0deg, #00F3D4 0%, #02A5AE 100%);
+        a:not(.btn){
+            &:hover{
+                color: $white;
+            }
+        }
+        .logo{
+            width: 150px;
         }
     }
 }

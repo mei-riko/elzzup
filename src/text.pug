@@ -9,24 +9,31 @@ html(lang="ru")
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
-        include chunks/header.pug
-        .title-block.bg-white
-            .container.pt-30.pt-xl-60.pb-30.pb-xl-60
-                h1.text-bold Правила проекта
-                p Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
-                h2.text-bold Заголовок h2
-                p Id est laborum et molestiae non provident, similique sunt in ea commodi. Qui ratione voluptatem sequi nesciunt, neque porro. Voluptatibus maiores alias consequatur. Dolor repellendus molestiae consequatur, vel eum fugiat, quo voluptas assumenda.
-                    | Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
-                h3.text-bold Заголовок h3
-                p Id est laborum et molestiae non provident, similique sunt in ea commodi. Qui ratione voluptatem sequi nesciunt, neque porro. Voluptatibus maiores alias consequatur. Dolor repellendus molestiae consequatur, vel eum fugiat, quo voluptas assumenda.
-                h4.text-bold Заголовок h4
-                p Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
-                h5.text-bold Заголовок h5
-                p Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
-                    | Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
-                h6.text-bold Заголовок h6
-                p Id est laborum et molestiae non provident, similique sunt in ea commodi. Qui ratione voluptatem sequi nesciunt, neque porro. Voluptatibus maiores alias consequatur. Dolor repellendus molestiae consequatur, vel eum fugiat, quo voluptas assumenda.
-        include chunks/footer.pug
+        .wrapper
+            include chunks/header.pug
+            main.content
+                .title-block.bg-white
+                    .container.pt-30.pt-xl-60.pb-30.pb-xl-60
+                        h1.text-bold Правила проекта
+                        ul.breadcrumbs
+                            li.breadcrumbs__item
+                                a.breadcrumbs__link(href="#") Главная
+                            li.breadcrumbs__item
+                                span.breadcrumbs__current Текстовая страница
+                        p Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
+                        h2.text-bold Заголовок h2
+                        p Id est laborum et molestiae non provident, similique sunt in ea commodi. Qui ratione voluptatem sequi nesciunt, neque porro. Voluptatibus maiores alias consequatur. Dolor repellendus molestiae consequatur, vel eum fugiat, quo voluptas assumenda.
+                            | Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
+                        h3.text-bold Заголовок h3
+                        p Id est laborum et molestiae non provident, similique sunt in ea commodi. Qui ratione voluptatem sequi nesciunt, neque porro. Voluptatibus maiores alias consequatur. Dolor repellendus molestiae consequatur, vel eum fugiat, quo voluptas assumenda.
+                        h4.text-bold Заголовок h4
+                        p Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
+                        h5.text-bold Заголовок h5
+                        p Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
+                            | Lorem ipsum dolor sit amet. Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea voluptate velit. Eligendi optio, cumque nihil molestiae. Accusamus et accusamus et expedita distinctio libero tempore. Temporibus autem vel illum, qui ratione.
+                        h6.text-bold Заголовок h6
+                        p Id est laborum et molestiae non provident, similique sunt in ea commodi. Qui ratione voluptatem sequi nesciunt, neque porro. Voluptatibus maiores alias consequatur. Dolor repellendus molestiae consequatur, vel eum fugiat, quo voluptas assumenda.
+            include chunks/footer.pug
         script(src="./js/util.js")
         script(src="./js/tab.js")
         script(src="./js/jquery.inputmask.js")

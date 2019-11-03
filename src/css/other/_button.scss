@@ -6,7 +6,7 @@
     text-align: center;
     
     border-radius: 4px;
-    padding: 6px 10px;
+    padding: 6px 10px 7px;
     line-height: 1;
 
     transition: .4s;
@@ -74,7 +74,18 @@
             color: $white;
         }
     }
+    &_modal-info{
+        font-size: 10px;
+        background: $dark-grey;
+        color: $white;
+        padding: 8px 10px 7px!important;
+        text-transform: uppercase;
 
+        &:hover{
+            color: $white;
+            background: $black;
+        }
+    }
     &_cabinet-create{
         font-size: 14px;
         font-weight: bold;
@@ -90,6 +101,9 @@
         width: 100%;
         padding: 10px 20px;
     }
+    &.btn_large{
+        padding: 14px 26px 15px;
+    }
 }
 .btn-group{
     @extend .row;
@@ -103,14 +117,14 @@
 @media all and (min-width: map-get($grid-breakpoints, 'md')){
     .btn{
         &_cta{
-            padding: 8px 16px;
+            padding: 8px 16px 9px;
         }
     }
 }
 @media all and (min-width: map-get($grid-breakpoints, 'xl')){
     .btn{
         border-radius: 6px;
-        padding: 8px 16px;
+        padding: 8px 16px 9px;
 
         &_cabinet-create{
             position: unset;
@@ -119,7 +133,7 @@
         }
 
         &_large-xl{
-            padding: 12px 26px 13px;
+            padding: 14px 26px 15px;
         }
     }
 }

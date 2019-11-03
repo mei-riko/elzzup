@@ -1,0 +1,60 @@
+.alert{
+    background: $light-blue;
+    padding: 14px 20px;
+    border-radius: 6px;
+
+    .alert__icon{
+        position: relative;
+        padding-left: 24px;
+        padding-right: 10px;
+
+        background: no-repeat left center / 16px;
+
+        &_person{
+            background-image: url("../img/account.svg");
+        }
+        &_star{
+            background-image: url("../img/star.svg");
+        }
+        &_request{
+            background-image: url("../img/mission.svg");
+        }
+    }
+
+    & + .alert{
+        margin-top: 10px;
+    }
+    &_small{
+        font-size: 12px;
+    }
+    &_active{
+        background: #00C2A9;
+        color: $white;
+
+        .alert__icon{
+            &_person{
+                background-image: url("../img/account_white.svg");
+            }
+            &_star{
+                background-image: url("../img/star_white.svg");
+            }
+            &_request{
+                background-image: url("../img/mission_white.svg");
+            }
+        }
+    }
+}
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .col-xl-6{
+        .alert{
+            &_brnr{
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            &_brnl{
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+    }
+}
