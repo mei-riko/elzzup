@@ -164,6 +164,7 @@ a{
     }
     .footer{
         flex: 0 0 auto;
+        margin-bottom: 56px;
     }
 }
 
@@ -223,6 +224,12 @@ a{
     .pb-md-30{padding-bottom: 30px;}
     .pb-md-60{padding-bottom: 60px;}}
 @media all and (min-width: map-get($grid-breakpoints, 'lg')){
+    .wrapper{
+        .footer{
+            margin-bottom: 0;
+        }
+    }
+
     .d-lg-none{display: none;}
     .d-lg-block{display: block;}
 

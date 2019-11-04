@@ -78,33 +78,33 @@ html(lang="ru")
                             p.step__title Заголовок 4
                             p Пункт для примера, точно не знаю какие надо выделить ключевые моменты
         .content-block.content-block_large.bg-dark.mt-0#howitwork
-            .container
+            .container-fluid
                 .row.align-items-center.text-center.text-md-left
                     .col-12.col-md-7.col-xl-6
                         p.content-title.text-bold.mb-xl-30 Как это работает?
                         p Maiores alias consequatur aut officiis debitis aut odit aut reiciendis voluptatibus. Velit esse, quam nihil molestiae. Quis nostrum exercitationem ullam corporis suscipit laboriosam.Maiores alias consequatur aut officiis debitis aut odit aut reiciendis voluptatibus. Velit esse, quam nihil molestiae. Quis nostrum exercitationem ullam corporis suscipit laboriosam.Maiores alias consequatur aut officiis debitis aut odit aut reiciendis voluptatibus. Velit esse, quam nihil molestiae. Quis nostrum exercitationem ullam corporis suscipit laboriosam.
                     .col-12.col-md-5.col-xl-6.mt-30.mt-md-0
                         img.img-fluid(src="../img/schema-test.png")
-        .content-block.cabinet-task.cabinet-task_category.bg-light-blue.mt-0
-            .container
+        .content-block.bg-light-blue.mt-0
+            .container-fluid
                 .row.no-gutters.justify-content-between.align-items-center
-                    .cabinet-task__category.cabinet-task__category_choose.text-bold Актуальное в блоге
+                    p.h3.mb-0.text-bold Актуальное в блоге
                     a.btn.btn_white(href="page-request.html") Все статьи
                 .slider.mt-30.slider_request
                     .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-1.jpg');") Сделать фото заката над морем
+                        a.preview-page(href="#" style="background-image:url('../img/image-demo-1.jpg');") Сделать фото заката над морем
                             .icon-category.icon-category_heart
                     .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo.jpg');") Миссия «Начало»
+                        a.preview-page(href="#" style="background-image:url('../img/image-demo.jpg');") Миссия «Начало»
                             .icon-category.icon-category_gift
                     .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
+                        a.preview-page(href="#" style="background-image:url('../img/image-demo-2.jpg');") Фейерверк по сигналу в&nbsp;СПб
                             .icon-category.icon-category_mask
                     .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-3.jpg');") Мастер-класс по food-фото
+                        a.preview-page(href="#" style="background-image:url('../img/image-demo-3.jpg');") Мастер-класс по food-фото
                             .icon-category.icon-category_heart
                     .slider__item
-                        a.request-link(href="#" style="background-image:url('../img/image-demo-4.jpg');") Праздник Холли
+                        a.preview-page(href="#" style="background-image:url('../img/image-demo-4.jpg');") Праздник Холли
                             .icon-category.icon-category_heart        
         include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")

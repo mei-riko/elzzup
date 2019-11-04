@@ -1,3 +1,4 @@
+// Обертка блока заявок
 .request-block{
     background: $white;
     padding: 20px;
@@ -7,7 +8,18 @@
         margin: 0 -20px;
     }
 }
-
+// Распределение заявок по колонкам
+.request-column{
+    column-count: 1;
+    column-gap: 30px;
+    orphans: 1;
+    widows: 1;
+    .request{
+        display: inline-block;
+        width: 100%;
+    }
+}
+// Заявки
 .request{
     position: relative;
 
@@ -150,88 +162,37 @@
     }
 }
 
-.request-link{
-    position: relative;
 
-    width: 100%;
-    height: 140px;
-    padding: 10px;
-    margin: 0 auto 10px;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-
-    color: $white;
-    font-weight: bold;
-    line-height: 1.2;
-
-    background-size: cover;
-    background-position: center;
-    
-    .icon-category{
-        width: 30px;
-        height: 30px;
-
-        position: absolute;
-        top: 10px;
-        left: 10px;
-
-        background-size: 16px;
-    }
-
-    &:hover{
-        text-decoration: none;
-        color: $white;
-    }
-}
-.request-column{
-    column-count: 1;
-    column-gap: 30px;
-    orphans: 1;
-    widows: 1;
-    .request{
-        display: inline-block;
-        width: 100%;
-    }
-}
 
 @media all and (min-width: map-get($grid-breakpoints, 'md')){
-    .request-link{
-        height: 220px;
-        padding: 20px;
-        margin: 0;
-
-        .icon-category{
-            width: 40px;
-            height: 40px;
-    
-            top: 20px;
-            left: 20px;
-    
-            background-size: 22px;
-        }
-    }
-    .request-column{
-        column-count: 2;
-    }
+    // Обертка блока заявок
     .request-block{
         margin: 0;
     }
+    // Распределение заявок по колонкам
+    .request-column{
+        column-count: 2;
+    }
+    // Заявки
     .request{
         border: none;
     }    
 }
-@media all and (min-width: map-get($grid-breakpoints, 'xl')){
-    .request-link{
-        height: 270px;
-    }    
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){    
+    // Обертка блока заявок
     .request-block{
         padding: 40px 0;
     }
+    // Распределение заявок по колонкам
     .request-column{
         column-count: 3;
     }
+    .container-fluid{
+        .request-column{
+            column-count: 4;
+        }   
+    }
+    // Заявки
     .request{
         .request__image-preview{
             margin-bottom: 20px;

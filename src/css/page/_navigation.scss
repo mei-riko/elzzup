@@ -6,6 +6,13 @@
     overflow-x: auto;
     padding: 20px 0;
 
+    &.btn-group{
+        padding: 12px 0px;
+        .select2-container{
+            margin: 0 6px;
+        }
+    }
+    
     .btn{
         font-size: 12px;
         white-space: nowrap;

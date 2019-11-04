@@ -8,7 +8,7 @@
 }
 .container-fluid {
     width: 100%;
-    max-width: 100%;
+    max-width: 1780px;
     padding-right: 20px;
     padding-left: 20px;
     margin-right: auto;
@@ -242,6 +242,10 @@
 }
 
 @media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .container-fluid{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
     .col-xl-1{
         flex: 0 0 8.33333%;
         max-width: 8.33333%
