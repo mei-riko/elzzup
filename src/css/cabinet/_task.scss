@@ -84,7 +84,7 @@
     }
 }
 
-.container_cabinet-task{
+.wrap_cabinet-task{
     margin: 0 -20px;
     padding: 0;
     width: calc(100% + 40px);
@@ -97,7 +97,7 @@
 }
 
 @media all and (min-width: map-get($grid-breakpoints, 'md')){
-    .container_cabinet-task{
+    .wrap_cabinet-task{
         margin: 0;
         width: 100%;
         border: 1px solid $border-color;

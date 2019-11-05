@@ -1,9 +1,9 @@
 .person{
-    @extend .row;
+    @extend .line;
     @extend .align-items-center;
 
     .person__image{
-        @extend .col;
+        @extend .column;
         flex: 0 0 100px;
 
         .img-fluid{
@@ -29,7 +29,7 @@
         }
     }
     .person__info{
-        @extend .col;
+        @extend .column;
         flex: 0 0 calc(100% - 100px);
         padding-left: 0;
         position: relative;

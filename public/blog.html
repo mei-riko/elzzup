@@ -10,12 +10,12 @@
   </head>
   <body>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <div class="wrapper">
+    <div class="content">
       <header class="header">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-6 col-lg-3 col-xl-3"><a class="header__logo" href="/"></a></div>
-            <div class="col-6 col-lg-9 col-xl-9"><svg class="header__info" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="wrap-fluid">
+          <div class="line align-items-center">
+            <div class="column-6 column-lg-3 column-xl-3"><a class="header__logo" href="/"></a></div>
+            <div class="column-6 column-lg-9 column-xl-9"><svg class="header__info" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 2C12 0.8954 12.8954 0 14 0C15.1046 0 16 0.8954 16 2C16 3.1046 15.1046 4 14 4C12.8954 4 12 3.1046 12 2ZM6 2C6 0.8954 6.8954 0 8 0C9.1046 0 10 0.8954 10 2C10 3.1046 9.1046 4 8 4C6.8954 4 6 3.1046 6 2ZM0 2C0 0.8954 0.89543 0 2 0C3.10457 0 4 0.8954 4 2C4 3.1046 3.10457 4 2 4C0.89543 4 0 3.1046 0 2ZM2 1C1.44771 1 1 1.4477 1 2C1 2.5523 1.44771 3 2 3C2.55228 3 3 2.5523 3 2C3 1.4477 2.55228 1 2 1ZM8 1C7.4477 1 7 1.4477 7 2C7 2.5523 7.4477 3 8 3C8.5523 3 9 2.5523 9 2C9 1.4477 8.5523 1 8 1ZM14 1C13.4477 1 13 1.4477 13 2C13 2.5523 13.4477 3 14 3C14.5523 3 15 2.5523 15 2C15 1.4477 14.5523 1 14 1Z" fill="black"/>
 </svg>
               <nav class="nav nav_inline">
@@ -33,15 +33,15 @@
       </header>
       <div class="navbar-fullscreen">
         <div class="cabinet-info">
-          <div class="container">
-            <div class="row"><a class="col cabinet-info__image" href="cabinet.html"><img class="img-fluid" src="../img/demo-photo.png"/></a>
-              <div class="col cabinet-info__data"><a class="cabinet-info__name" href="cabinet.html">Катерина Мельник</a>
-                <div class="row">
-                  <div class="col-4">
+          <div class="wrap">
+            <div class="line"><a class="column cabinet-info__image" href="cabinet.html"><img class="img-fluid" src="../img/demo-photo.png"/></a>
+              <div class="column cabinet-info__data"><a class="cabinet-info__name" href="cabinet.html">Катерина Мельник</a>
+                <div class="line">
+                  <div class="column-4">
                     <p class="cabinet-info__label">Рейтинг</p>
                     <p class="cabinet-info__value">4.8</p>
                   </div>
-                  <div class="col-8">
+                  <div class="column-8">
                     <p class="cabinet-info__label">Собрано пазлов</p>
                     <p class="cabinet-info__value">16 из 100</p>
                   </div>
@@ -60,7 +60,7 @@
         </nav>
       </div>
       <div class="navbar-mobile">
-        <div class="container">
+        <div class="wrap">
           <nav class="navbar">
             <div class="navbar__item"><a class="navbar__link" href="/"><svg class="navbar__icon" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.3333 7.11539L10.4583 2.24039L2.78207 9.91667H4.5V11V18.5833H7.75V12.0833H13.1667V18.5833H16.4167V9.91667H18.1346L16.4167 8.19873V4.50001H15.3333V7.11539ZM0.166672 11L10.4583 0.708344L14.25 4.5V3.41667H17.5V7.75L20.75 11H17.5L17.4992 19.6648H12.0826V13.1648L8.83268 13.1645V19.6645H3.41601V11H0.166672Z" fill="white"/>
@@ -77,18 +77,18 @@
           </nav>
         </div>
       </div>
-      <main class="content">
+      <main class="content__inside">
         <div class="title-block bg-white">
-          <div class="container">
+          <div class="wrap-fluid">
             <h1 class="text-bold mb-0">Блог</h1>
           </div>
         </div>
         <div class="navigation-scroll">
-          <div class="container">
+          <div class="wrap-fluid">
             <div class="navigation btn-group"><a class="btn btn_border navigation__btn-small btn_border--active" href="#">Показать все</a><a class="btn btn_border navigation__btn-small" href="#">Еда</a><a class="btn btn_border navigation__btn-small" href="#">Сюрприз</a><a class="btn btn_border navigation__btn-small" href="#">Фото</a></div>
           </div>
         </div>
-        <div class="container">       
+        <div class="wrap-fluid">       
           <div class="item-columns"><a class="item item_image-full" href="#">
               <div class="item__image"></div>
               <div class="item__title">Опубликовано 3 новых миссии</div>
@@ -143,23 +143,41 @@
         </div>
       </main>
       <footer class="footer">
-        <div class="container">
-          <div class="row align-items-end">
-            <div class="col-6"><a class="footer__logo" href="/"></a><a class="footer__link text-small mb-0" href="#">Политика конфиденциальности</a></div>
-            <div class="col-6 text-right">
+        <div class="wrap">
+          <div class="line">
+            <div class="column-6 column-lg-3"><a class="footer__logo" href="/"></a>
+              <p class="text-small mt-15 mb-0">2019. Все права защищены</p>
+            </div>
+            <div class="column-6 column-lg-3">
+              <ul class="list">
+                <li class="list__item"><a class="footer__link" href="page-request.html">Заявки</a></li>
+                <li class="list__item"><a class="footer__link" href="faq.html">Популярные вопросы      </a></li>
+                <li class="list__item"><a class="footer__link" href="blog.html">Блог</a></li>
+              </ul>
+            </div>
+            <div class="column-6 column-lg-3">
+              <ul class="list">
+                <li class="list__item"><a class="footer__link" href="cabinet.html">Личный кабинет</a></li>
+                <li class="list__item"><a class="footer__link" href="text.html">О проекте</a></li>
+                <li class="list__item"><a class="footer__link" href="text.html">Правила проекта</a></li>
+              </ul>
+            </div>
+            <div class="column-6 column-lg-3">
+              <ul class="list">
+                <li class="list__item"><a class="footer__link" href="#">mail@elzzup.org</a></li>
+              </ul>
               <ul class="list list_inline">
                 <li class="list__item"><a class="list__link" href="#"><svg class="icon-svg" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.5">
+<g>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V14H14V0H0ZM10.4953 7.74545C10.8167 8.05898 11.1566 8.35419 11.445 8.7008C11.5725 8.85397 11.693 9.01197 11.7849 9.18945C11.9153 9.44372 11.7971 9.72231 11.57 9.73766L10.1584 9.73705C9.79409 9.76698 9.50375 9.62009 9.25889 9.37083C9.06418 9.17237 8.88218 8.95994 8.69422 8.75474C8.61772 8.67025 8.53683 8.59123 8.44071 8.52822C8.24788 8.40326 8.08062 8.4412 7.9704 8.64203C7.85831 8.84661 7.83197 9.07375 7.82163 9.30157C7.80628 9.63409 7.70594 9.72108 7.37218 9.73708C6.65809 9.77015 5.98086 9.66166 5.35191 9.30219C4.79646 8.98505 4.36662 8.53668 3.9924 8.02969C3.26311 7.04126 2.70455 5.95612 2.20305 4.83975C2.08969 4.58815 2.17249 4.45332 2.44917 4.44846C2.9104 4.43935 3.37145 4.44046 3.83203 4.44785C4.01938 4.45098 4.14369 4.55806 4.21535 4.73505C4.46462 5.34754 4.76951 5.93043 5.15222 6.47126C5.25458 6.61517 5.35868 6.75846 5.50618 6.86006C5.66969 6.97277 5.79465 6.93594 5.87175 6.75283C5.92083 6.63652 5.94231 6.51283 5.95265 6.38849C5.98932 5.96286 5.99372 5.53677 5.93055 5.1124C5.89135 4.84714 5.74135 4.67563 5.47686 4.62548C5.34203 4.59975 5.36225 4.55022 5.42717 4.47292C5.54114 4.34015 5.64837 4.25735 5.8608 4.25735H7.45609C7.70769 4.30643 7.76412 4.41975 7.79831 4.67265L7.79957 6.44554C7.79658 6.54351 7.84865 6.83369 8.02437 6.89797C8.16514 6.94452 8.25889 6.83117 8.34338 6.74182C8.72545 6.3364 8.99806 5.85702 9.24166 5.36098C9.34951 5.14292 9.44265 4.9164 9.53326 4.68969C9.60003 4.52194 9.70412 4.43932 9.89335 4.44231L11.4292 4.44418C11.4745 4.44418 11.5211 4.44418 11.5658 4.45154C11.8241 4.49622 11.8952 4.60769 11.8149 4.86055C11.6895 5.25671 11.4438 5.58748 11.2044 5.91874C10.9478 6.27335 10.6747 6.61557 10.42 6.97206C10.1873 7.29849 10.2056 7.46262 10.4953 7.74545Z" />
 </g>
 </svg></a></li>
                 <li class="list__item"><a class="list__link" href="#"><svg class="icon-svg" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.5">
+<g>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V14H14V0H0ZM10.4953 7.74545C10.8167 8.05898 11.1566 8.35419 11.445 8.7008C11.5725 8.85397 11.693 9.01197 11.7849 9.18945C11.9153 9.44372 11.7971 9.72231 11.57 9.73766L10.1584 9.73705C9.79409 9.76698 9.50375 9.62009 9.25889 9.37083C9.06418 9.17237 8.88218 8.95994 8.69422 8.75474C8.61772 8.67025 8.53683 8.59123 8.44071 8.52822C8.24788 8.40326 8.08062 8.4412 7.9704 8.64203C7.85831 8.84661 7.83197 9.07375 7.82163 9.30157C7.80628 9.63409 7.70594 9.72108 7.37218 9.73708C6.65809 9.77015 5.98086 9.66166 5.35191 9.30219C4.79646 8.98505 4.36662 8.53668 3.9924 8.02969C3.26311 7.04126 2.70455 5.95612 2.20305 4.83975C2.08969 4.58815 2.17249 4.45332 2.44917 4.44846C2.9104 4.43935 3.37145 4.44046 3.83203 4.44785C4.01938 4.45098 4.14369 4.55806 4.21535 4.73505C4.46462 5.34754 4.76951 5.93043 5.15222 6.47126C5.25458 6.61517 5.35868 6.75846 5.50618 6.86006C5.66969 6.97277 5.79465 6.93594 5.87175 6.75283C5.92083 6.63652 5.94231 6.51283 5.95265 6.38849C5.98932 5.96286 5.99372 5.53677 5.93055 5.1124C5.89135 4.84714 5.74135 4.67563 5.47686 4.62548C5.34203 4.59975 5.36225 4.55022 5.42717 4.47292C5.54114 4.34015 5.64837 4.25735 5.8608 4.25735H7.45609C7.70769 4.30643 7.76412 4.41975 7.79831 4.67265L7.79957 6.44554C7.79658 6.54351 7.84865 6.83369 8.02437 6.89797C8.16514 6.94452 8.25889 6.83117 8.34338 6.74182C8.72545 6.3364 8.99806 5.85702 9.24166 5.36098C9.34951 5.14292 9.44265 4.9164 9.53326 4.68969C9.60003 4.52194 9.70412 4.43932 9.89335 4.44231L11.4292 4.44418C11.4745 4.44418 11.5211 4.44418 11.5658 4.45154C11.8241 4.49622 11.8952 4.60769 11.8149 4.86055C11.6895 5.25671 11.4438 5.58748 11.2044 5.91874C10.9478 6.27335 10.6747 6.61557 10.42 6.97206C10.1873 7.29849 10.2056 7.46262 10.4953 7.74545Z" />
 </g>
 </svg></a></li>
               </ul>
-              <p class="text-small mb-0">2019. Все права защищены</p>
             </div>
           </div>
         </div>

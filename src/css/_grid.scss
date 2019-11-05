@@ -1,4 +1,4 @@
-.container {
+.wrap {
     width: 100%;
     max-width: map-get($container-max-widths, 'xl');
     padding-right: 20px;
@@ -6,7 +6,7 @@
     margin-right: auto;
     margin-left: auto
 }
-.container-fluid {
+.wrap-fluid {
     width: 100%;
     max-width: 1780px;
     padding-right: 20px;
@@ -14,7 +14,7 @@
     margin-right: auto;
     margin-left: auto
 }
-.row{
+.line{
     display: flex;
     flex-wrap: wrap;
     margin-right: -20px;
@@ -24,17 +24,17 @@
     margin-right: 0;
     margin-left: 0
 }
-.no-gutters>.col,.no-gutters>[class*=col-] {
+.no-gutters>.column,.no-gutters>[class*=column-] {
     padding-right: 0;
     padding-left: 0
 }
-.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {
+.column,.column-1,.column-2,.column-3,.column-4,.column-5,.column-6,.column-7,.column-8,.column-9,.column-10,.column-11,.column-12 {
     position: relative;
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
 }
-.col{
+.column{
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -webkit-box-flex: 1;
@@ -42,255 +42,255 @@
     flex-grow: 1;
     max-width: 100%
 }
-.col-1{
+.column-1{
     flex: 0 0 8.33333%;
     max-width: 8.33333%
 }
-.col-2 {
+.column-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%
 }
-.col-3 {
+.column-3 {
     flex: 0 0 25%;
     max-width: 25%
 }
-.col-4{
+.column-4{
     flex: 0 0 33.33333%;
     max-width: 33.33333%
 }
-.col-5 {
+.column-5 {
     flex: 0 0 41.66667%;
     max-width: 41.66667%
 }
-.col-6 {
+.column-6 {
     flex: 0 0 50%;
     max-width: 50%
 }
-.col-7 {
+.column-7 {
     flex: 0 0 58.33333%;
     max-width: 58.33333%
 }
-.col-8 {
+.column-8 {
     flex: 0 0 66.66667%;
     max-width: 66.66667%
 }
-.col-9 {
+.column-9 {
     flex: 0 0 75%;
     max-width: 75%
 }
-.col-10 {
+.column-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%
 }
-.col-11 {
+.column-11 {
     flex: 0 0 91.66667%;
     max-width: 91.66667%
 }
-.col-12 {
+.column-12 {
     flex: 0 0 100%;
     max-width: 100%
 }
 @media all and (min-width: map-get($grid-breakpoints, 'sm')){
-    .col-sm-1{
+    .column-sm-1{
         flex: 0 0 8.33333%;
         max-width: 8.33333%
     }
-    .col-sm-2 {
+    .column-sm-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%
     }
-    .col-sm-3 {
+    .column-sm-3 {
         flex: 0 0 25%;
         max-width: 25%
     }
-    .col-sm-4{
+    .column-sm-4{
         flex: 0 0 33.33333%;
         max-width: 33.33333%
     }
-    .col-sm-5 {
+    .column-sm-5 {
         flex: 0 0 41.66667%;
         max-width: 41.66667%
     }
-    .col-sm-6 {
+    .column-sm-6 {
         flex: 0 0 50%;
         max-width: 50%
     }
-    .col-sm-7 {
+    .column-sm-7 {
         flex: 0 0 58.33333%;
         max-width: 58.33333%
     }
-    .col-sm-8 {
+    .column-sm-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%
     }
-    .col-sm-9 {
+    .column-sm-9 {
         flex: 0 0 75%;
         max-width: 75%
     }
-    .col-sm-10 {
+    .column-sm-10 {
         flex: 0 0 83.33333%;
         max-width: 83.33333%
     }
-    .col-sm-11 {
+    .column-sm-11 {
         flex: 0 0 91.66667%;
         max-width: 91.66667%
     }
-    .col-sm-12 {
+    .column-sm-12 {
         flex: 0 0 100%;
         max-width: 100%
     }
 }
 @media all and (min-width: map-get($grid-breakpoints, 'md')){
-    .col-md-1{
+    .column-md-1{
         flex: 0 0 8.33333%;
         max-width: 8.33333%
     }
-    .col-md-2 {
+    .column-md-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%
     }
-    .col-md-3 {
+    .column-md-3 {
         flex: 0 0 25%;
         max-width: 25%
     }
-    .col-md-4{
+    .column-md-4{
         flex: 0 0 33.33333%;
         max-width: 33.33333%
     }
-    .col-md-5 {
+    .column-md-5 {
         flex: 0 0 41.66667%;
         max-width: 41.66667%
     }
-    .col-md-6 {
+    .column-md-6 {
         flex: 0 0 50%;
         max-width: 50%
     }
-    .col-md-7 {
+    .column-md-7 {
         flex: 0 0 58.33333%;
         max-width: 58.33333%
     }
-    .col-md-8 {
+    .column-md-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%
     }
-    .col-md-9 {
+    .column-md-9 {
         flex: 0 0 75%;
         max-width: 75%
     }
-    .col-md-10 {
+    .column-md-10 {
         flex: 0 0 83.33333%;
         max-width: 83.33333%
     }
-    .col-md-11 {
+    .column-md-11 {
         flex: 0 0 91.66667%;
         max-width: 91.66667%
     }
-    .col-md-12 {
+    .column-md-12 {
         flex: 0 0 100%;
         max-width: 100%
     }
 }
 @media all and (min-width: map-get($grid-breakpoints, 'lg')){
-    .col-lg-1{
+    .column-lg-1{
         flex: 0 0 8.33333%;
         max-width: 8.33333%
     }
-    .col-lg-2 {
+    .column-lg-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%
     }
-    .col-lg-3 {
+    .column-lg-3 {
         flex: 0 0 25%;
         max-width: 25%
     }
-    .col-lg-4{
+    .column-lg-4{
         flex: 0 0 33.33333%;
         max-width: 33.33333%
     }
-    .col-lg-5 {
+    .column-lg-5 {
         flex: 0 0 41.66667%;
         max-width: 41.66667%
     }
-    .col-lg-6 {
+    .column-lg-6 {
         flex: 0 0 50%;
         max-width: 50%
     }
-    .col-lg-7 {
+    .column-lg-7 {
         flex: 0 0 58.33333%;
         max-width: 58.33333%
     }
-    .col-lg-8 {
+    .column-lg-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%
     }
-    .col-lg-9 {
+    .column-lg-9 {
         flex: 0 0 75%;
         max-width: 75%
     }
-    .col-lg-10 {
+    .column-lg-10 {
         flex: 0 0 83.33333%;
         max-width: 83.33333%
     }
-    .col-lg-11 {
+    .column-lg-11 {
         flex: 0 0 91.66667%;
         max-width: 91.66667%
     }
-    .col-lg-12 {
+    .column-lg-12 {
         flex: 0 0 100%;
         max-width: 100%
     }
 }
 
 @media all and (min-width: map-get($grid-breakpoints, 'xl')){
-    .container-fluid{
+    .wrap-fluid{
         padding-left: 80px;
         padding-right: 80px;
     }
-    .col-xl-1{
+    .column-xl-1{
         flex: 0 0 8.33333%;
         max-width: 8.33333%
     }
-    .col-xl-2 {
+    .column-xl-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%
     }
-    .col-xl-3 {
+    .column-xl-3 {
         flex: 0 0 25%;
         max-width: 25%
     }
-    .col-xl-4{
+    .column-xl-4{
         flex: 0 0 33.33333%;
         max-width: 33.33333%
     }
-    .col-xl-5 {
+    .column-xl-5 {
         flex: 0 0 41.66667%;
         max-width: 41.66667%
     }
-    .col-xl-6 {
+    .column-xl-6 {
         flex: 0 0 50%;
         max-width: 50%
     }
-    .col-xl-7 {
+    .column-xl-7 {
         flex: 0 0 58.33333%;
         max-width: 58.33333%
     }
-    .col-xl-8 {
+    .column-xl-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%
     }
-    .col-xl-9 {
+    .column-xl-9 {
         flex: 0 0 75%;
         max-width: 75%
     }
-    .col-xl-10 {
+    .column-xl-10 {
         flex: 0 0 83.33333%;
         max-width: 83.33333%
     }
-    .col-xl-11 {
+    .column-xl-11 {
         flex: 0 0 91.66667%;
         max-width: 91.66667%
     }
-    .col-xl-12 {
+    .column-xl-12 {
         flex: 0 0 100%;
         max-width: 100%
     }

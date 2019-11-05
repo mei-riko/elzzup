@@ -6,17 +6,6 @@
 @import "grid.scss";
 @import "position.scss";
 
-@import "other/header.scss";
-@import "other/alert.scss";
-@import "other/button.scss";
-@import "other/form.scss";
-@import "other/list.scss";
-@import "other/nav.scss";
-@import "other/pagination.scss";
-@import "other/person.scss";
-@import "other/tabs.scss";
-@import "other/footer.scss";
-
 body{
     position: relative;
     min-height: 100vh;
@@ -29,6 +18,18 @@ body{
         padding: 0;
     }
 }
+
+@import "other/header.scss";
+@import "other/alert.scss";
+@import "other/button.scss";
+@import "other/form.scss";
+@import "other/list.scss";
+@import "other/nav.scss";
+@import "other/pagination.scss";
+@import "other/person.scss";
+@import "other/tabs.scss";
+@import "other/footer.scss";
+
 @import "cabinet/info.scss";
 @import "cabinet/nav.scss";
 @import "cabinet/block.scss";

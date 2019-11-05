@@ -11,6 +11,7 @@
     .tabs__item{
         position: relative;
         padding: 10px 30px;
+        transition: .4s;
 
         &:after{
             content:'';
@@ -26,44 +27,15 @@
 
             transition: .4s;
         }
-        &--active{
+        &:hover{
+            color: $blue2;
+            cursor: pointer;
+        }
+        &.active{
             font-weight: bold;
             &:after{
                 height: 5px;
             }
         }
-
-        &:hover{
-            @extend .tabs__item--active;
-            &:after{
-                background: $dark-grey;
-            }
-        }
-    }
-}
-
-.tabs-content{
-    padding: 20px;
-    display: none;
-
-    &--active{
-        display: block;
-    }
-}
-// bootstrap-tabs
-.tab-pane{
-    .message_inside{
-        padding: 20px 0 40px;
-        margin: 0;
-        border: none;
-        & + .message_inside{
-            margin-top: 30px;
-        }
-    }
-    .message-answer{
-        border: 1px solid $border-color;
-    }
-    .person-list{
-        margin-top: 20px;
     }
 }

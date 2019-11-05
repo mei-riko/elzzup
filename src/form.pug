@@ -9,39 +9,36 @@ html(lang="ru")
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
-        .wrapper
-            //- include chunks/header.pug
-            main.content
-                .header-block.header-block_form
-                    .container
-                        .row.justify-content-center
-                            .col-12.col-sm-10.col-md-7.col-lg-5.text-center
-                                p.h2
-                                    span.text-bold Регистрация
-                                    |  — 
-                                    a(href="#") Вход
-                                p.mb-30 авторизация через 
-                                    a.text-bold(href="#") Facebook 
-                                    |  или 
-                                    a.text-bold(href="#") ВКонтакте
-                                form.form.form_user
-                                    .form-group.form-group_first
-                                        .form-input
-                                            input.input(type="text" placeholder="Ваше имя")
-                                    .form-group
-                                        .form-input
-                                            input.input(type="email" placeholder="E-mail *")
-                                    .form-group
-                                        .form-input
-                                            input.input(type="password" placeholder="Пароль")
-                                    button.btn.btn_cta.btn_large.btn_fullwidth.text-bold(type="submit") Зарегистироваться
-                                    .form__agree.checkbox.text-small
-                                        input.checkbox__input#policy(type="checkbox" checked="")
-                                        label.checkbox__label(for="policy") согласен с обработкой 
-                                            a.checkbox__link(href="/privacy.pdf" title="Соглашение на обработку персональных данных") персональных данных
-                                a.mt-30(href="/")
-                                    img(class="img-fluid logo" src="../img/logo-text-white.svg")
-            //- include chunks/footer.pug
+        main
+            .header-block.header-block_form
+                .wrap
+                    .line.justify-content-center
+                        .column-12.column-sm-10.column-md-7.column-lg-5.text-center
+                            p.h2
+                                span.text-bold Регистрация
+                                |  — 
+                                a(href="#") Вход
+                            p.mb-30 авторизация через 
+                                a.text-bold(href="#") Facebook 
+                                |  или 
+                                a.text-bold(href="#") ВКонтакте
+                            form.form.form_user
+                                .form-group.form-group_first
+                                    .form-input
+                                        input.input(type="text" placeholder="Ваше имя")
+                                .form-group
+                                    .form-input
+                                        input.input(type="email" placeholder="E-mail *")
+                                .form-group
+                                    .form-input
+                                        input.input(type="password" placeholder="Пароль")
+                                button.btn.btn_cta.btn_large.btn_fullwidth.text-bold(type="submit") Зарегистироваться
+                                .form__agree.checkbox.text-small
+                                    input.checkbox__input#policy(type="checkbox" checked="")
+                                    label.checkbox__label(for="policy") согласен с обработкой 
+                                        a.checkbox__link(href="/privacy.pdf" title="Соглашение на обработку персональных данных") персональных данных
+                            a.mt-30(href="/")
+                                img(class="img-fluid logo" src="../img/logo-text-white.svg")
         script(src="./js/util.js")
         script(src="./js/tab.js")
         script(src="./js/jquery.inputmask.js")

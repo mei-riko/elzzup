@@ -155,11 +155,11 @@ a{
 .pb-30{padding-bottom: 30px;}
 .pb-60{padding-bottom: 60px;}
 
-.wrapper{
+.content{
     display: flex;
     flex-direction: column;
     height: 100%;
-    .content{
+    .content__inside{
         flex: 1 0 auto;
     }
     .footer{
@@ -224,7 +224,7 @@ a{
     .pb-md-30{padding-bottom: 30px;}
     .pb-md-60{padding-bottom: 60px;}}
 @media all and (min-width: map-get($grid-breakpoints, 'lg')){
-    .wrapper{
+    .content{
         .footer{
             margin-bottom: 0;
         }

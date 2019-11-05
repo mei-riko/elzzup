@@ -9,26 +9,26 @@ html(lang="ru")
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
-        .wrapper
+        .content
             include chunks/header.pug
-            main.content
-                .container.container_cabinet
-                    .row
-                        .col-12.col-xl-3.col-lg-4.col-md-5.cabinet-sidebar
+            main.content__inside
+                .wrap.wrap_cabinet
+                    .line
+                        .column-12.column-xl-3.column-lg-4.column-md-5.cabinet-sidebar
                             .cabinet-info.cabinet-info_full
-                                .row
-                                    .col.cabinet-info__image
+                                .line
+                                    .column.cabinet-info__image
                                         img.img-fluid(src="../img/demo-photo.png")
-                                    .col.cabinet-info__data
+                                    .column.cabinet-info__data
                                         .cabinet-info__name Катерина Мельник
-                                        .row
-                                            .col-4
+                                        .line
+                                            .column-4
                                                 p.cabinet-info__label Рейтинг
                                                 p.cabinet-info__value 4.8
-                                            .col-8
+                                            .column-8
                                                 p.cabinet-info__label Собрано пазлов
                                                 p.cabinet-info__value 16 из 100
-                        .col-12.col-xl-9.col-lg-8.col-md-7.cabinet-content
+                        .column-12.column-xl-9.column-lg-8.column-md-7.cabinet-content
                             .cabinet-block 
                                 p Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот не имеет никакого отношения к обитателям водоемов.
                                 p.h3.text-bold.mt-30.mb-0 311 отзывов
@@ -38,10 +38,10 @@ html(lang="ru")
                                 .tab-content#reviewTab
                                     .tab-pane.fade.active.show#type1(role="tabpanel" aria-labelledby="type1-tab")
                                         .message.message_inside
-                                            .message__row.row
-                                                .col.message__image
+                                            .message__row.line
+                                                .column.message__image
                                                     img.img-fluid(src="../img/demo-photo.png")
-                                                .col.message__info
+                                                .column.message__info
                                                     .message__name Катерина Мельник       
                                                     .message__data 7 сентября 2019
                                                     .message__item Самый опасный, и психологическом комфорте ими 
@@ -49,10 +49,10 @@ html(lang="ru")
                                                         | которых супруги привыкают друг к ссоры. Для кого 
                                                         | не те, что были раньше, значит, они начинают. 
                                         .message.message_inside
-                                            .message__row.row
-                                                .col.message__image
+                                            .message__row.line
+                                                .column.message__image
                                                     span.no-image ЮМ
-                                                .col.message__info
+                                                .column.message__info
                                                     .message__name Юрий Мартынов       
                                                     .message__data 27 сентября 2019
                                                     .message__item Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатанииdiv

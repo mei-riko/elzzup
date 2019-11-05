@@ -16,3 +16,16 @@
 .tab-content .tab-pane.show,.tab-content>.active {
     display: block
 }
+.tab-pane{
+    .message_inside{
+        padding: 20px 0!important;
+        margin: 0;
+        border: none;
+    }
+    .message-answer{
+        border: 1px solid $border-color;
+    }
+    .person-list{
+        margin-top: 20px;
+    }
+}

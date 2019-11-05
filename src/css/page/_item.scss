@@ -163,4 +163,9 @@ a.item{
             margin-bottom: 30px;
         }
     }
+    .wrap-fluid{
+        .item-columns {
+            column-count: 3;
+        }
+    }
 }

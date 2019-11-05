@@ -9,20 +9,20 @@ html(lang="ru")
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
-        .wrapper
+        .content
             include chunks/header.pug
-            main.content
+            main.content__inside
                 .title-block.bg-white
-                    .container
+                    .wrap-fluid
                         h1.text-bold.mb-0 Блог
                 .navigation-scroll
-                    .container
+                    .wrap-fluid
                         .navigation.btn-group
                             a.btn.btn_border.navigation__btn-small.btn_border--active(href="#") Показать все
                             a.btn.btn_border.navigation__btn-small(href="#") Еда
                             a.btn.btn_border.navigation__btn-small(href="#") Сюрприз
                             a.btn.btn_border.navigation__btn-small(href="#") Фото
-                .container        
+                .wrap-fluid        
                     .item-columns
                         a.item.item_image-full(href="#")
                             .item__image

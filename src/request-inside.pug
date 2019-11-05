@@ -9,12 +9,12 @@ html(lang="ru")
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
-        .wrapper
+        .content
             include chunks/header.pug
-            main.content.bg-white
-                .container.pt-30.pt-xl-60.pb-30.pb-xl-60
-                    .row.justify-content-between
-                        .col-12.col-xl-7.col-lg-8.col-md-7
+            main.content__inside.bg-white
+                .wrap-fluid.pt-30.pt-xl-60.pb-30.pb-xl-60
+                    .line.justify-content-between
+                        .column-12.column-xl-7.column-lg-8.column-md-7
                             h1.text-bold Спеть песню "Калинка-малинка" возле Эйфелевой башни
                             .person.mb-30.mb-xl-60
                                 .person__image
@@ -31,25 +31,24 @@ html(lang="ru")
                                 li Item 4
                             .request-inside
                                 p.text-bold Требования к исполнителю:
-                                .row.no-gutters
-                                    .col-12.col-lg-6
+                                .line.no-gutters
+                                    .column-12.column-lg-6
                                         .alert.alert_small.alert_brnr-lg
                                             span.alert__icon.alert__icon_star.text-bold Минимальный рейтинг:
                                             span 4.2
-                                    .col-12.col-lg-6.mt-15.mt-lg-0
+                                    .column-12.column-lg-6.mt-15.mt-lg-0
                                         .alert.alert_small.alert_brnl-lg
                                             span.alert__icon.alert__icon_request.text-bold Исполнено заявок:
                                             span не менее 5
-                                    .col-12.col-xl-12.mt-15
+                                    .column-12.column-xl-12.mt-15
                                         .alert.alert_active.alert_small
                                             span.alert__icon.alert__icon_person.text-bold Откликнулось на заявку:
                                             span.text-bold 4 исполнителя
-                        .col-12.col-xl-4.col-lg-4.col-md-5
+                        .column-12.column-xl-4.column-lg-4.column-md-5
                             .request-info
                                 a.btn.btn_modal-info(href="#") Схема работы
                                 p.request-info__label.text-bold Бюджет
                                 p.request-info__price 100zz
-                                //- p.alert.alert_small после выполнение начисляется внутренняя валюта проекта
                                 p.request-info__label.text-bold Осталось до окончания
                                 p.request-info__duration 18 дн. 4 ч.
                                 p.request-info__label.text-bold Статус заявки
@@ -64,7 +63,7 @@ html(lang="ru")
                                     a.btn.btn_border.btn_large.btn_fullwidth(href="#") Отменить отклик
                             .text-center.mt-15
                                 a.text-small.text-grey(href="#") Пожаловаться на заявку
-                        .col-12.col-xl-7.col-lg-8
+                        .column-12.column-xl-7.column-lg-8
                             .request-tabs
                                 .nav.navigation#requestTab(role="tablist")
                                     a.nav__link.active(id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true") ОБСУЖДЕНИЕ ЗАЯВКИ
@@ -73,10 +72,10 @@ html(lang="ru")
                                 .tab-content#requestContent
                                     .tab-pane.fade.active.show#type1(role="tabpanel" aria-labelledby="type1-tab")
                                         .message.message_inside
-                                            .message__row.row
-                                                .col.message__image
+                                            .message__row.line
+                                                .column.message__image
                                                     img.img-fluid(src="../img/demo-photo.png")
-                                                .col.message__info
+                                                .column.message__info
                                                     .message__name Катерина Мельник       
                                                     .message__data 7 сентября 2019
                                                     .message__item Самый опасный, и психологическом комфорте ими 
@@ -90,12 +89,12 @@ html(lang="ru")
                                                     .message__data 13 сентября 2019
                                                     .message__item Самый опасный, и психологическом комфорте ими 
                                                         | раньше разобраться в привычках взглядах.
-                                            .message__row.message__row_answer.row
-                                                .col.message__info
+                                            .message__row.message__row_answer.line
+                                                .column.message__info
                                                     .message__name Юрий Мартынов       
                                                     .message__data 27 сентября 2019
                                                     .message__item Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатанииdiv
-                                                .col.message__image
+                                                .column.message__image
                                                     span.no-image ЮМ
                                         .message-answer
                                             form.form
@@ -104,8 +103,8 @@ html(lang="ru")
                                         p.text-right.text-small.text-grey.mt-15 Принимаются файлы формата: gif, png, jpg, jpeg
                                     .tab-pane.fade#type2(role="tabpanel" aria-labelledby="type2-tab")
                                         .person-list
-                                            .row
-                                                .col-12.col-sm-6.col-md-7
+                                            .line
+                                                .column-12.column-sm-6.column-md-7.column-lg-8
                                                     .person
                                                         .person__image
                                                             span.no-image AC
@@ -115,12 +114,12 @@ html(lang="ru")
                                                                 span.text-bold 4.8                                                
                                                             .person__rating выполнено заявок: 
                                                                 span.text-bold 21                                                
-                                                .col-12.mt-15.mt-sm-0.col-sm-6.col-md-5.text-small.text-bold
+                                                .column-12.mt-15.mt-sm-0.column-sm-6.column-md-5.column-lg-4.text-small.text-bold
                                                     a.btn.btn_border.btn_fullwidth(href="#") Написать сообщение
                                                     a.btn.btn_request.btn_fullwidth(href="#") Назначить исполнителем
                                         .person-list
-                                            .row
-                                                .col-12.col-sm-6.col-md-7
+                                            .line
+                                                .column-12.column-sm-6.column-md-7.column-lg-8
                                                     .person
                                                         .person__image
                                                             span.no-image AC
@@ -130,7 +129,7 @@ html(lang="ru")
                                                                 span.text-bold 4.8                                                
                                                             .person__rating выполнено заявок: 
                                                                 span.text-bold 21
-                                                .col-12.mt-15.mt-sm-0.col-sm-6.col-md-5.text-small.text-bold
+                                                .column-12.mt-15.mt-sm-0.column-sm-6.column-md-5.column-lg-4.text-small.text-bold
                                                     a.btn.btn_border.btn_fullwidth(href="#") Написать сообщение
                                                     a.btn.btn_request.btn_fullwidth(href="#") Назначить исполнителем                      
             include chunks/footer.pug

@@ -5,25 +5,25 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Cabinet Page
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css", rel="stylesheet")
         link(href='./css/style.css', rel='stylesheet')
-
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-        .container.container_cabinet
-            .row
-                .col-12.col-xl-3.col-lg-4.col-md-5.cabinet-sidebar
+        .wrap.wrap_cabinet
+            .line
+                .column-12.column-xl-3.column-lg-4.column-md-5.cabinet-sidebar
                     .cabinet-info
-                        .row
-                            a.col.cabinet-info__image(href="cabinet.html")
+                        .line
+                            a.column.cabinet-info__image(href="cabinet.html")
                                 img.img-fluid(src="../img/demo-photo.png")
-                            .col.cabinet-info__data
+                            .column.cabinet-info__data
                                 a.cabinet-info__name(href="cabinet.html") Катерина Мельник
-                                .row
-                                    .col-4
+                                .line
+                                    .column-4
                                         p.cabinet-info__label Рейтинг
                                         p.cabinet-info__value 4.8
-                                    .col-8
+                                    .column-8
                                         p.cabinet-info__label Собрано пазлов
                                         p.cabinet-info__value 16 из 100
                         a.cabinet-info__pay(href="#")
@@ -66,22 +66,40 @@ html(lang="ru")
                                     </svg>
                                     .alert 2
                                 .title Уведомления
-                .col-12.col-xl-9.col-lg-8.col-md-7.cabinet-content
-                    .navigation-scroll
-                        .navigation.btn-group
-                            a.btn.btn_border.cabinet-block__btn-small(href="#") Любой город
-                            a.btn.btn_border.btn_border--active.cabinet-block__btn-small(href="#") Тип заявки · СЮРПРИЗ
-                            a.btn.btn_border.cabinet-block__btn-small(href="#") Статус заявки                                
+                .column-12.column-xl-9.column-lg-8.column-md-7.cabinet-content
+                    .cabinet-block.cabinet-block_alert
+                        p Отличный день! Самое время кому-то помочь.
+                    .cabinet-block.cabinet-block_filter
+                        .nav.tabs(role="tablist")
+                            a.tabs__item.nav__link.active(id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true") Заказчик
+                            a.tabs__item.nav__link(id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false") Исполнитель
+                        .tab-content
+                            .tab-pane.fade.active.show#type1(role="tabpanel" aria-labelledby="type1-tab")
+                                .navigation.btn-group.justify-content-center
+                                    select.basic-select(name="place")
+                                        option(value="Любой город") Фильтр 1
+                                        option(value="1") Москва
+                                        option(value="2") Санкт-Петербург
+                                    select.basic-select(name="place")
+                                        option(value="Любой город") Фильтр 2
+                                        option(value="1") Москва
+                                        option(value="2") Санкт-Петербург
+                                    select.basic-select(name="place")
+                                        option(value="Любой город") Фильтр 3
+                                        option(value="1") Москва
+                                        option(value="2") Санкт-Петербург
+                            .tab-pane.fade#type2(role="tabpanel" aria-labelledby="type2-tab")
+                                p 2
                     .request-block
-                        .row
-                            .col-12
+                        .line
+                            .column-12
                                 .request
                                     .request__image-preview
                                         .request__price 122 ZZ
-                                    .row.align-items-center
-                                        .col.request__image
+                                    .line.align-items-center
+                                        .column.request__image
                                             span.no-image AC
-                                        .col.request__info
+                                        .column.request__info
                                             .request__author Анна Старовер
                                             .request__rating рейтинг пользователя — 4.8
                                             <svg class="icon-category" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,12 +123,12 @@ html(lang="ru")
                                             | водоемов такое. Этот, несмотря на кириллице значительно.
                                         .request__duration Осталось до окончания: 
                                             span.text-bold 5 дн. 18 часов
-                            .col-12
+                            .column-12
                                 .request.request_no-preview.request_last
-                                    .row
-                                        .col.request__image
+                                    .line
+                                        .column.request__image
                                             span.no-image ЮМ
-                                        .col.request__info
+                                        .column.request__info
                                             .request__author Анна Старовер
                                             .request__rating рейтинг пользователя — 4.8
                                             <svg class="icon-category" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -171,5 +189,8 @@ html(lang="ru")
                                             | водоемов такое. Этот, несмотря на кириллице значительно.
                                         .request__price 122 ZZ
         include chunks/footer.pug
+        script(src="./js/util.js")
+        script(src="./js/tab.js")
         script(src="./js/jquery.inputmask.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js")
         script(src="./js/app.min.js")

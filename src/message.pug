@@ -12,20 +12,20 @@ html(lang="ru")
         .wrapper
             include chunks/header.pug
             main.content
-                .container.container_cabinet
-                    .row
-                        .col-12.col-xl-3.col-lg-4.col-md-5.cabinet-sidebar
+                .wrap.wrap_cabinet
+                    .line
+                        .column-12.column-xl-3.column-lg-4.column-md-5.cabinet-sidebar
                             .cabinet-info
-                                .row
-                                    a.col.cabinet-info__image(href="cabinet.html")
+                                .line
+                                    a.column.cabinet-info__image(href="cabinet.html")
                                         img.img-fluid(src="../img/demo-photo.png")
-                                    .col.cabinet-info__data
+                                    .column.cabinet-info__data
                                         a.cabinet-info__name(href="cabinet.html") Катерина Мельник
-                                        .row
-                                            .col-4
+                                        .line
+                                            .column-4
                                                 p.cabinet-info__label Рейтинг
                                                 p.cabinet-info__value 4.8
-                                            .col-8
+                                            .column-8
                                                 p.cabinet-info__label Собрано пазлов
                                                 p.cabinet-info__value 16 из 100
                                 a.cabinet-info__pay(href="#")
@@ -68,33 +68,33 @@ html(lang="ru")
                                             </svg>
                                             .alert 2
                                         .title Уведомления
-                        .col-12.col-lg-8.col-md-7.col-xl-9.cabinet-content
+                        .column-12.column-lg-8.column-md-7.column-xl-9.cabinet-content
                             .cabinet-block.cabinet-block_alert
                                 p Здесь есть о чем поговорить
                             a.message(href="message-chat.html")
                                 .message__alert 11
-                                .row
-                                    .col.message__image
+                                .line
+                                    .column.message__image
                                         img.img-fluid(src="../img/demo-photo.png")
-                                    .col.message__info
+                                    .column.message__info
                                         .message__data 7 сент 2019
                                         .message__name Катерина Мельник       
                                         .message__introtext Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатании еще в...         
                                         .message__task-name заявка "Фото в Голливуде"
                             a.message(href="message-chat.html")
-                                .row
-                                    .col.message__image
+                                .line
+                                    .column.message__image
                                         span.no-image АС
-                                    .col.message__info
+                                    .column.message__info
                                         .message__data 27 сент 2019
                                         .message__name Анна Старовер       
                                         .message__introtext Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатании еще в...         
                                         .message__task-name заявка "Фото в Голливуде"
                             a.message(href="message-chat.html")
-                                .row
-                                    .col.message__image
+                                .line
+                                    .column.message__image
                                         span.no-image ЮМ
-                                    .col.message__info
+                                    .column.message__info
                                         .message__data 27 сент 2019
                                         .message__name Юрий Мартынов       
                                         .message__introtext Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатании еще в...         

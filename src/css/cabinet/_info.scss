@@ -92,37 +92,38 @@
 }
 @media all and (min-width: map-get($grid-breakpoints, 'md')){
     .cabinet-info{
-        padding: 20px;
-        margin: 20px 0;
+        // padding: 20px;
+        margin: 20px 0 0;
         border: 1px solid $border-color;
+        border-bottom: 0;
         // column
-        .cabinet-info__image{
-            flex: 0 0 100%;
-            margin-bottom: 20px;
-            .cabinet-info__pay{
-                top: 0;
-                left: 20px;
-            }
-            .img-fluid{
-                width: 140px;
-            }
-        }
+        // .cabinet-info__image{
+        //     flex: 0 0 100%;
+        //     margin-bottom: 20px;
+        //     .cabinet-info__pay{
+        //         top: 0;
+        //         left: 20px;
+        //     }
+        //     .img-fluid{
+        //         width: 140px;
+        //     }
+        // }
         .cabinet-info__pay{
-            top: 20px;
-            left: 20px;
+            // top: 20px;
+            right: -10px;
         }
-        .cabinet-info__data{
-            flex: 0 0 100%;
-            padding-left: 15px;
-            overflow-x: hidden;      
-        }
+        // .cabinet-info__data{
+        //     flex: 0 0 100%;
+        //     padding-left: 15px;
+        //     overflow-x: hidden;      
+        // }
 
-        &_full{
-            .cabinet-info__bio{
-                font-size: 12px;
-                line-height: 16px;
-            }
-        }
+        // &_full{
+        //     .cabinet-info__bio{
+        //         font-size: 12px;
+        //         line-height: 16px;
+        //     }
+        // }
         .btn{
             padding: 6px 12px;
         }

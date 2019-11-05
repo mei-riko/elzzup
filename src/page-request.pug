@@ -5,36 +5,42 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Request Category
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
-        link(href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css", rel="stylesheet")        
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css", rel="stylesheet")
         link(href='./css/style.css', rel='stylesheet')
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
-        .wrapper
+        .content
             include chunks/header.pug
-            main.content
+            main.content__inside
                 .title-block.bg-white
-                    .container-fluid
+                    .wrap-fluid
                         h1.text-bold.mb-0 Актуальные заявки
                 .navigation-scroll
-                    .container-fluid
+                    .wrap-fluid
                         .navigation.btn-group
                             select.basic-select(name="place")
-                                option(value="Любой город") Любой город
+                                option(value="Любой город") Фильтр 1
                                 option(value="1") Москва
                                 option(value="2") Санкт-Петербург
-                            a.btn.btn_border.btn_border--active.navigation__btn-small(href="#") Тип заявки · СЮРПРИЗ
-                            a.btn.btn_border.navigation__btn-small(href="#") Статус заявки    
+                            select.basic-select(name="place")
+                                option(value="Любой город") Фильтр 2
+                                option(value="1") Москва
+                                option(value="2") Санкт-Петербург
+                            select.basic-select(name="place")
+                                option(value="Любой город") Фильтр 3
+                                option(value="1") Москва
+                                option(value="2") Санкт-Петербург
                 .request-block
-                    .container-fluid
+                    .wrap-fluid
                         .request-column
                             .request
                                 a.request__image-preview(href="/request-inside.html")
                                     .request__price 122 ZZ
-                                .row.align-items-center
-                                    .col.request__image
+                                .line.align-items-center
+                                    .column.request__image
                                         span.no-image AC
-                                    .col.request__info
+                                    .column.request__info
                                         .request__author Анна Старовер
                                         .request__rating рейтинг пользователя — 4.8
                                         <svg class="icon-category" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,10 +70,10 @@ html(lang="ru")
                                     </svg>
                             
                             .request.request_no-preview
-                                .row.align-items-center
-                                    .col.request__image
+                                .line.align-items-center
+                                    .column.request__image
                                         span.no-image ЮМ
-                                    .col.request__info
+                                    .column.request__info
                                         .request__author Анна Старовер
                                         .request__rating рейтинг пользователя — 4.8
                                         <svg class="icon-category" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,10 +138,10 @@ html(lang="ru")
                                         <path class="path" d="M44.16,91.815c74.831-76.012,148.48-42.535,207.951,11.422c59.077-53.957,132.726-87.828,207.951-11.422c58.683,59.471,59.077,155.175,0,214.646c-98.855,90.585-150.449,137.452-177.625,162.265c-16.935,15.36-42.535,15.36-59.471,0c-27.175-24.418-79.163-71.68-178.806-162.265C-14.917,247.385-14.523,151.68,44.16,91.815z"/>
                                     </svg>                       
                             .request.request_no-preview.request_last
-                                .row.align-items-center
-                                    .col.request__image
+                                .line.align-items-center
+                                    .column.request__image
                                         span.no-image ЮМ
-                                    .col.request__info
+                                    .column.request__info
                                         .request__author Анна Старовер
                                         .request__rating рейтинг пользователя — 4.8
                                         <svg class="icon-category" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,10 +208,10 @@ html(lang="ru")
                             .request
                                 a.request__image-preview(href="/request-inside.html" style="background-image:url('../img/image-8.jpg');")
                                     .request__price 122 ZZ
-                                .row.align-items-center
-                                    .col.request__image
+                                .line.align-items-center
+                                    .column.request__image
                                         span.no-image AC
-                                    .col.request__info
+                                    .column.request__info
                                         .request__author Анна Старовер
                                         .request__rating рейтинг пользователя — 4.8
                                         <svg class="icon-category" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
