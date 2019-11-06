@@ -5,59 +5,88 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Cabinet Page
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href="./css/datepicker.min.css" rel="stylesheet")
         link(href='./css/style.css', rel='stylesheet')
-
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         .content
             include chunks/header.pug
             main.content__inside
-                .wrap.wrap_cabinet
+                .wrap-fluid.wrap_cabinet
                     .line
                         .column-12.column-xl-3.column-lg-4.column-md-5.cabinet-sidebar
                             include chunks/cabinet-sidebar.pug
                         .column-12.column-xl-9.column-lg-8.column-md-7.cabinet-content
-                            .cabinet-subtitle ВЫБЕРИТЕ КАТЕГОРИЮ:
-                            a.cabinet-task.cabinet-task_category(href="create-form.html")
-                                .line.no-gutters.justify-content-between.align-items-center
-                                    .cabinet-task__icon.cabinet-task__icon_camera
-                                    .cabinet-task__category Камера
-                                        .cabinet-task__info ?
-                            a.cabinet-task.cabinet-task_category(href="create-form.html")
-                                .line.no-gutters.justify-content-between.align-items-center
-                                    .cabinet-task__icon.cabinet-task__icon_plate
-                                    .cabinet-task__category Тарелка
-                                        .cabinet-task__info ?
-                            a.cabinet-task.cabinet-task_category(href="create-form.html")
-                                .line.no-gutters.justify-content-between.align-items-center
-                                    .cabinet-task__icon.cabinet-task__icon_travel
-                                    .cabinet-task__category Путеводитель
-                                        .cabinet-task__info ?
-                            a.cabinet-task.cabinet-task_category(href="create-form.html")
-                                .line.no-gutters.justify-content-between.align-items-center
-                                    .cabinet-task__icon.cabinet-task__icon_box
-                                    .cabinet-task__category Посылка
-                                        .cabinet-task__info ?
-                            a.cabinet-task.cabinet-task_category(href="create-form.html")
-                                .line.no-gutters.justify-content-between.align-items-center
-                                    .cabinet-task__icon.cabinet-task__icon_hand
-                                    .cabinet-task__category Рукопожатие
-                                        .cabinet-task__info ?
-                            a.cabinet-task.cabinet-task_category(href="create-form.html")
-                                .line.no-gutters.justify-content-between.align-items-center
-                                    .cabinet-task__icon.cabinet-task__icon_gift
-                                    .cabinet-task__category Подарок
-                                        .cabinet-task__info ?
-                            a.cabinet-task.cabinet-task_category(href="create-form.html")
-                                .line.no-gutters.justify-content-between.align-items-center
-                                    .cabinet-task__icon.cabinet-task__icon_mask
-                                    .cabinet-task__category Маски
-                                        .cabinet-task__info ?
-                            a.cabinet-task.cabinet-task_category(href="create-form.html")
-                                .line.no-gutters.justify-content-between.align-items-center
-                                    .column.cabinet-task__icon.cabinet-task__icon_heart
-                                    .column.cabinet-task__category Сердце
-                                        .cabinet-task__info ?
+                            form.form.form_cabinet-create
+                                .cabinet-block.cabinet-block--last
+                                    .line.no-gutters.justify-content-between.align-items-center
+                                        p.mb-0.text-bold Создание новой заявки
+                                        a.btn.btn_border Сохранить
+                                .form-group
+                                    .form-label УКАЖИТЕ НАЗВАНИЕ
+                                    .form-input
+                                        input.input(type="text" placeholder="Пишите здесь...")
+                                .form-label ВЫБЕРИТЕ КАТЕГОРИЮ:
+                                .line.no-gutters
+                                    a.cabinet-task.cabinet-task_line.cabinet-task_category(href="#")
+                                        .cabinet-task__icon.cabinet-task__icon_camera
+                                        .cabinet-task__category Камера
+                                            .cabinet-task__info ?
+                                    a.cabinet-task.cabinet-task_line.cabinet-task_category(href="#")
+                                        .cabinet-task__icon.cabinet-task__icon_plate
+                                        .cabinet-task__category Тарелка
+                                            .cabinet-task__info ?
+                                    a.cabinet-task.cabinet-task_line.cabinet-task_category(href="#")
+                                        .cabinet-task__icon.cabinet-task__icon_travel
+                                        .cabinet-task__category Путеводитель
+                                            .cabinet-task__info ?
+                                    a.cabinet-task.cabinet-task_line.cabinet-task_category(href="#")
+                                        .cabinet-task__icon.cabinet-task__icon_box
+                                        .cabinet-task__category Посылка
+                                            .cabinet-task__info ?
+                                    a.cabinet-task.cabinet-task_line.cabinet-task_category(href="#")
+                                        .cabinet-task__icon.cabinet-task__icon_hand
+                                        .cabinet-task__category Рукопожатие
+                                            .cabinet-task__info ?
+                                    a.cabinet-task.cabinet-task_line.cabinet-task_category(href="#")
+                                        .cabinet-task__icon.cabinet-task__icon_gift
+                                        .cabinet-task__category Подарок
+                                            .cabinet-task__info ?
+                                    a.cabinet-task.cabinet-task_line.cabinet-task_category(href="#")
+                                        .cabinet-task__icon.cabinet-task__icon_mask
+                                        .cabinet-task__category Маски
+                                            .cabinet-task__info ?
+                                    a.cabinet-task.cabinet-task_line.cabinet-task_category(href="#")
+                                        .column.cabinet-task__icon.cabinet-task__icon_heart
+                                        .column.cabinet-task__category Сердце
+                                            .cabinet-task__info ?
+                                .form-group
+                                    .form-label ДЕТАЛИ
+                                    .form-input
+                                        textarea.textarea(rows="6" placeholder="Описание...")
+                                .form-group.bg-white
+                                    .radio-group
+                                        .radio
+                                            input.radio__input(id="type1" name="type" type="radio" value="Денежная награда")
+                                            label.radio__label(for="type1") Денежная награда
+                                        .radio
+                                            input.radio__input(checked id="type2" name="type" type="radio" value="Внутренняя валюта")
+                                            label.radio__label(for="type2") Валюта ZZ
+                                        .radio
+                                            input.radio__input(id="type3" name="type" type="radio" value="Очки опыта")
+                                            label.radio__label(for="type3") Опыт
+                                .form-group.bg-white
+                                    input.input(type="number" placeholder="Размер вознаграждения")
+                                .form-group
+                                    .form-input
+                                        .form-input__date
+                                            input.input.input_date#datepicker(autocomplete="off" type="text" placeholder="Укажите дату завершения миссии")  
+                                .form-group
+                                    .form-input
+                                        .form-input__place
+                                            input.input.input_place(type="text" placeholder="Укажите место выполнения миссии")                                
+                                button.btn.btn_cta.btn_cabinet-create Опубликовать
             include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
+        script(src="./js/datepicker.min.js")
         script(src="./js/app.min.js")

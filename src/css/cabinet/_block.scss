@@ -6,7 +6,7 @@
 }
 .cabinet-content{
     .cabinet-block{
-        &:last-child{
+        &:not(.cabinet-block_line):last-child{
             margin-bottom: 20px;
         }
         &_alert{
@@ -25,6 +25,8 @@
         max-width: calc(100% + 40px);
     }
     .request-block{
+        margin-left: -20px;
+        margin-right: -20px;
         .request{
             margin-bottom: 20px;
             padding-bottom: 20px;
@@ -71,6 +73,15 @@
             
             width: 24px;
             height: 20px;
+
+            &_camera{background-size: 20px;background-color: inherit;}
+            &_plate{background-size: 20px;background-color: inherit;}
+            &_travel{background-size: 18px;background-color: inherit;}
+            &_box{background-size: 16px;background-color: inherit;}
+            &_hand{background-size: 22px;background-color: inherit;}
+            &_gift{background-size: 18px;background-color: inherit;}
+            &_mask{background-size: 18px;background-color: inherit;}
+            &_heart{background-size: 20px;background-color: inherit;}
         }
         .icon-star{
             position: absolute;
@@ -79,13 +90,12 @@
 
             width: 24px;
             height: 24px;
-            .path{
-                fill: $grey;
+
+            &_silver{
+                background: url('../img/star_silver.svg') no-repeat center / contain;
             }
             &_gold{
-                .path{
-                    fill: $gold;
-                }
+                background: url('../img/star_gold.svg') no-repeat center / contain;
             }
         }
     }
@@ -183,7 +193,6 @@
         font-size: 10px;
     }
 
-
     &_locked{
         position: relative;
         .cabinet-block__image{
@@ -217,6 +226,7 @@
         margin-bottom: 10px;
     }
     &_filter{
+        padding: 20px 20px 8px;
         margin-bottom: 10px;
         .tabs{
             .tabs__item{
@@ -225,15 +235,17 @@
         }
         .tab-content{
 
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding-top: 20px;
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: center;
+            padding-top: 8px;
             padding-bottom: 0;
 
-            .navigation{
-                padding: 0;
+            .navigation-scroll{
+                margin: 0;
+                border: none;
             }
+
             .btn{
                 margin: 10px 5px 0;
                 &--active{
@@ -242,6 +254,12 @@
                 }
             }
         }
+    }
+    &_line{
+        flex: 0 0 calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 a.cabinet-block{
@@ -283,12 +301,11 @@ a.cabinet-block{
         }
         
         .request-block{
+            margin: 0;
             padding: 20px;
             border: 1px solid $border-color;
             .request{
-                &:not(.request_last) {
-                    border-bottom: 1px solid #bbbbbb;
-                }
+                border-bottom: 1px solid $border-color;
             }
         } 
         .form_cabinet-create{
@@ -296,16 +313,14 @@ a.cabinet-block{
             .form-label{
                 padding: 0;
             }
-            .cabinet-task.cabinet-task_category{
-                border: 1px solid $border-color;
-            }
         }
     }
     .cabinet-block{
         margin: 0;
         border: 1px solid $border-color;
         border-bottom: none;
-        &:last-child{
+        &:last-child,
+        &--last{
             border-bottom: 1px solid $border-color;
         }
         &_alert{
@@ -314,6 +329,38 @@ a.cabinet-block{
         &_filter{
             border-bottom: 1px solid $border-color;
             margin-bottom: 20px;
+        }
+    }
+}
+@media all and (min-width: map-get($grid-breakpoints, 'lg')){
+    .cabinet-block{
+        &_line{
+            @extend .column-lg-6;
+            &:nth-child(2n){
+                border-left: none;
+            }
+            &:nth-last-child(2){
+                border-bottom: 1px solid $border-color;
+            }
+            .cabinet-block__col-image{
+                flex: 0 0 80px;
+                max-width: 80px;
+            }
+            .cabinet-block__col-content{
+                flex: 0 0 calc(100% - 80px);
+                max-width: calc(100% - 80px);
+            }
+        }
+    }
+}
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .cabinet-block{
+        padding: 20px 40px;
+        &_alert{
+            padding: 10px 40px;
+        }
+        &_line{
+            @extend .column-xl-6;
         }
     }
 }

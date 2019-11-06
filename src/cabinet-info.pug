@@ -17,6 +17,72 @@ html(lang="ru")
                         .column-12.column-xl-3.column-lg-4.column-md-5.cabinet-sidebar
                             include chunks/cabinet-sidebar.pug
                         .column-12.column-xl-9.column-lg-8.column-md-7.cabinet-content
+                            .cabinet-block
+                                .line
+                                    .column-3.text-grey О себе:
+                                    .column-9.column-lg-8
+                                        p Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот не имеет никакого отношения к обитателям водоемов.
+                                            | Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот не имеет никакого отношения к обитателям водоемов.
+                                .line.mt-15
+                                    .column-3.text-grey Дата рождения:
+                                    .column-9 01.01.1970
+                                .line.mt-15
+                                    .column-3.text-grey E-mail: 
+                                    .column-9 
+                                        a(href="#") 111@mail.ru
+                                .line.mt-15
+                                    .column-3.text-grey Телефон:
+                                    .column-9
+                                        a(href="#") +7 (921) 111-11-11
+                                .line.mt-15
+                                    .column-3.text-grey Город:
+                                    .column-9 Санкт-Петербург
+
+                                button.btn.btn_border.mt-30 Изменить данные
+                            .cabinet-block
+                                .line
+                                    .column-12.column-lg-3.column-xl-3.text-grey Статистика:
+                                    .column-6.column-sm-3.column-lg-2.text-center.mt-15.mt-lg-0
+                                        .cabinet-info-value 4.8
+                                        .cabinet-info-label Рейтинг заказчика
+                                    .column-6.column-sm-3.column-lg-2.text-center.mt-15.mt-lg-0
+                                        .cabinet-info-value 34
+                                        .cabinet-info-label Выполненно заявок
+                                    .column-6.column-sm-3.column-lg-2.text-center.mt-15.mt-lg-0
+                                        .cabinet-info-value 4.2
+                                        .cabinet-info-label Рейтинг исполнителя
+                                    .column-6.column-sm-3.column-lg-2.text-center.mt-15.mt-lg-0
+                                        .cabinet-info-value 12
+                                        .cabinet-info-label Создано заявок
+                            .cabinet-block
+                                p.h3.text-bold.mt-30.mb-0 311 отзывов
+                                .nav.navigation.btn-group#reviewTab(role="tablist")
+                                    a.nav__link.btn.btn_border.active.navigation__btn-small(id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true") От заказчиков (195)
+                                    a.nav__link.btn.btn_border.navigation__btn-small(id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false") От исполнителей (116)
+                                .tab-content#reviewTab
+                                    .tab-pane.fade.active.show#type1(role="tabpanel" aria-labelledby="type1-tab")
+                                        .message.message_inside
+                                            .message__row.line
+                                                .column.message__image
+                                                    img.img-fluid(src="../img/demo-photo.png")
+                                                .column.message__info
+                                                    .message__name Катерина Мельник       
+                                                    .message__data 7 сентября 2019
+                                                    .message__item Самый опасный, и психологическом комфорте ими 
+                                                        | раньше разобраться в привычках взглядах. Во время 
+                                                        | которых супруги привыкают друг к ссоры. Для кого 
+                                                        | не те, что были раньше, значит, они начинают. 
+                                        .message.message_inside
+                                            .message__row.line
+                                                .column.message__image
+                                                    span.no-image ЮМ
+                                                .column.message__info
+                                                    .message__name Юрий Мартынов       
+                                                    .message__data 27 сентября 2019
+                                                    .message__item Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатанииdiv
+                                    .tab-pane.fade#type2(role="tabpanel" aria-labelledby="type2-tab")
+                                        p 2
             include chunks/footer.pug
-        script(src="./js/jquery.inputmask.js")
+        script(src="./js/util.js")
+        script(src="./js/tab.js")
         script(src="./js/app.min.js")

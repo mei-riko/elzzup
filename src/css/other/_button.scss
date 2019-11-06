@@ -25,13 +25,13 @@
             background: $body-bg;
         }
         &--active{
-            color: $white;
+            color: $black;
             background: $blue;
             border-color: $blue;
             font-weight: bold;
             &:hover{
-                color: $white;
-                background: darken($color: $blue, $amount: 5%);
+                color: $black;
+                background: lighten($color: $blue, $amount: 5%);
             }
         }
         &.active{

@@ -68,7 +68,6 @@ html(lang="ru")
                                     <svg x="0px" y="0px" viewBox="0 0 504.222 504.222" xml:space="preserve">
                                         <path class="path" d="M44.16,91.815c74.831-76.012,148.48-42.535,207.951,11.422c59.077-53.957,132.726-87.828,207.951-11.422c58.683,59.471,59.077,155.175,0,214.646c-98.855,90.585-150.449,137.452-177.625,162.265c-16.935,15.36-42.535,15.36-59.471,0c-27.175-24.418-79.163-71.68-178.806-162.265C-14.917,247.385-14.523,151.68,44.16,91.815z"/>
                                     </svg>
-                            
                             .request.request_no-preview
                                 .line.align-items-center
                                     .column.request__image
@@ -137,7 +136,7 @@ html(lang="ru")
                                     <svg x="0px" y="0px" viewBox="0 0 504.222 504.222" xml:space="preserve">
                                         <path class="path" d="M44.16,91.815c74.831-76.012,148.48-42.535,207.951,11.422c59.077-53.957,132.726-87.828,207.951-11.422c58.683,59.471,59.077,155.175,0,214.646c-98.855,90.585-150.449,137.452-177.625,162.265c-16.935,15.36-42.535,15.36-59.471,0c-27.175-24.418-79.163-71.68-178.806-162.265C-14.917,247.385-14.523,151.68,44.16,91.815z"/>
                                     </svg>                       
-                            .request.request_no-preview.request_last
+                            .request.request_no-preview
                                 .line.align-items-center
                                     .column.request__image
                                         span.no-image ЮМ
@@ -239,7 +238,15 @@ html(lang="ru")
                                     <svg x="0px" y="0px" viewBox="0 0 504.222 504.222" xml:space="preserve">
                                         <path class="path" d="M44.16,91.815c74.831-76.012,148.48-42.535,207.951,11.422c59.077-53.957,132.726-87.828,207.951-11.422c58.683,59.471,59.077,155.175,0,214.646c-98.855,90.585-150.449,137.452-177.625,162.265c-16.935,15.36-42.535,15.36-59.471,0c-27.175-24.418-79.163-71.68-178.806-162.265C-14.917,247.385-14.523,151.68,44.16,91.815z"/>
                                     </svg>
-                            
+                        ul.pagination
+                            li.pagination__item.pagination__item--active
+                                a.pagination__link.pagination__link--active(href="#1") 1
+                            li.pagination__item
+                                a.pagination__link(href="#2") 2
+                            li.pagination__item
+                                a.pagination__link(href="#3") 3
+                            li.pagination__item
+                                a.pagination__link(href="#4") 4
             include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js")

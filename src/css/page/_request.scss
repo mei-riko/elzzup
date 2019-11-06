@@ -44,10 +44,20 @@
             position: absolute;
             right: 20px;
             top: 0;
-            width: 20px;
-            height: 20px;
-            background: none;
+            background-color: inherit;
             border-radius: 0;
+
+            width: 30px;
+            height: 30px;
+
+            &_camera{background-size: 24px;}
+            &_plate{background-size: 24px;}
+            &_travel{background-size: 22px;}
+            &_box{background-size: 20px;}
+            &_hand{background-size: 24px;}
+            &_gift{background-size: 22px;}
+            &_mask{background-size: 22px;}
+            &_heart{background-size: 24px;}
         }
     }
     .request__content{
@@ -135,6 +145,9 @@
         @extend .h5;
         font-weight: bold;
         margin: 0 0 20px;
+        &:hover{
+            text-decoration: none;
+        }
     }
     .request__introtext{
         margin-bottom: 20px;
@@ -157,8 +170,6 @@
     }
 }
 
-
-
 @media all and (min-width: map-get($grid-breakpoints, 'md')){
     // Обертка блока заявок
     .request-block{
@@ -167,6 +178,13 @@
     // Распределение заявок по колонкам
     .request-column{
         column-count: 2;
+    }
+    .wrap-fluid{ 
+        .cabinet-content{
+            .request-column {
+                column-count: 1;
+            }
+        }
     }
     // Заявки
     .request{
@@ -186,6 +204,11 @@
         .request-column{
             column-count: 4;
         }   
+        .cabinet-content{
+            .request-column {
+                column-count: 2;
+            }
+        }
     }
     // Заявки
     .request{

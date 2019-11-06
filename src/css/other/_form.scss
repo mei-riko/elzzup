@@ -62,12 +62,17 @@
 
     &_cabinet-create{
         // padding: 0 0 44px;
+        .cabinet-block{
+            margin: 0;
+        }
         .form-group{
             & + .form-group{
                 margin-top: 0;
                 border-top: 1px solid $grey;
             }
-            
+            & + .btn{
+                margin-top: 0px;
+            }
             .form-input{
                 background: $white;
             }
@@ -84,6 +89,7 @@
             }
         }
         .btn{
+            margin-top: 0px;
             border-radius: 0px;
         }
     }

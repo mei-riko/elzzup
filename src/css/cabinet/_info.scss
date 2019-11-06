@@ -47,31 +47,20 @@
             margin-top: 15px;
         }
     }
+    .cabinet-info-label{
+        margin-top: 15px;
+    }
     .btn{
         padding: 2px 6px;
         margin-bottom: 6px;
         font-size: 12px;
     }
-    .cabinet-info__label{
-        font-size: 8px;
-        line-height: 1;
-        text-transform: uppercase;
-        margin-top: 15px;
-        margin-bottom: 5px;
-    }
-    .cabinet-info__value{
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 24px;
-        margin-bottom: 0;
-        white-space: nowrap;
-    }
-
     // start page
     &_full{
         .cabinet-info__image{
             position: relative;
             flex: 0 0 140px;
+            max-width: 100%;
             .cabinet-info__pay{
                 top: 70px;
                 left: 20px;
@@ -79,7 +68,27 @@
         }
         .cabinet-info__data{
             flex: 0 0 calc(100% - 140px);
+            max-width: 100%;
         }
+    }
+}
+.cabinet-info-label{
+    font-size: 8px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    & + .cabinet-info-value{
+        margin-top: 5px;
+    }
+}
+.cabinet-info-value{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    & + .cabinet-info-label{
+        margin-top: 5px;
     }
 }
 @media all and (min-width: map-get($grid-breakpoints, 'sm')){
@@ -96,34 +105,24 @@
         margin: 20px 0 0;
         border: 1px solid $border-color;
         border-bottom: 0;
-        // column
-        // .cabinet-info__image{
-        //     flex: 0 0 100%;
-        //     margin-bottom: 20px;
-        //     .cabinet-info__pay{
-        //         top: 0;
-        //         left: 20px;
-        //     }
-        //     .img-fluid{
-        //         width: 140px;
-        //     }
-        // }
         .cabinet-info__pay{
-            // top: 20px;
             right: -10px;
         }
-        // .cabinet-info__data{
-        //     flex: 0 0 100%;
-        //     padding-left: 15px;
-        //     overflow-x: hidden;      
-        // }
-
-        // &_full{
-        //     .cabinet-info__bio{
-        //         font-size: 12px;
-        //         line-height: 16px;
-        //     }
-        // }
+        &_full{
+            .cabinet-info__image{
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+                .cabinet-info__pay{
+                    top: 0;
+                    left: 20px;
+                }
+            }
+            .cabinet-info__data{
+                flex: 0 0 100%;
+                padding-left: 15px;
+                overflow-x: hidden;      
+            }
+        }
         .btn{
             padding: 6px 12px;
         }

@@ -23,14 +23,47 @@ html(lang="ru")
                                         .cabinet-info__name Катерина Мельник
                                         .line
                                             .column-4
-                                                p.cabinet-info__label Рейтинг
-                                                p.cabinet-info__value 4.8
+                                                p.cabinet-info-label Рейтинг
+                                                p.cabinet-info-value 4.8
                                             .column-8
-                                                p.cabinet-info__label Собрано пазлов
-                                                p.cabinet-info__value 16 из 100
+                                                p.cabinet-info-label Собрано пазлов
+                                                p.cabinet-info-value 16 из 100
                         .column-12.column-xl-9.column-lg-8.column-md-7.cabinet-content
                             .cabinet-block 
-                                p Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот не имеет никакого отношения к обитателям водоемов.
+                                .line
+                                    .column-3.text-grey О себе:
+                                    .column-9.column-lg-9
+                                        p Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот не имеет никакого отношения к обитателям водоемов.
+                                            | Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот не имеет никакого отношения к обитателям водоемов.
+                                .line.mt-15
+                                    .column-3.text-grey Дата рождения:
+                                    .column-9 01.01.1970
+                                .line.mt-15
+                                    .column-3.text-grey E-mail: 
+                                    .column-9 
+                                        a(href="#") 111@mail.ru
+                                .line.mt-15
+                                    .column-3.text-grey Телефон:
+                                    .column-9
+                                        a(href="#") +7 (921) 111-11-11
+                                .line.mt-15
+                                    .column-3.text-grey Город:
+                                    .column-9 Санкт-Петербург
+                            .cabinet-block
+                                .line.justify-content-center
+                                    .column-6.column-lg-3.text-center
+                                        .cabinet-info-value 4.8
+                                        .cabinet-info-label Рейтинг заказчика
+                                    .column-6.column-lg-3.text-center
+                                        .cabinet-info-value 34
+                                        .cabinet-info-label Выполненно заявок
+                                    .column-6.column-lg-3.text-center
+                                        .cabinet-info-value 4.2
+                                        .cabinet-info-label Рейтинг исполнителя
+                                    .column-6.column-lg-3.text-center
+                                        .cabinet-info-value 12
+                                        .cabinet-info-label Создано заявок
+                            .cabinet-block
                                 p.h3.text-bold.mt-30.mb-0 311 отзывов
                                 .nav.navigation.btn-group#reviewTab(role="tablist")
                                     a.nav__link.btn.btn_border.active.navigation__btn-small(id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true") От заказчиков (195)
@@ -57,7 +90,7 @@ html(lang="ru")
                                                     .message__data 27 сентября 2019
                                                     .message__item Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатанииdiv
                                     .tab-pane.fade#type2(role="tabpanel" aria-labelledby="type2-tab")
-                                        p 2   
+                                        p 2
             include chunks/footer.pug
         script(src="./js/util.js")
         script(src="./js/tab.js")

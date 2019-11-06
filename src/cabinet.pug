@@ -17,99 +17,80 @@ html(lang="ru")
                         .column-12.column-xl-3.column-lg-4.column-md-5.cabinet-sidebar
                             include chunks/cabinet-sidebar.pug
                         .column-12.column-xl-9.column-lg-8.column-md-7.cabinet-content
-                            a.cabinet-block(href="mission-start.html")
-                                .line
-                                    .column.cabinet-block__col-image
+                            .line.no-gutters
+                                a.cabinet-block.cabinet-block_line(href="mission-start.html")
+                                    .cabinet-block__col-image
                                         .cabinet-block__image(style="background-image: url('../img/img-01.png');")
-                                    .column.cabinet-block__col-content
+                                    .cabinet-block__col-content
                                         .cabinet-block__content
                                             p.cabinet-block__title «Начало»
+                                            .cabinet-block__progress.cabinet-block__progress_5
+                                                .cabinet-block__progress__title прогресс миссии
+                                                .cabinet-block__progress__info 5 из 8
+                                            .icon-category.icon-category_heart                                            
+                                            .icon-star.icon-star_gold
+                                a.cabinet-block.cabinet-block_line(href="mission-start.html")
+                                    .cabinet-block__col-image
+                                        .cabinet-block__image(style="background-image: url('../img/img-01.png');")
+                                    .cabinet-block__col-content
+                                        .cabinet-block__content
+                                            p.cabinet-block__title «Досье»
                                             .cabinet-block__progress.cabinet-block__progress_2
                                                 .cabinet-block__progress__title прогресс миссии
                                                 .cabinet-block__progress__info 2 из 8
-                                            <svg class="icon-category" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M18.3266 8.89516H1.67334C1.49889 8.89516 1.35756 9.03656 1.35756 9.21094V19.0091C1.35756 19.1835 1.49889 19.3249 1.67334 19.3249H18.3267C18.5011 19.3249 18.6424 19.1835 18.6424 19.0091V9.21098C18.6424 9.03652 18.501 8.89516 18.3266 8.89516Z" fill="#F7434C"/>
-                                                <path d="M18.3266 8.89516H1.67334C1.49889 8.89516 1.35756 9.03656 1.35756 9.21094V10.4741H18.6424V9.21094C18.6424 9.03652 18.501 8.89516 18.3266 8.89516Z" fill="#DB2E37"/>
-                                                <path d="M11.6133 8.89516H8.38681C8.21236 8.89516 8.07103 9.03656 8.07103 9.21094V19.0091C8.07103 19.1835 8.21236 19.3249 8.38681 19.3249H11.6133C11.7877 19.3249 11.9291 19.1835 11.9291 19.0091V9.21098C11.9291 9.03652 11.7877 8.89516 11.6133 8.89516Z" fill="#FFDB57"/>
-                                                <path d="M11.6133 8.89516H8.38681C8.21236 8.89516 8.07103 9.03656 8.07103 9.21094V10.4673H11.9291V9.21094C11.9291 9.03652 11.7877 8.89516 11.6133 8.89516Z" fill="#F5BA3D"/>
-                                                <path d="M17.7114 3.06166C17.4018 2.25459 16.9132 1.46635 16.4045 0.953029C16.2178 0.764708 15.9665 0.66924 15.6803 0.675372C14.7322 0.697443 13.1872 1.8874 11.0883 4.21217C11.0358 4.27018 11.0068 4.34561 11.0068 4.42381V6.09416C11.0068 6.26858 11.1481 6.40994 11.3226 6.40994H16.1801C17.2625 6.40994 17.7092 5.88338 17.8933 5.44162C18.1389 4.85276 18.0743 4.00748 17.7114 3.06166Z" fill="#FFDB57"/>
-                                                <path d="M17.8922 3.61189C17.8834 3.57947 17.8694 3.54865 17.8509 3.52064C17.3741 2.79967 16.3437 3.06943 15.5634 3.42268C13.2962 4.44893 12.36 5.86256 12.3212 5.92221C12.2581 6.01936 12.2533 6.14315 12.3086 6.24491C12.3638 6.34667 12.4703 6.40999 12.5861 6.40999H16.1803C16.869 6.40999 17.3797 6.19858 17.6983 5.78166C18.0768 5.28635 18.1438 4.53604 17.8922 3.61189Z" fill="#EF9325"/>
-                                                <path d="M8.91168 4.21221C6.81273 1.88745 5.26773 0.697484 4.31961 0.675414C4.03273 0.669242 3.78207 0.76475 3.59543 0.95307C3.08676 1.46635 2.59816 2.25463 2.28855 3.0617C1.9257 4.00752 1.86105 4.85276 2.10652 5.4417C2.29066 5.88346 2.73734 6.41002 3.81973 6.41002H8.67727C8.85172 6.41002 8.99305 6.26862 8.99305 6.09424V4.42385C8.99309 4.34565 8.96414 4.27022 8.91168 4.21221Z" fill="#FFDB57"/>
-                                                <path d="M7.67883 5.92217C7.64008 5.86252 6.70383 4.44885 4.43668 3.42264C3.65625 3.0694 2.62594 2.79975 2.1491 3.52057C2.13058 3.54862 2.11664 3.5794 2.10781 3.61186C1.85613 4.536 1.92324 5.28631 2.30172 5.78158C2.62027 6.1985 3.13101 6.4099 3.81976 6.4099H7.41398C7.52976 6.4099 7.63625 6.34658 7.69148 6.24482C7.74672 6.1431 7.74187 6.01932 7.67883 5.92217Z" fill="#EF9325"/>
-                                                <path d="M11.3227 3.79591H8.67731C8.50286 3.79591 8.36153 3.93732 8.36153 4.11169V6.09423C8.36153 6.26865 8.50286 6.41001 8.67731 6.41001H11.3227C11.4972 6.41001 11.6385 6.26861 11.6385 6.09423V4.11169C11.6385 3.93728 11.4972 3.79591 11.3227 3.79591Z" fill="#F5BA3D"/>
-                                                <path d="M19.6842 5.77902H0.315781C0.141328 5.77902 0 5.92043 0 6.0948V9.21094C0 9.38535 0.141328 9.52672 0.315781 9.52672H19.6842C19.8587 9.52672 20 9.38531 20 9.21094V6.0948C20 5.92039 19.8587 5.77902 19.6842 5.77902Z" fill="#F7434C"/>
-                                                <path d="M12.4257 5.7789H7.57431V9.52667H12.4257V5.7789Z" fill="#FFDB57"/>
-                                            </svg>
-                                            <svg class="icon-star icon-star_gold" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path class="path" d="M5.33333 9.33333L0.0833282 5.25H6.49999L8.83333 0L11.1667 5.25H17.5833C17.5833 5.25 16.4167 6.41667 12.9167 9.33333L14.0833 15.1667L8.83333 12.25L3.58333 15.1667L5.33333 9.33333Z"/>
-                                            </svg>
-                            .cabinet-block.cabinet-block_locked
-                                .line
-                                    .column.cabinet-block__col-image
+                                            .icon-category.icon-category_mask
+                                            .icon-star.icon-star_silver
+                                .cabinet-block.cabinet-block_line.cabinet-block_locked
+                                    .cabinet-block__col-image
                                         .cabinet-block__image
-                                    .column.cabinet-block__col-content
-                                        .cabinet-block__content
-                                            p.cabinet-block__title Миссия 1
-                                            .cabinet-block__progress
-                                                .cabinet-block__progress__title прогресс миссии
-                                                .cabinet-block__progress__info 0 из 8
-                            .cabinet-block.cabinet-block_locked
-                                .line
-                                    .column.cabinet-block__col-image
-                                        .cabinet-block__image
-                                    .column.cabinet-block__col-content
-                                        .cabinet-block__content
-                                            p.cabinet-block__title Миссия 2
-                                            .cabinet-block__progress
-                                                .cabinet-block__progress__title прогресс миссии
-                                                .cabinet-block__progress__info 0 из 8
-                            .cabinet-block.cabinet-block_locked
-                                .line
-                                    .column.cabinet-block__col-image
-                                        .cabinet-block__image
-                                    .column.cabinet-block__col-content
+                                    .cabinet-block__col-content
                                         .cabinet-block__content
                                             p.cabinet-block__title Миссия 3
                                             .cabinet-block__progress
                                                 .cabinet-block__progress__title прогресс миссии
                                                 .cabinet-block__progress__info 0 из 8
-                            .cabinet-block.cabinet-block_locked
-                                .line
-                                    .column.cabinet-block__col-image
+                                .cabinet-block.cabinet-block_line.cabinet-block_locked
+                                    .cabinet-block__col-image
                                         .cabinet-block__image
-                                    .column.cabinet-block__col-content
+                                    .cabinet-block__col-content
                                         .cabinet-block__content
                                             p.cabinet-block__title Миссия 4
                                             .cabinet-block__progress
                                                 .cabinet-block__progress__title прогресс миссии
                                                 .cabinet-block__progress__info 0 из 8
-                            .cabinet-block.cabinet-block_locked
-                                .line
-                                    .column.cabinet-block__col-image
+                                .cabinet-block.cabinet-block_line.cabinet-block_locked
+                                    .cabinet-block__col-image
                                         .cabinet-block__image
-                                    .column.cabinet-block__col-content
+                                    .cabinet-block__col-content
                                         .cabinet-block__content
                                             p.cabinet-block__title Миссия 5
                                             .cabinet-block__progress
                                                 .cabinet-block__progress__title прогресс миссии
                                                 .cabinet-block__progress__info 0 из 8
-                            .cabinet-block.cabinet-block_locked
-                                .line
-                                    .column.cabinet-block__col-image
+                                .cabinet-block.cabinet-block_line.cabinet-block_locked
+                                    .cabinet-block__col-image
                                         .cabinet-block__image
-                                    .column.cabinet-block__col-content
+                                    .cabinet-block__col-content
                                         .cabinet-block__content
                                             p.cabinet-block__title Миссия 6
                                             .cabinet-block__progress
                                                 .cabinet-block__progress__title прогресс миссии
                                                 .cabinet-block__progress__info 0 из 8
-                            .cabinet-block.cabinet-block_locked
-                                .line
-                                    .column.cabinet-block__col-image
+                                .cabinet-block.cabinet-block_line.cabinet-block_locked
+                                    .cabinet-block__col-image
                                         .cabinet-block__image
-                                    .column.cabinet-block__col-content
+                                    .cabinet-block__col-content
                                         .cabinet-block__content
                                             p.cabinet-block__title Миссия 7
+                                            .cabinet-block__progress
+                                                .cabinet-block__progress__title прогресс миссии
+                                                .cabinet-block__progress__info 0 из 8
+                                .cabinet-block.cabinet-block_line.cabinet-block_locked
+                                    .cabinet-block__col-image
+                                        .cabinet-block__image
+                                    .cabinet-block__col-content
+                                        .cabinet-block__content
+                                            p.cabinet-block__title Миссия 8
                                             .cabinet-block__progress
                                                 .cabinet-block__progress__title прогресс миссии
                                                 .cabinet-block__progress__info 0 из 8
