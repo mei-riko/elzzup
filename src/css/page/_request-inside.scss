@@ -44,13 +44,24 @@
     .request-info__label{
         font-size: 12px;
         margin-bottom: 0;
+
+        white-space: nowrap;
+        max-width: calc(100% - 200px);
+        overflow: hidden;
     }
     .request-info__price{
         font-size: 28px;
         margin-bottom: 5px;
     }
+    .request-info__text{
+        font-size: 14px;
+        line-height: 1.25;
+    }
     .request-info__status{
         font-weight: 700;
+        &--publish{
+            color: $blue3;
+        }
         &--active{
             color: $blue2;
         }

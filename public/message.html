@@ -25,7 +25,16 @@
                 <div class="nav__item"><a class="nav__link" href="text.html">Правила проекта</a></div>
                 <div class="nav__item"><a class="nav__link" href="form.html">Регистрация</a></div>
                 <div class="nav__item"><a class="nav__link" href="form.html">Вход</a></div>
-                <div class="nav__item"><a class="nav__link nav__link_cabinet" href="cabinet.html"> <img class="img-fluid" src="../img/demo-photo.png"/></a></div>
+                <div class="nav__item nav__item_dropdown"><a class="nav__link nav__link_cabinet nav__link_cabinet--active" href="cabinet.html" data-href="cabinet"> <img class="img-fluid" src="../img/demo-photo.png"/></a>
+                  <ul class="dropdown" id="cabinet">
+                    <li class="dropdown__item"><a class="dropdown__link" href="cabinet-info.html">Моя страница</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="request.html">Заявки</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="create.html">Создать заявку</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="mission.html">Миссии</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="message.html">Сообщения<span class="alert">5</span></a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="alert.html">Уведомления<span class="alert">12</span></a></li>
+                  </ul>
+                </div>
               </nav>
             </div>
           </div>
@@ -57,6 +66,13 @@
           <div class="nav__item"><a class="nav__link" href="blog.html">Блог проекта</a></div>
           <div class="nav__item"><a class="nav__link" href="faq.html">Популярные вопросы</a></div>
           <div class="nav__item"><a class="nav__link" href="#">Правила проекта</a></div>
+          <div class="sep"></div>
+          <div class="nav__item"><a class="nav__link nav__link_small" href="#">Моя страница</a></div>
+          <div class="nav__item"><a class="nav__link nav__link_small" href="#">Мои заявки</a></div>
+          <div class="nav__item"><a class="nav__link nav__link_small" href="#">Сообщения</a></div>
+          <div class="nav__item"><a class="nav__link nav__link_small" href="#">Уведомления</a></div>
+          <div class="sep"></div>
+          <div class="nav__item"><a class="nav__link nav__link_small" href="#">Выйти из профиля</a></div>
         </nav>
       </div>
       <div class="navbar-mobile">
@@ -139,7 +155,18 @@
             </div>
             <div class="column-12 column-lg-8 column-md-7 column-xl-9 cabinet-content">
               <div class="cabinet-block cabinet-block_alert">
-                <p>Здесь есть о чем поговорить</p>
+                <div class="line align-items-center">
+                  <div class="column-12 column-lg-6 column-xl-8 text-lg-left">
+                    <p class="mb-0">Здесь есть о чем поговорить</p>
+                  </div>
+                  <div class="column-12 column-lg-6 column-xl-4 text-lg-right"><a class="message-read-all" href="#">Отметить все прочитанными</a></div>
+                </div>
+              </div>
+              <div class="cabinet-block">
+                <form class="form form_search">
+                  <input class="form-input form-input_field" type="search" placeholder="Поиск по сообщениям"/>
+                  <button class="btn btn_search"></button>
+                </form>
               </div><a class="message" href="message-chat.html">
                 <div class="message__alert">11</div>
                 <div class="line">

@@ -21,7 +21,7 @@ html(lang="ru")
                                 .cabinet-block.cabinet-block--last
                                     .line.no-gutters.justify-content-between.align-items-center
                                         p.mb-0.text-bold Создание новой заявки
-                                        a.btn.btn_border Сохранить
+                                        a.btn.btn_border Сохранить черновик
                                 .form-group
                                     .form-label УКАЖИТЕ НАЗВАНИЕ
                                     .form-input
@@ -64,6 +64,19 @@ html(lang="ru")
                                     .form-label ДЕТАЛИ
                                     .form-input
                                         textarea.textarea(rows="6" placeholder="Описание...")
+                                .form-label ДОП. МАТЕРИАЛЫ
+                                .form-group.form-group_btn.bg-white
+                                    .line
+                                        .column-12.column-lg-4
+                                            button.btn.btn_border.btn_fullwidth Добавить фото
+                                            p.text-small Принимаются файлы формата: gif, png, jpg, jpeg
+                                        .column-12.column-lg-4.mt-15.mt-lg-0
+                                            button.btn.btn_border.btn_fullwidth Добавить видео
+                                            p.text-small Принимаются файлы формата: mp4, webm, ogg, mov
+                                        .column-12.column-lg-4.mt-15.mt-lg-0
+                                            button.btn.btn_border.btn_fullwidth Добавить документ
+                                            p.text-small Принимаются файлы формата: doc, docx, pdf, txt, xls, xlsx
+                                .form-label ТИП НАГРАДЫ
                                 .form-group.bg-white
                                     .radio-group
                                         .radio
@@ -77,6 +90,7 @@ html(lang="ru")
                                             label.radio__label(for="type3") Опыт
                                 .form-group.bg-white
                                     input.input(type="number" placeholder="Размер вознаграждения")
+                                .form-label ДАТА И МЕСТО
                                 .form-group
                                     .form-input
                                         .form-input__date
@@ -85,6 +99,8 @@ html(lang="ru")
                                     .form-input
                                         .form-input__place
                                             input.input.input_place(type="text" placeholder="Укажите место выполнения миссии")                                
+                                
+                                
                                 button.btn.btn_cta.btn_cabinet-create Опубликовать
             include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")

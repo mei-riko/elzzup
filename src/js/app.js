@@ -58,16 +58,45 @@ $(document).ready(() =>{
         $(this).toggleClass("item_collapse--active");
         $(this).find(".item__content").slideToggle();
     });
+    // Dropdown Nav
+    $(".nav .nav__item.nav__item_dropdown .nav__link").on("click", function(e){
+      e.preventDefault();
+      let openNav = $(this).data("href");
+      // Show Dropdown
+      $("#" + openNav).slideToggle();
+      // Add Active Class
+      $("#" + openNav).toggleClass("active");
+      $(this).toggleClass("active");
+    });
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+      let dropdownNavActive = $(".nav .nav__item.nav__item_dropdown .nav__link.active"); // пункт меню
+      let dropdownActive = $(".nav .dropdown.active"); // элемент
+          
+      if (!dropdownActive.is(e.target) // клик был не по блоку
+              && !dropdownNavActive.is(e.target) // и не по активному пункту меню
+              && dropdownActive.has(e.target).length === 0) { // и не по его дочерним элементам
+                  $(".nav .nav__item.nav__item_dropdown .nav__link.active").removeClass("active");
+                  dropdownActive.removeClass("active");
+                  dropdownActive.hide();
+          }
+      });
     // Nav Mobile
     $(".navbar-mobile .navbar .navbar__link#openNabvar").on("click", function(){
         $(this).toggleClass("navbar__link--active");
         $(".navbar-fullscreen").toggleClass("navbar-fullscreen--active");
+
+        if( $(this).hasClass("navbar__link--active") ){
+          $("body").attr("style","position: fixed; overflow: hidden;")
+        }else{
+          $("body").attr("style","")
+        }
     });
     // Hide Navigation on Desktop
     $(window).resize(function(){
-        if ( $(window).width() > 991 || !window.matchMedia('screen and (max-width: 992px)').matches ){
+      if ( $(window).width() > 991 || !window.matchMedia('screen and (max-width: 992px)').matches ){
         $(".navbar-mobile .navbar .navbar__link#openNabvar").removeClass("navbar__link--active");
         $(".navbar-fullscreen").removeClass("navbar-fullscreen--active");
-        }
+        $("body").attr("style","")
+      }
     });
 });

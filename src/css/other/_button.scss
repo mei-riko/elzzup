@@ -15,47 +15,7 @@
         text-decoration: none;
         outline: none;
     }
-
-    &_border{
-        color: #969696;
-        border: 1px solid #C4C4C4;
-        border-radius: 4px;
-        &:hover{
-            color: $dark-grey;
-            background: $body-bg;
-        }
-        &--active{
-            color: $black;
-            background: $blue;
-            border-color: $blue;
-            font-weight: bold;
-            &:hover{
-                color: $black;
-                background: lighten($color: $blue, $amount: 5%);
-            }
-        }
-        &.active{
-            @extend .btn_border--active;
-        }
-    }
-    &_message{
-        padding: 0;
-        width: 30px;
-        height: 30px;
-        background: url("../img/redo-variant.svg") no-repeat center/contain;
-        &:hover{
-            background: $light-grey url("../img/redo-variant.svg") no-repeat center/contain;
-        }
-    }
-    &_white{
-        background: $white;
-        color: $dark-grey;
-
-        &:hover{
-            background: $light-grey;
-            color: $dark-grey;
-        }
-    }
+    // Other
     &_primary{
         background: $blue;
         color: $dark-grey;
@@ -74,9 +34,79 @@
             color: $white;
         }
     }
-    &_request{
+    &_border{
+        color: #969696;
+        border: 1px solid #C4C4C4;
+        border-radius: 4px;
+        &:hover{
+            color: $dark-grey;
+            background: $white;
+        }
+        &--active{
+            color: $black;
+            background: $blue;
+            border-color: $blue;
+            font-weight: bold;
+            &:hover{
+                color: $black;
+                background: lighten($color: $blue, $amount: 5%);
+            }
+        }
+        &.active{
+            @extend .btn_border--active;
+        }
+    }
+    &_white{
+        background: $white;
+        color: $dark-grey;
+
+        &:hover{
+            background: $light-blue;
+            color: $blue3;
+        }
+    }
+    &_dark{
+        background: $dark-grey;
         color: $white;
+
+        &:hover{
+            background: $dark-blue;
+            color: $white;
+        }
+    }
+    &_alert{
+        background: $gold;
+        color: $white;
+
+        &:hover{
+            background: $gold-hover;
+            color: $white;
+        }
+    }
+    &_info{
+        background: $blue2;
+        color: $white;
+
+        &:hover{
+            background: darken($blue2, 5%);
+            color: $white;
+        }
+    }
+    &_danger{
+        font-weight: bold;
+        color: $red;
+        border: 1px solid $red;
+        border-radius: 4px;
+        &:hover{
+            color: $red;
+            background: $white;
+        }
+    }   
+
+    // Specials
+    &_request{
         background: linear-gradient(0deg, $blue 0%, $blue2 100%);
+        color: $white;
 
         &:hover{
             color: $light-blue;
@@ -100,7 +130,28 @@
         width: 100%;
         padding: 12px 15px;
     }
-    &_fullwidth{
+    &_message{
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        background: url("../img/redo-variant.svg") no-repeat center/contain;
+        &:hover{
+            background: $light-grey url("../img/redo-variant.svg") no-repeat center/contain;
+        }
+    }
+    &_search{
+        border-radius: 50%;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        background: url("../img/search.svg") no-repeat center/16px;
+        &:hover{
+            background: $light-grey url("../img/search.svg") no-repeat center/16px;
+        }
+    }
+
+    // Style
+    &.btn_fullwidth{
         width: 100%;
         padding: 10px 20px;
 
@@ -111,6 +162,16 @@
     &.btn_large{
         padding: 14px 26px 15px;
     }
+
+    // Bootstrap Button
+    &-primary{@extend .btn_primary;}
+    &-secondary{@extend .btn_border;}
+    &-success{@extend .btn_cta;}
+    &-danger{@extend .btn_danger;}
+    &-warning{@extend .btn_alert;}
+    &-info{@extend .btn_info;}
+    &-light{@extend .btn_white;}
+    &-dark{@extend .btn_dark;}
 }
 .btn-group{
     @extend .line;
@@ -137,6 +198,10 @@
             position: unset;
             border-radius: 0px;
             padding: 20px;
+        }
+        &_search{
+            border-radius: 50%;
+            padding: 0;
         }
 
         &_large-xl{

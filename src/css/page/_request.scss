@@ -99,14 +99,30 @@
     .request__price{
         position: absolute;
 
-        background: $red;
-        color: $white;
-
         font-weight: bold;
         line-height: 1;
 
         border-radius: 2px;
         padding: 4px 10px;
+
+        &_zz{
+            background: $red;
+            color: $white;
+        }
+        &_money{
+            background: $gold;
+            color: $white;
+        }
+        &_gift{
+            background: $dark-blue;
+            color: $white;
+            padding: 4px 10px 5px;
+        }
+        &_service{
+            background: $dark-grey;
+            color: $white;
+            padding: 4px 10px 5px;
+        }
     }
     .request__rating{
         color: $dark-grey;

@@ -25,7 +25,16 @@
                 <div class="nav__item"><a class="nav__link" href="text.html">Правила проекта</a></div>
                 <div class="nav__item"><a class="nav__link" href="form.html">Регистрация</a></div>
                 <div class="nav__item"><a class="nav__link" href="form.html">Вход</a></div>
-                <div class="nav__item"><a class="nav__link nav__link_cabinet" href="cabinet.html"> <img class="img-fluid" src="../img/demo-photo.png"/></a></div>
+                <div class="nav__item nav__item_dropdown"><a class="nav__link nav__link_cabinet nav__link_cabinet--active" href="cabinet.html" data-href="cabinet"> <img class="img-fluid" src="../img/demo-photo.png"/></a>
+                  <ul class="dropdown" id="cabinet">
+                    <li class="dropdown__item"><a class="dropdown__link" href="cabinet-info.html">Моя страница</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="request.html">Заявки</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="create.html">Создать заявку</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="mission.html">Миссии</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="message.html">Сообщения<span class="alert">5</span></a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="alert.html">Уведомления<span class="alert">12</span></a></li>
+                  </ul>
+                </div>
               </nav>
             </div>
           </div>
@@ -57,6 +66,13 @@
           <div class="nav__item"><a class="nav__link" href="blog.html">Блог проекта</a></div>
           <div class="nav__item"><a class="nav__link" href="faq.html">Популярные вопросы</a></div>
           <div class="nav__item"><a class="nav__link" href="#">Правила проекта</a></div>
+          <div class="sep"></div>
+          <div class="nav__item"><a class="nav__link nav__link_small" href="#">Моя страница</a></div>
+          <div class="nav__item"><a class="nav__link nav__link_small" href="#">Мои заявки</a></div>
+          <div class="nav__item"><a class="nav__link nav__link_small" href="#">Сообщения</a></div>
+          <div class="nav__item"><a class="nav__link nav__link_small" href="#">Уведомления</a></div>
+          <div class="sep"></div>
+          <div class="nav__item"><a class="nav__link nav__link_small" href="#">Выйти из профиля</a></div>
         </nav>
       </div>
       <div class="navbar-mobile">
@@ -114,18 +130,22 @@
             </div>
             <div class="column-12 column-xl-4 column-lg-4 column-md-5">
               <div class="request-info"><a class="btn btn_modal-info" href="#">Схема работы</a>
-                <p class="request-info__label text-bold">Бюджет</p>
-                <p class="request-info__price">100zz</p>
+                <p class="request-info__label text-bold">Награда</p>
+                <p class="request-info__price">100 zz</p>
+                <p class="request-info__price">15000 р.</p>
+                <p class="request-info__text">здесь писать о нематериальном вознаграждении: пользовательский текст, кол-во символов ограничить (< 110)</p>
                 <p class="request-info__label text-bold">Осталось до окончания</p>
                 <p class="request-info__duration">18 дн. 4 ч.</p>
                 <p class="request-info__label text-bold">Статус заявки</p>
-                <p class="request-info__status request-info__status--active mb-0">активна</p>
-                <p class="request-info__status request-info__status--process mb-0">в процессе</p>
-                <p class="request-info__status request-info__status--check mb-0">на проверке</p>
+                <!-- mb-0 это для демонстрации, чтобы отступы не мешали смотреть-->
+                <p class="request-info__status request-info__status--publish">опубликована</p>
+                <p class="request-info__status request-info__status--active">активна</p>
+                <p class="request-info__status request-info__status--process">в процессе</p>
+                <p class="request-info__status request-info__status--check">на проверке</p>
                 <p class="request-info__status request-info__status--end">завершена</p>
                 <p class="request-info__label text-bold">Место выполнения</p>
-                <p class="request-info__location">Россия, Санкт-Петербург</p><a class="btn btn_cta btn_large btn_fullwidth" href="#">Стать исполнителем</a>
-                <div class="mt-15"><a class="btn btn_border btn_large btn_fullwidth" href="#">Отменить отклик</a></div>
+                <p class="request-info__location">Россия, Санкт-Петербург</p><a class="btn btn_cta btn_large btn_fullwidth" href="#">Стать исполнителем</a><a class="btn btn_border btn_large btn_fullwidth" href="#">Отменить отклик</a>
+                <p class="mt-30 text-bold">Bootstrap Button</p><a class="btn btn-primary btn_fullwidth btn_large" href="#">Primary</a><a class="btn btn-secondary btn_fullwidth btn_large" href="#">Secondary</a><a class="btn btn-success btn_fullwidth btn_large" href="#">Success</a><a class="btn btn-danger btn_fullwidth btn_large" href="#">Danger</a><a class="btn btn-warning btn_fullwidth btn_large" href="#">Warning</a><a class="btn btn-info btn_fullwidth btn_large" href="#">Info</a><a class="btn btn-light btn_fullwidth btn_large" href="#">Light</a><a class="btn btn-dark btn_fullwidth btn_large" href="#">Dark</a>
               </div>
               <div class="text-center mt-15"><a class="text-small text-grey" href="#">Пожаловаться на заявку</a></div>
             </div>

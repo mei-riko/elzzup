@@ -18,7 +18,11 @@ html(lang="ru")
                             include chunks/cabinet-sidebar.pug
                         .column-12.column-xl-9.column-lg-8.column-md-7.cabinet-content
                             .cabinet-block.cabinet-block_alert
-                                p Что происходит в миссиях и заявках?
+                                .line.align-items-center
+                                    .column-12.column-lg-6.column-xl-8.text-lg-left
+                                        p.mb-0 Что происходит в миссиях и заявках?
+                                    .column-12.column-lg-6.column-xl-4.text-lg-right
+                                        a.message-read-all(href="#") Отметить все прочитанными
                             a.message.message_alert(href="#")
                                 .message__data 12 сент 2019 
                                 .message__name Исполнитель условно завершил заявку

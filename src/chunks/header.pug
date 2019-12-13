@@ -20,9 +20,24 @@ header.header
                         a.nav__link(href="form.html") Регистрация
                     .nav__item
                         a.nav__link(href="form.html") Вход
-                    .nav__item
-                        a.nav__link.nav__link_cabinet(href="cabinet.html") 
+                    .nav__item.nav__item_dropdown
+                        a.nav__link.nav__link_cabinet.nav__link_cabinet--active(href="cabinet.html" data-href="cabinet") 
                             img.img-fluid(src="../img/demo-photo.png")
+                        ul.dropdown#cabinet
+                            li.dropdown__item
+                                a.dropdown__link(href="cabinet-info.html") Моя страница
+                            li.dropdown__item
+                                a.dropdown__link(href="request.html") Заявки
+                            li.dropdown__item
+                                a.dropdown__link(href="create.html") Создать заявку
+                            li.dropdown__item
+                                a.dropdown__link(href="mission.html") Миссии
+                            li.dropdown__item
+                                a.dropdown__link(href="message.html") Сообщения
+                                    span.alert 5
+                            li.dropdown__item
+                                a.dropdown__link(href="alert.html") Уведомления
+                                    span.alert 12
 .navbar-fullscreen
     .cabinet-info
         .wrap
@@ -51,6 +66,18 @@ header.header
             a.nav__link(href="faq.html") Популярные вопросы
         .nav__item
             a.nav__link(href="#") Правила проекта
+        .sep
+        .nav__item
+            a.nav__link.nav__link_small(href="#") Моя страница
+        .nav__item
+            a.nav__link.nav__link_small(href="#") Мои заявки
+        .nav__item
+            a.nav__link.nav__link_small(href="#") Сообщения
+        .nav__item
+            a.nav__link.nav__link_small(href="#") Уведомления
+        .sep
+        .nav__item
+            a.nav__link.nav__link_small(href="#") Выйти из профиля
 .navbar-mobile
     .wrap
         nav.navbar
