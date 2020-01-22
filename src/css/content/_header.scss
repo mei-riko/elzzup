@@ -75,6 +75,14 @@
             width: 150px;
         }
     }
+    &_poll{
+        background: linear-gradient(0deg, #00F3D4 0%, #02A5AE 100%);
+        a:not(.btn){
+            &:hover{
+                color: $white;
+            }
+        }
+    }
 }
 @media all and (min-width: map-get($grid-breakpoints, 'sm')){
     .header-block{
@@ -98,6 +106,9 @@
         .header-block__title{
             font-size: 42px;
             line-height: 44px;
+        }
+        &_poll{
+            padding: 40px 0;
         }
     }
 }

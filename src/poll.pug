@@ -1,0 +1,65 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Enter Page
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+        main
+            .header-block.header-block_poll
+                .wrap-fluid
+                    .line.justify-content-center
+                        .column-12.column-sm-12.column-md-6.column-lg-4
+                            p Elzzup – сервис, не имеющий аналогов в мире! С его помощью возможно создавать задания и выполнять поручения в любой точке земного шара. 
+                            p Теперь для того, чтобы получить услугу, не обязательно платить деньги, достаточно выполнить поручение в ответ. 
+                                | Проект помогает заводить новые приятные знакомства по всему миру, выполнять поручения и делать добро. 
+                            p.mb-30 Помогите нам стать лучше! Для этого достаточно ответить на несколько вопросов
+                        .column-12.column-sm-12.column-md-6.column-lg-8.mt-md-0.mt-30
+                            form.form
+                                .line
+                                    .column-12.column-lg-6
+                                        .form-group
+                                            p.text-bold 1.	Есть ли у вас личный кабинет на сайте? 
+                                            .form-input
+                                                input.input(type="text" placeholder="")
+                                        .form-group
+                                            p.text-bold 2.	Удобно ли пользоваться сервисом? 
+                                            .form-input
+                                                input.input(type="text" placeholder="")
+                                        .form-group
+                                            p.text-bold 3.	Оцените по шкале от 1 до 10, насколько интересные заявки на сайте
+                                            .form-input
+                                                input.input(type="text" placeholder="")
+                                        .form-group
+                                            p.text-bold 4.	Выступали ли вы в роли заказчика или исполнителя
+                                            .form-input
+                                                input.input(type="text" placeholder="")
+                                    .column-12.column-lg-6.mt-lg-0.mt-30
+                                        .form-group
+                                            p.text-bold 5.	Интересно ли вам будет воспользоваться схемой бартера (услуга за услугу)
+                                            .form-input
+                                                input.input(type="text" placeholder="")
+                                        .form-group
+                                            p.text-bold 6.	Какие поручения вам было бы интересно выполнять? 
+                                            .form-input
+                                                input.input(type="text" placeholder="")
+                                        .form-group
+                                            p.text-bold 7.	Вы выполняете миссии сервиса?
+                                            .form-input
+                                                input.input(type="text" placeholder="")
+                                        .form-group
+                                            p.text-bold 8.	Чего по вашему мнению не хватает сервису?
+                                            .form-input
+                                                input.input(type="text" placeholder="")
+                                    .column-12.column-md-12.mt-30
+                                        button.btn.btn_cta.btn_large.btn_fullwidth.text-bold(type="submit") Отправить
+        include chunks/footer.pug
+        script(src="./js/util.js")
+        script(src="./js/tab.js")
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/app.min.js")

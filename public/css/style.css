@@ -5218,6 +5218,16 @@ a.item:hover .item__title {
   width: 150px;
 }
 
+.header-block_poll {
+  background: -webkit-gradient(linear, left bottom, left top, from(#00F3D4), to(#02A5AE));
+  background: -o-linear-gradient(bottom, #00F3D4 0%, #02A5AE 100%);
+  background: linear-gradient(0deg, #00F3D4 0%, #02A5AE 100%);
+}
+
+.header-block_poll a:not(.btn):not(.radio__label):hover {
+  color: #ffffff;
+}
+
 @media all and (min-width: 576px) {
   .header-block .btn-group .btn, .header-block .btn-group .radio__label {
     width: auto;
@@ -5238,6 +5248,9 @@ a.item:hover .item__title {
   .header-block .header-block__title {
     font-size: 42px;
     line-height: 44px;
+  }
+  .header-block_poll {
+    padding: 40px 0;
   }
 }
 
