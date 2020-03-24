@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Cabinet Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
   </head>
@@ -25,7 +26,7 @@
                 <div class="nav__item"><a class="nav__link" href="text.html">Правила проекта</a></div>
                 <div class="nav__item"><a class="nav__link" href="form.html">Регистрация</a></div>
                 <div class="nav__item"><a class="nav__link" href="form.html">Вход</a></div>
-                <div class="nav__item nav__item_dropdown"><a class="nav__link nav__link_cabinet nav__link_cabinet--active" href="cabinet.html" data-href="cabinet"> <img class="img-fluid" src="../img/demo-photo.png"/></a>
+                <div class="nav__item nav__item_dropdown"><a class="nav__link nav__link_cabinet nav__link_cabinet--active" href="cabinet.html" data-href="cabinet" style="background-image: url('../img/demo-photo-2.jpg')"> </a>
                   <ul class="dropdown" id="cabinet">
                     <li class="dropdown__item"><a class="dropdown__link" href="cabinet-info.html">Моя страница</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="request.html">Заявки</a></li>
@@ -43,7 +44,8 @@
       <div class="navbar-fullscreen">
         <div class="cabinet-info">
           <div class="wrap">
-            <div class="line"><a class="column cabinet-info__image" href="cabinet.html"><img class="img-fluid" src="../img/demo-photo.png"/></a>
+            <div class="line"><a class="column cabinet-info__image" href="cabinet.html">
+                <div class="cabinet-info__photo" style="background-image: url('../img/demo-photo-2.jpg')"></div></a>
               <div class="column cabinet-info__data"><a class="cabinet-info__name" href="cabinet.html">Катерина Мельник</a>
                 <div class="line">
                   <div class="column-4">
@@ -101,7 +103,7 @@
         </div>
         <div class="navigation-scroll">
           <div class="wrap">
-            <div class="nav navigation btn-group" id="faqTab" role="tablist"><a class="nav__link btn btn_border active navigation__btn-small" id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true">Регистрация</a><a class="nav__link btn btn_border navigation__btn-small" id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false">Выполнение миссий</a><a class="nav__link btn btn_border navigation__btn-small" id="type3-tab" data-toggle="tab" href="#type3" role="tab" aria-controls="type3" aria-selected="false">Валюта проекта</a><a class="nav__link btn btn_border navigation__btn-small" id="type4-tab" data-toggle="tab" href="#type4" role="tab" aria-controls="type4" aria-selected="false">Статус заявки        </a></div>
+            <div class="nav navigation btn-in-group" id="faqTab" role="tablist"><a class="nav__link btn btn_border active navigation__btn-small" id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true">Регистрация</a><a class="nav__link btn btn_border navigation__btn-small" id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false">Выполнение миссий</a><a class="nav__link btn btn_border navigation__btn-small" id="type3-tab" data-toggle="tab" href="#type3" role="tab" aria-controls="type3" aria-selected="false">Валюта проекта</a><a class="nav__link btn btn_border navigation__btn-small" id="type4-tab" data-toggle="tab" href="#type4" role="tab" aria-controls="type4" aria-selected="false">Статус заявки        </a></div>
           </div>
         </div>
         <div class="wrap">

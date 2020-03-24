@@ -4,6 +4,9 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Cabinet Page
+
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
         link(href='./css/style.css', rel='stylesheet')
 
@@ -18,14 +21,14 @@ html(lang="ru")
                             .cabinet-info.cabinet-info_full
                                 .line
                                     .column.cabinet-info__image
-                                        img.img-fluid(src="../img/demo-photo.png")
+                                        .cabinet-info__photo(style="background-image: url('../img/demo-photo.png')")
                                     .column.cabinet-info__data
                                         .cabinet-info__name Катерина Мельник
                                         .line
-                                            .column-4
+                                            .column-12.column-sm-4
                                                 p.cabinet-info-label Рейтинг
                                                 p.cabinet-info-value 4.8
-                                            .column-8
+                                            .column-12.column-sm-8
                                                 p.cabinet-info-label Собрано пазлов
                                                 p.cabinet-info-value 16 из 100
                         .column-12.column-xl-9.column-lg-8.column-md-7.cabinet-content
@@ -57,15 +60,15 @@ html(lang="ru")
                                     .column-6.column-lg-3.text-center
                                         .cabinet-info-value 34
                                         .cabinet-info-label Выполненно заявок
-                                    .column-6.column-lg-3.text-center
+                                    .column-6.column-lg-3.text-center.mt-15
                                         .cabinet-info-value 4.2
                                         .cabinet-info-label Рейтинг исполнителя
-                                    .column-6.column-lg-3.text-center
+                                    .column-6.column-lg-3.text-center.mt-15
                                         .cabinet-info-value 12
                                         .cabinet-info-label Создано заявок
                             .cabinet-block
                                 p.h3.text-bold.mt-30.mb-0 311 отзывов
-                                .nav.navigation.btn-group#reviewTab(role="tablist")
+                                .nav.navigation.btn-in-group#reviewTab(role="tablist")
                                     a.nav__link.btn.btn_border.active.navigation__btn-small(id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true") От заказчиков (195)
                                     a.nav__link.btn.btn_border.navigation__btn-small(id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false") От исполнителей (116)
                                 .tab-content#reviewTab

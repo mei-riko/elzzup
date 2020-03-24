@@ -4,6 +4,9 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Blog
+
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
         link(href='./css/style.css', rel='stylesheet')
 
@@ -17,7 +20,7 @@ html(lang="ru")
                         h1.text-bold.mb-0 Блог
                 .navigation-scroll
                     .wrap-fluid
-                        .navigation.btn-group
+                        .navigation.btn-in-group
                             a.btn.btn_border.navigation__btn-small.btn_border--active(href="#") Показать все
                             a.btn.btn_border.navigation__btn-small(href="#") Еда
                             a.btn.btn_border.navigation__btn-small(href="#") Сюрприз
@@ -27,24 +30,24 @@ html(lang="ru")
                         a.item.item_image-full(href="#")
                             .item__image
                             .item__title Опубликовано 3 новых миссии
-                            .item__introtext новости проекта
+                            .item__category новости проекта
                             .item__data.text-small Опубликовано сегодня
                         a.item.item_image(href="#")
                             .item__image(style="background-image: url('../img/image-demo.jpg');")
                             .item__info
                                 .item__title Новая миссия в категории «Путеводитель»
-                                .item__introtext новые миссии
+                                .item__category новые миссии
                                 .item__data.text-small Опубликовано 15 сентября 2019
                         a.item.item_image(href="#")
                             .item__image
                             .item__info
                                 .item__title Новая миссия в категории «Путеводитель»
-                                .item__introtext новые миссии
+                                .item__category новые миссии
                                 .item__data.text-small Опубликовано 15 сентября 2019
                         a.item.item_image-full(href="#")
                             .item__image(style="background-image: url('../img/image-demo.jpg');")
                             .item__title Опубликовано 3 новых миссии
-                            .item__introtext новости проекта
+                            .item__category новости проекта
                             .item__data.text-small Опубликовано сегодня
                         a.item.item_image(href="#")
                             .item__image(style="background-image: url('../img/image-demo.jpg');")
@@ -56,13 +59,13 @@ html(lang="ru")
                             .item__image(style="background-image: url('../img/image-demo.jpg');")
                             .item__info
                                 .item__title Новая миссия в категории «Путеводитель»
-                                .item__introtext новые миссии
+                                .item__category новые миссии
                                 .item__data.text-small Опубликовано 15 сентября 2019
                         a.item.item_image-full(href="#")
                             .item__image(style="background-image: url('../img/bg-demo.jpg');")
                             .item__info
                                 .item__title Новая миссия в категории «Путеводитель»
-                                .item__introtext новые миссии
+                                .item__category новые миссии
                                 .item__data.text-small Опубликовано 15 сентября 2019                
                         a.item.item_image(href="#")
                             .item__image(style="background-image: url('../img/image-demo.jpg');")

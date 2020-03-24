@@ -4,6 +4,9 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Cabinet Page
+
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
         link(href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css", rel="stylesheet")
         link(href='./css/style.css', rel='stylesheet')
@@ -47,7 +50,7 @@ html(lang="ru")
                                     .request__price.request__price_zz 122 ZZ
                                 .line.align-items-center
                                     .column.request__image
-                                        span.no-image AC
+                                        span.image(style="background-image: url('../img/demo-photo.png')")
                                     .column.request__info
                                         .request__author Анна Старовер
                                         .request__rating рейтинг пользователя — 4.8

@@ -4,6 +4,9 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Request Inside Page
+
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
         link(href='./css/style.css', rel='stylesheet')
 
@@ -87,7 +90,7 @@ html(lang="ru")
                                         .message.message_inside
                                             .message__row.line
                                                 .column.message__image
-                                                    img.img-fluid(src="../img/demo-photo.png")
+                                                    span.image(style="background-image: url('../img/demo-photo.png');")
                                                 .column.message__info
                                                     .message__name Катерина Мельник       
                                                     .message__data 7 сентября 2019

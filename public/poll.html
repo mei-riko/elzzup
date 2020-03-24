@@ -4,7 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Enter Page</title>
+    <title>Poll Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
   </head>
@@ -24,7 +25,7 @@
               <div class="nav__item"><a class="nav__link" href="text.html">Правила проекта</a></div>
               <div class="nav__item"><a class="nav__link" href="form.html">Регистрация</a></div>
               <div class="nav__item"><a class="nav__link" href="form.html">Вход</a></div>
-              <div class="nav__item nav__item_dropdown"><a class="nav__link nav__link_cabinet nav__link_cabinet--active" href="cabinet.html" data-href="cabinet"> <img class="img-fluid" src="../img/demo-photo.png"/></a>
+              <div class="nav__item nav__item_dropdown"><a class="nav__link nav__link_cabinet nav__link_cabinet--active" href="cabinet.html" data-href="cabinet" style="background-image: url('../img/demo-photo-2.jpg')"> </a>
                 <ul class="dropdown" id="cabinet">
                   <li class="dropdown__item"><a class="dropdown__link" href="cabinet-info.html">Моя страница</a></li>
                   <li class="dropdown__item"><a class="dropdown__link" href="request.html">Заявки</a></li>
@@ -42,7 +43,8 @@
     <div class="navbar-fullscreen">
       <div class="cabinet-info">
         <div class="wrap">
-          <div class="line"><a class="column cabinet-info__image" href="cabinet.html"><img class="img-fluid" src="../img/demo-photo.png"/></a>
+          <div class="line"><a class="column cabinet-info__image" href="cabinet.html">
+              <div class="cabinet-info__photo" style="background-image: url('../img/demo-photo-2.jpg')"></div></a>
             <div class="column cabinet-info__data"><a class="cabinet-info__name" href="cabinet.html">Катерина Мельник</a>
               <div class="line">
                 <div class="column-4">
@@ -96,16 +98,16 @@
       <div class="header-block header-block_poll">
         <div class="wrap-fluid">
           <div class="line justify-content-center">
-            <div class="column-12 column-sm-12 column-md-6 column-lg-4">
+            <div class="column-12 column-sm-12 column-md-10 column-lg-8">
               <p>Elzzup – сервис, не имеющий аналогов в мире! С его помощью возможно создавать задания и выполнять поручения в любой точке земного шара. </p>
               <p>
                 Теперь для того, чтобы получить услугу, не обязательно платить деньги, достаточно выполнить поручение в ответ. Проект помогает заводить новые приятные знакомства по всему миру, выполнять поручения и делать добро. </p>
               <p class="mb-30">Помогите нам стать лучше! Для этого достаточно ответить на несколько вопросов</p>
             </div>
-            <div class="column-12 column-sm-12 column-md-6 column-lg-8 mt-md-0 mt-30">
+            <div class="column-12 column-sm-12 column-md-10 column-lg-8 mt-60">
               <form class="form">
                 <div class="line">
-                  <div class="column-12 column-lg-6">
+                  <div class="column-12 column-lg-4">
                     <div class="form-group">
                       <p class="text-bold">1.	Есть ли у вас личный кабинет на сайте? </p>
                       <div class="form-input">
@@ -124,26 +126,28 @@
                         <input class="input" type="text" placeholder=""/>
                       </div>
                     </div>
+                  </div>
+                  <div class="column-12 column-lg-4 mt-lg-0 mt-30">
                     <div class="form-group">
                       <p class="text-bold">4.	Выступали ли вы в роли заказчика или исполнителя</p>
                       <div class="form-input">
                         <input class="input" type="text" placeholder=""/>
                       </div>
                     </div>
+                    <div class="form-group">
+                      <p class="text-bold">5.	Какие поручения вам было бы интересно выполнять? </p>
+                      <div class="form-input">
+                        <input class="input" type="text" placeholder=""/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <p class="text-bold">6.	Интересно ли вам будет воспользоваться схемой бартера (услуга за услугу)</p>
+                      <div class="form-input">
+                        <input class="input" type="text" placeholder=""/>
+                      </div>
+                    </div>
                   </div>
-                  <div class="column-12 column-lg-6 mt-lg-0 mt-30">
-                    <div class="form-group">
-                      <p class="text-bold">5.	Интересно ли вам будет воспользоваться схемой бартера (услуга за услугу)</p>
-                      <div class="form-input">
-                        <input class="input" type="text" placeholder=""/>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <p class="text-bold">6.	Какие поручения вам было бы интересно выполнять? </p>
-                      <div class="form-input">
-                        <input class="input" type="text" placeholder=""/>
-                      </div>
-                    </div>
+                  <div class="column-12 column-lg-4 mt-lg-0 mt-30">
                     <div class="form-group">
                       <p class="text-bold">7.	Вы выполняете миссии сервиса?</p>
                       <div class="form-input">
@@ -156,8 +160,6 @@
                         <input class="input" type="text" placeholder=""/>
                       </div>
                     </div>
-                  </div>
-                  <div class="column-12 column-md-12 mt-30">
                     <button class="btn btn_cta btn_large btn_fullwidth text-bold" type="submit">Отправить</button>
                   </div>
                 </div>

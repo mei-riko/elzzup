@@ -21,8 +21,7 @@ header.header
                     .nav__item
                         a.nav__link(href="form.html") Вход
                     .nav__item.nav__item_dropdown
-                        a.nav__link.nav__link_cabinet.nav__link_cabinet--active(href="cabinet.html" data-href="cabinet") 
-                            img.img-fluid(src="../img/demo-photo.png")
+                        a.nav__link.nav__link_cabinet.nav__link_cabinet--active(href="cabinet.html" data-href="cabinet" style="background-image: url('../img/demo-photo-2.jpg')") 
                         ul.dropdown#cabinet
                             li.dropdown__item
                                 a.dropdown__link(href="cabinet-info.html") Моя страница
@@ -43,7 +42,7 @@ header.header
         .wrap
             .line
                 a.column.cabinet-info__image(href="cabinet.html")
-                    img.img-fluid(src="../img/demo-photo.png")
+                    .cabinet-info__photo(style="background-image: url('../img/demo-photo-2.jpg')")
                 .column.cabinet-info__data
                     a.cabinet-info__name(href="cabinet.html") Катерина Мельник
                     .line

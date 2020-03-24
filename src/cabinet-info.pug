@@ -4,6 +4,9 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Cabinet Page
+
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
         link(href='./css/style.css', rel='stylesheet')
 
@@ -56,7 +59,7 @@ html(lang="ru")
                                         .cabinet-info-label Создано заявок
                             .cabinet-block
                                 p.h3.text-bold.mt-30.mb-0 311 отзывов
-                                .nav.navigation.btn-group#reviewTab(role="tablist")
+                                .nav.navigation.btn-in-group#reviewTab(role="tablist")
                                     a.nav__link.btn.btn_border.active.navigation__btn-small(id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true") От заказчиков (195)
                                     a.nav__link.btn.btn_border.navigation__btn-small(id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false") От исполнителей (116)
                                 .tab-content#reviewTab
@@ -64,7 +67,7 @@ html(lang="ru")
                                         .message.message_inside
                                             .message__row.line
                                                 .column.message__image
-                                                    img.img-fluid(src="../img/demo-photo.png")
+                                                    span.image(style="background-image: url('../img/demo-photo.png')")
                                                 .column.message__info
                                                     .message__name Катерина Мельник       
                                                     .message__data 7 сентября 2019

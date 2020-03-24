@@ -17,6 +17,16 @@
         overflow-x: hidden;      
     }
     // elements
+    .cabinet-info__photo{
+        border-radius: 50%;
+        background-color: $body-bg;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 60px;
+        height: 60px;
+    }
     .cabinet-info__pay{
         position: absolute;
         width: 50px;
@@ -66,6 +76,10 @@
                 left: 20px;
             }
         }
+        .cabinet-info__photo{
+            width: 90px;
+            height: 90px;
+        }
         .cabinet-info__data{
             flex: 0 0 calc(100% - 140px);
             max-width: 100%;
@@ -109,6 +123,10 @@
             right: -10px;
         }
         &_full{
+            & > .line{
+                max-width: 230px;
+                margin: 0 auto;
+            }
             .cabinet-info__image{
                 flex: 0 0 100%;
                 margin-bottom: 20px;
@@ -117,14 +135,30 @@
                     left: 20px;
                 }
             }
+            .cabinet-info__photo{
+                width: 190px;
+                height: 190px;
+            }
             .cabinet-info__data{
                 flex: 0 0 100%;
-                padding-left: 15px;
+                padding-left: 20px;
                 overflow-x: hidden;      
             }
         }
         .btn{
             padding: 6px 12px;
+        }
+    }
+}
+
+@media all and (min-width: map-get($grid-breakpoints, 'xl')){
+    .cabinet-info{
+        &_full{
+            & > .line{
+                max-width: calc(100% + 40px);
+                margin-left: -20px;
+                margin-right: -20px;
+            }
         }
     }
 }

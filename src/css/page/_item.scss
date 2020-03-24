@@ -26,6 +26,20 @@
     .item__introtext{
         color: $dark-grey;
     }
+    .item__category{
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: $blue2;
+        
+        &:before{
+            content: '#';
+            font-size: 10px;
+            font-weight: 600;
+            padding-right: 2px;
+            color: $blue2;
+        }
+    }
     .item__data{
         // display: none;
 

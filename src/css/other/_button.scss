@@ -6,7 +6,7 @@
     text-align: center;
     
     border-radius: 4px;
-    padding: 6px 10px 7px;
+    padding: 8px 14px 9px;
     line-height: 1;
 
     transition: .4s;
@@ -14,6 +14,7 @@
     &:hover, &:focus{
         text-decoration: none;
         outline: none;
+        box-shadow: none;
     }
     // Other
     &_primary{
@@ -173,13 +174,33 @@
     &-light{@extend .btn_white;}
     &-dark{@extend .btn_dark;}
 }
-.btn-group{
+.btn-in-group{
     @extend .line;
     margin-left: - 6px;
     margin-right: - 6px;
 
     .btn{
+        width: 100%;
         margin: 0 6px;
+
+        & + .btn{
+            margin-top: 10px;
+        }
+    }
+    &.navigation{
+        .btn + .btn{
+            margin-top: 0px;
+        }   
+    }
+}
+@media all and (min-width: map-get($grid-breakpoints, 'sm')){
+    .btn-in-group{
+        .btn{
+            width: auto;
+            & + .btn{
+                margin-top: 0;
+            }
+        }
     }
 }
 @media all and (min-width: map-get($grid-breakpoints, 'md')){

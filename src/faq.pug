@@ -4,6 +4,9 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Cabinet Page
+
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
         link(href='./css/style.css', rel='stylesheet')
 
@@ -17,7 +20,7 @@ html(lang="ru")
                         h1.text-bold.mb-0 Популярные вопросы
                 .navigation-scroll
                     .wrap
-                        .nav.navigation.btn-group#faqTab(role="tablist")
+                        .nav.navigation.btn-in-group#faqTab(role="tablist")
                             a.nav__link.btn.btn_border.active.navigation__btn-small(id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true") Регистрация
                             a.nav__link.btn.btn_border.navigation__btn-small(id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false") Выполнение миссий
                             a.nav__link.btn.btn_border.navigation__btn-small(id="type3-tab" data-toggle="tab" href="#type3" role="tab" aria-controls="type3" aria-selected="false") Валюта проекта

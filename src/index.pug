@@ -4,6 +4,9 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Index Page
+        
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
         link(href='./css/slick.css', rel='stylesheet')
         link(href='./css/slick-theme.css', rel='stylesheet')
@@ -18,7 +21,7 @@ html(lang="ru")
                     .column-12.column-lg-9
                         p.header-block__title Выполняй поручения и&nbsp;получай награду!
                         p.header-block__content Безграничные возможности поручения и выполнения заданий по всему миру с сервисом Elzzup. Зарегистрируйся на сервисе, общайся, находи новых друзей, откликайся на интересные заявки, выполняй миссии и получай вознаграждение
-                        .btn-group.justify-content-center
+                        .btn-in-group.justify-content-center
                             a.btn.btn_primary.btn_large-xl.text-bold(href="#") Создать аккаунт
                             a.btn.btn_white.btn_large-xl.scroll(href="#howitwork") Как это работает?
         .bg-light-blue.content-category
@@ -45,10 +48,10 @@ html(lang="ru")
                             .content-category__title Покупки
                     .column-12.column-lg-3.column-sm-6
                         a(href="#").content-category__item.content-category__item_photo-7
-                            .content-category__title Танцы
+                            .content-category__title Отдых
                     .column-12.column-lg-3.column-sm-6
                         a(href="#").content-category__item.content-category__item_photo-8
-                            .content-category__title Маски
+                            .content-category__title Развлечения
         .content-block.content-block_large
             .wrap-fluid.text-center
                 h2.content-title.text-bold Что такое Elzzup?
@@ -77,11 +80,11 @@ html(lang="ru")
                         .step__content
                             p.step__title Игровой процесс
                             p Стань участником увлекательной игры: выполняй квесты и миссии, создавай задания для игроков из других стран
-        .content-block.content-block_large.bg-dark.mt-0#howitwork
+        .content-block.content-block_large.content-block_work.bg-dark.mt-0#howitwork
             .wrap-fluid
-                .line.align-items-center.text-center.text-md-left
-                    .column-12.column-md-7.column-xl-6
-                        p.content-title.text-bold.mb-xl-30 Как это работает?
+                .line.justify-content-center.align-items-center.text-center.text-md-left
+                    .column-12.column-sm-9.column-md-7.column-xl-6
+                        p.content-title.text-bold.mb-lg-30 Как это работает?
                         p 
                             span.text-bold Регистрация: 
                             | Пройди простую процедуру регистрации и получи доступ к миссиям от Elzzup и заданиям других пользователей, а также создавай свои поручения. 
@@ -95,7 +98,7 @@ html(lang="ru")
                             span.text-bold Рейтинг: 
                             | За выполнение каждой заявки начисляются баллы, и ты повышаешь свой рейтинг. Чем выше рейтинг, тем больше заявок доступно для выполнения!
                     .column-12.column-md-5.column-xl-6.mt-30.mt-md-0
-                        img.img-fluid(src="../img/schema.png" width=400)
+                        img.img-fluid(src="../img/schema.png")
         .content-block.bg-light-blue.mt-0
             .wrap-fluid
                 .line.no-gutters.justify-content-between.align-items-center
