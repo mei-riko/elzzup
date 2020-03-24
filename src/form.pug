@@ -27,14 +27,12 @@ html(lang="ru")
                                 a.text-bold(href="#") ВКонтакте
                             form.form.form_user
                                 .form-group.form-group_first
-                                    .form-input
-                                        input.input(type="text" placeholder="Ваше имя")
-                                .form-group
-                                    .form-input
-                                        input.input(type="email" placeholder="E-mail *")
-                                .form-group
-                                    .form-input
-                                        input.input(type="password" placeholder="Пароль")
+                                    .form-label E-MAIL (ЛОГИН)
+                                    input.input(type="text")
+                                .form-group.has-error
+                                    .form-label ПАРОЛЬ
+                                    input.input(type="password")
+                                    p.help-block.help-block-error Необходимо заполнить «Пароль»
                                 button.btn.btn_cta.btn_large.btn_fullwidth.text-bold(type="submit") Зарегистироваться
                                 .form__agree.checkbox.text-small
                                     input.checkbox__input#policy(type="checkbox" checked="")

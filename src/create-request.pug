@@ -1,0 +1,117 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Cabinet Page
+
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href="./css/datepicker.min.css" rel="stylesheet")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css", rel="stylesheet")
+        link(href='./css/style.css', rel='stylesheet')
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        .content
+            include chunks/header.pug
+            main.content__inside
+                .wrap-fluid.wrap_cabinet
+                    .line
+                        .column-12.column-xl-3.column-lg-4.column-md-5.cabinet-sidebar
+                            include chunks/cabinet-sidebar.pug
+                        .column-12.column-xl-9.column-lg-8.column-md-7.cabinet-content
+                            form(id="request-create-form" action="" method="post")
+                                <div class="form-group field-requestcustomerform-type_id required has-success">
+                                    <label class="control-label" for="requestcustomerform-type_id">Тип</label>
+                                    <svg class="svg-inline--fa fa-question-circle fa-w-16 form-field-hint" title="Укажите к какой категории относится заявка" aria-labelledby="svg-inline--fa-title-1" data-prefix="fa" data-icon="question-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><title id="svg-inline--fa-title-1">Укажите к какой категории относится заявка</title><path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path></svg><!-- <i class="fa fa-question-circle form-field-hint" title="" data-original-title="Укажите к какой категории относится заявка"></i> -->
+                                    <select id="requestcustomerform-type_id" class="form-control" name="RequestCustomerForm[type_id]" aria-required="true" aria-invalid="false">
+                                        <option value="1">Фотография</option>
+                                        <option value="2">Путешествия</option>
+                                        <option value="3">Еда</option>
+                                        <option value="4">Любовь</option>
+                                        <option value="5">Встречи</option>
+                                        <option value="6">Покупки</option>
+                                        <option value="7">Отдых</option>
+                                        <option value="8">Развлечения</option>
+                                    </select>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+
+                                <div class="form-group field-requestcustomerform-city_id">
+                                    <label class="control-label" for="requestcustomerform-city_id">Место выполнения заявки</label>
+                                    <svg class="svg-inline--fa fa-question-circle fa-w-16 form-field-hint" title="Укажите город, в котором предполагается выполнение заявки" aria-labelledby="svg-inline--fa-title-2" data-prefix="fa" data-icon="question-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><title id="svg-inline--fa-title-2">Укажите город, в котором предполагается выполнение заявки</title><path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path></svg><!-- <i class="fa fa-question-circle form-field-hint" title="" data-original-title="Укажите город, в котором предполагается выполнение заявки"></i> -->
+                                    <select id="requestcustomerform-city_id" class="form-control" name="RequestCustomerForm[city_id]">
+                                        <option value="">Начните вводить название города...</option>
+                                        <option value=""></option>
+                                    </select>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+
+                                <div class="form-group field-requestcustomerform-language_id required">
+                                    <label class="control-label" for="requestcustomerform-language_id">Язык</label>
+                                    <svg class="svg-inline--fa fa-question-circle fa-w-16 form-field-hint" title="Укажите на каком языке будет составляться заявка" aria-labelledby="svg-inline--fa-title-3" data-prefix="fa" data-icon="question-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><title id="svg-inline--fa-title-3">Укажите на каком языке будет составляться заявка</title><path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path></svg><!-- <i class="fa fa-question-circle form-field-hint" title="" data-original-title="Укажите на каком языке будет составляться заявка"></i> -->
+                                    <select id="requestcustomerform-language_id" class="form-control" name="RequestCustomerForm[language_id]" aria-required="true">
+                                        <option value="1">Русский</option>
+                                        <option value="2">Английский</option>
+                                        <option value="3">Китайский</option>
+                                        <option value="4">Испанский</option>
+                                        <option value="5">Арабский</option>
+                                        <option value="6">Португальский</option>
+                                        <option value="7">Немецкий</option>
+                                        <option value="8">Французский</option>
+                                    </select>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+
+                                <div class="form-group field-requestcustomerform-performancedate">
+                                    <label class="control-label" for="requestcustomerform-performancedate">Выполнить до</label>
+
+                                    <div id="requestcustomerform-performancedate-datetime" class="input-group  date"><span class="input-group-addon kv-datetime-picker" title="Выбрать дату &amp; время"><svg class="svg-inline--fa fa-calendar fa-w-14 kv-dp-icon" aria-hidden="true" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg><!-- <i class="fa fa-calendar kv-dp-icon"></i> --></span><span class="input-group-addon kv-datetime-remove" title="Очистить поле"><svg class="svg-inline--fa fa-times fa-w-11 kv-dp-icon" aria-hidden="true" data-prefix="fa" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg=""><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fa fa-times kv-dp-icon"></i> --></span><input type="text" id="requestcustomerform-performancedate" class="form-control" name="RequestCustomerForm[performanceDate]" data-datetimepicker-source="requestcustomerform-performancedate-datetime" data-datetimepicker-type="2" data-krajee-datetimepicker="datetimepicker_fc96526c"></div>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+
+                                <div class="form-group field-requestcustomerform-reward_type required">
+                                    <label class="control-label" for="requestcustomerform-reward_type">Тип награды</label>
+
+                                    <select id="requestcustomerform-reward_type" class="form-control" name="RequestCustomerForm[reward_type]" aria-required="true">
+                                        <option value="11">Денежное вознаграждение</option>
+                                        <option value="12">Вещественное вознаграждение</option>
+                                        <option value="13">Нематериальное вознаграждение</option>
+                                    </select>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+
+                                <div class="form-group field-requestcustomerform-reward required">
+                                    <label class="control-label" for="requestcustomerform-reward">Награда</label>
+
+                                    <textarea id="requestcustomerform-reward" class="form-control" name="RequestCustomerForm[reward]" aria-required="true"></textarea>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+
+                                <div class="form-group field-requestcustomerform-text required">
+                                    <label class="control-label" for="requestcustomerform-text">Текст заявки</label>
+                                    <svg class="svg-inline--fa fa-question-circle fa-w-16 form-field-hint form-field-hint-focus" title="Детально опишите суть задачи, которую необходимо выполнить" aria-labelledby="svg-inline--fa-title-4" data-prefix="fa" data-icon="question-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><title id="svg-inline--fa-title-4">Детально опишите суть задачи, которую необходимо выполнить</title><path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path></svg><!-- <i class="fa fa-question-circle form-field-hint form-field-hint-focus" title="" data-original-title="Детально опишите суть задачи, которую необходимо выполнить"></i> -->
+                                    <textarea id="requestcustomerform-text" class="form-control" name="RequestCustomerForm[text]" rows="6" aria-required="true"></textarea>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                    <input type="file" id="w0" name="RequestFile[imageUpload]" multiple="" style="display:none"><div id="file-input-wrapper" class="file-input-wrapper file-input-multiple file-input-file"></div><button type="button" id="w0_load_btn" class="btn btn-sm btn-border no-uppercase" style="display: block;">Добавить фото...</button><p class="wanter-label d-block mt-2">Доступные форматы: gif, png, jpg, jpeg</p>            </div>
+                                    <div class="col-md-4">
+                                    <input type="file" id="w1" name="RequestFile[videoUpload]" multiple="" style="display:none"><div id="file-input-video" class="file-input-wrapper file-input-multiple file-input-file"></div><button type="button" id="w1_load_btn" class="btn btn-sm btn-border no-uppercase" style="display: block;">Добавить видео...</button><p class="wanter-label d-block mt-2">Доступные форматы: mp4, webm, ogg, mov</p>            </div>
+                                    <div class="col-md-4">
+                                    <input type="file" id="w2" name="RequestFile[documentUpload]" multiple="" style="display:none"><div id="file-input-document" class="file-input-wrapper file-input-multiple file-input-file"></div><button type="button" id="w2_load_btn" class="btn btn-sm btn-border no-uppercase" style="display: block;">Добавить документ...</button><p class="wanter-label d-block mt-2">Доступные форматы: doc, docx, pdf, txt, xls, xlsx</p>            </div>
+                                </div>
+                                <div class="form-group mt-30">
+                                    <button type="submit" class="btn btn_cta btn_large-xl" name="save-publish" value="save-publish">Сохранить и опубликовать</button>
+                                    <button type="submit" class="btn btn_border btn_large-xl" name="save" value="save">Сохранить</button>
+                                </div>
+            include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/datepicker.min.js")
+        
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js")
+        
+        script(src="./js/app.min.js")

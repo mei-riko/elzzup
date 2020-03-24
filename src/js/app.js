@@ -53,6 +53,40 @@ $(document).ready(() =>{
     if( $('.basic-select').length > 0 ) {
       $('.basic-select').select2();
     };
+    function formatType (type) {
+      if (!type.id) {
+        return type.text;
+      }
+      var baseUrl = "/img/type";
+      var $type = $(
+        '<span><img src="' + baseUrl + '/' + type.element.value.toLowerCase() + '.svg" class="img-type" /> ' + type.text + '</span>'
+      );
+      return $type;
+    };
+    if( $('#requestcustomerform-type_id').length > 0 ) {
+      $('#requestcustomerform-type_id').select2({
+        minimumResultsForSearch: -1,
+        templateResult: formatType,
+        theme: 'default select2-container--create'
+      });
+    };
+    if( $('#requestcustomerform-city_id').length > 0 ) {
+      $('#requestcustomerform-city_id').select2({
+        theme: 'default select2-container--create'
+      });
+    };  
+    if( $('#requestcustomerform-language_id').length > 0 ) {
+      $('#requestcustomerform-language_id').select2({
+        theme: 'default select2-container--create'
+      });
+    };
+    if( $('#requestcustomerform-reward_type').length > 0 ) {
+      $('#requestcustomerform-reward_type').select2({
+        minimumResultsForSearch: -1,
+        theme: 'default select2-container--create'
+      });
+    };    
+
     // Collapse Item
     $(".item.item_collapse").on("click", function(){
         $(this).toggleClass("item_collapse--active");

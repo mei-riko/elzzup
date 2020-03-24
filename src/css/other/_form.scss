@@ -266,4 +266,82 @@
             color: $dark-grey;
         }
     }
+    &--create{
+        .select2-results__option {
+            padding: 8px 20px;
+        }
+        .img-type{
+            width: 30px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.has-error{
+    position: relative;
+    .input{
+        border: 1px solid $red;
+    }
+    .help-block{
+        font-size: 12px;
+        color: $red;
+        position: absolute;
+        left: 8px;
+        bottom: 4px;
+    }
+}
+
+// Request Creat Form in PP
+
+form#request-create-form{
+    .form-group{
+        margin-bottom: 15px;
+    }
+
+    .form-field-hint{
+        width: 20px;
+        height: 14px;
+        margin-top: -2px;
+    }
+    .control-label{
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .form-control{
+        padding: 14px 20px;
+        font-size: 14px;
+        height: auto;
+        border-radius: 0;
+        border-color: $border-color;
+
+        &:hover, &:focus{
+            border-color: $blue2;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    .select2-container{
+        .select2-selection--single{
+            padding: 9px 14px;
+            font-size: 14px;
+            border-color: $border-color;
+            border-radius: 0;
+            height: auto;    
+            .select2-selection__arrow {
+                top: calc(50% - 13px);
+            }
+        }
+    }
+
+    .file-input-file ~ .btn {
+        @extend .btn;
+        @extend .btn_border;
+        @extend .btn_fullwidth;
+        border-radius: 0px;
+    }
+    .wanter-label{
+        @extend .text-small;
+    }
 }

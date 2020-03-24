@@ -482,7 +482,7 @@ a.link-inverse:hover {
   font-weight: 700;
 }
 
-.text-small, small, .small {
+.text-small, form#request-create-form .wanter-label, small, .small {
   font-size: 12px;
   line-height: 16px;
 }
@@ -2267,7 +2267,7 @@ body {
   }
 }
 
-.btn, .radio__label {
+.btn, .radio__label, form#request-create-form .file-input-file ~ .btn {
   border: none;
   outline: none;
   background: none;
@@ -2280,7 +2280,7 @@ body {
   transition: .4s;
 }
 
-.btn:hover, .radio__label:hover, .btn:focus, .radio__label:focus {
+.btn:hover, .radio__label:hover, form#request-create-form .file-input-file ~ .btn:hover, .btn:focus, .radio__label:focus, form#request-create-form .file-input-file ~ .btn:focus {
   text-decoration: none;
   outline: none;
   -webkit-box-shadow: none;
@@ -2307,25 +2307,25 @@ body {
   color: #ffffff;
 }
 
-.btn_border, .btn-secondary, .radio__label {
+.btn_border, .btn-secondary, .radio__label, form#request-create-form .file-input-file ~ .btn {
   color: #969696;
   border: 1px solid #C4C4C4;
   border-radius: 4px;
 }
 
-.btn_border:hover, .btn-secondary:hover, .radio__label:hover {
+.btn_border:hover, .btn-secondary:hover, .radio__label:hover, form#request-create-form .file-input-file ~ .btn:hover {
   color: #484848;
   background: #ffffff;
 }
 
-.btn_border--active, .btn_border.active, .active.btn-secondary, .active.radio__label {
+.btn_border--active, .btn_border.active, .active.btn-secondary, .active.radio__label, form#request-create-form .file-input-file ~ .active.radio__label, form#request-create-form .file-input-file ~ .active.btn {
   color: #252526;
   background: #00F3D4;
   border-color: #00F3D4;
   font-weight: bold;
 }
 
-.btn_border--active:hover, .btn_border.active:hover, .active.btn-secondary:hover, .active.radio__label:hover {
+.btn_border--active:hover, .btn_border.active:hover, .active.btn-secondary:hover, .active.radio__label:hover, form#request-create-form .file-input-file ~ .active.radio__label:hover, form#request-create-form .file-input-file ~ .active.btn:hover {
   color: #252526;
   background: #0effe0;
 }
@@ -2436,16 +2436,16 @@ body {
   background: #f6f6f6 url("../img/search.svg") no-repeat center/16px;
 }
 
-.btn.btn_fullwidth, .btn_fullwidth.radio__label {
+.btn.btn_fullwidth, .btn_fullwidth.radio__label, form#request-create-form .file-input-file ~ .btn {
   width: 100%;
   padding: 10px 20px;
 }
 
-.btn.btn_fullwidth + .btn_fullwidth, .btn_fullwidth.radio__label + .btn_fullwidth {
+.btn.btn_fullwidth + .btn_fullwidth, .btn_fullwidth.radio__label + .btn_fullwidth, form#request-create-form .file-input-file ~ .btn + .btn_fullwidth, form#request-create-form .file-input-file ~ .btn.btn_fullwidth + .btn, form#request-create-form .file-input-file.btn.btn_fullwidth + .btn, form#request-create-form .file-input-file ~ .btn_fullwidth.radio__label + .btn, form#request-create-form .file-input-file.btn_fullwidth.radio__label + .btn, form#request-create-form .file-input-file ~ .file-input-file ~ .btn + .btn, form#request-create-form .file-input-file ~ .file-input-file.btn + .btn {
   margin-top: 10px;
 }
 
-.btn.btn_large, .btn_large.radio__label {
+.btn.btn_large, .btn_large.radio__label, form#request-create-form .file-input-file ~ .btn_large.btn {
   padding: 14px 26px 15px;
 }
 
@@ -2454,24 +2454,24 @@ body {
   margin-right: -6px;
 }
 
-.btn-in-group .btn, .btn-in-group .radio__label {
+.btn-in-group .btn, .btn-in-group .radio__label, .btn-in-group form#request-create-form .file-input-file ~ .btn, form#request-create-form .btn-in-group .file-input-file ~ .btn {
   width: 100%;
   margin: 0 6px;
 }
 
-.btn-in-group .btn + .btn, .btn-in-group .radio__label + .btn, .btn-in-group .btn + .radio__label, .btn-in-group .radio__label + .radio__label {
+.btn-in-group .btn + .btn, .btn-in-group .radio__label + .btn, .btn-in-group .btn + .radio__label, .btn-in-group .radio__label + .radio__label, .btn-in-group form#request-create-form .file-input-file ~ .btn + .radio__label, form#request-create-form .btn-in-group .file-input-file ~ .btn + .radio__label, .btn-in-group form#request-create-form .file-input-file ~ .btn + .btn, form#request-create-form .btn-in-group .file-input-file ~ .btn + .btn, .btn-in-group form#request-create-form .file-input-file.btn + .btn, form#request-create-form .btn-in-group .file-input-file.btn + .btn, .btn-in-group form#request-create-form .file-input-file ~ .radio__label + .btn, form#request-create-form .btn-in-group .file-input-file ~ .radio__label + .btn, .btn-in-group form#request-create-form .file-input-file.radio__label + .btn, form#request-create-form .btn-in-group .file-input-file.radio__label + .btn, .btn-in-group form#request-create-form .file-input-file ~ .file-input-file ~ .btn + .btn, form#request-create-form .btn-in-group .file-input-file ~ .file-input-file ~ .btn + .btn {
   margin-top: 10px;
 }
 
-.btn-in-group.navigation .btn + .btn, .btn-in-group.navigation .radio__label + .btn, .btn-in-group.navigation .btn + .radio__label, .btn-in-group.navigation .radio__label + .radio__label {
+.btn-in-group.navigation .btn + .btn, .btn-in-group.navigation .radio__label + .btn, .btn-in-group.navigation .btn + .radio__label, .btn-in-group.navigation .radio__label + .radio__label, .btn-in-group.navigation form#request-create-form .file-input-file ~ .btn + .radio__label, form#request-create-form .btn-in-group.navigation .file-input-file ~ .btn + .radio__label, .btn-in-group.navigation form#request-create-form .file-input-file ~ .btn + .btn, form#request-create-form .btn-in-group.navigation .file-input-file ~ .btn + .btn, .btn-in-group.navigation form#request-create-form .file-input-file.btn + .btn, form#request-create-form .btn-in-group.navigation .file-input-file.btn + .btn, .btn-in-group.navigation form#request-create-form .file-input-file ~ .radio__label + .btn, form#request-create-form .btn-in-group.navigation .file-input-file ~ .radio__label + .btn, .btn-in-group.navigation form#request-create-form .file-input-file.radio__label + .btn, form#request-create-form .btn-in-group.navigation .file-input-file.radio__label + .btn, .btn-in-group.navigation form#request-create-form .file-input-file ~ .file-input-file ~ .btn + .btn, form#request-create-form .btn-in-group.navigation .file-input-file ~ .file-input-file ~ .btn + .btn {
   margin-top: 0px;
 }
 
 @media all and (min-width: 576px) {
-  .btn-in-group .btn, .btn-in-group .radio__label {
+  .btn-in-group .btn, .btn-in-group .radio__label, .btn-in-group form#request-create-form .file-input-file ~ .btn, form#request-create-form .btn-in-group .file-input-file ~ .btn {
     width: auto;
   }
-  .btn-in-group .btn + .btn, .btn-in-group .radio__label + .btn, .btn-in-group .btn + .radio__label, .btn-in-group .radio__label + .radio__label {
+  .btn-in-group .btn + .btn, .btn-in-group .radio__label + .btn, .btn-in-group .btn + .radio__label, .btn-in-group .radio__label + .radio__label, .btn-in-group form#request-create-form .file-input-file ~ .btn + .radio__label, form#request-create-form .btn-in-group .file-input-file ~ .btn + .radio__label, .btn-in-group form#request-create-form .file-input-file ~ .btn + .btn, form#request-create-form .btn-in-group .file-input-file ~ .btn + .btn, .btn-in-group form#request-create-form .file-input-file.btn + .btn, form#request-create-form .btn-in-group .file-input-file.btn + .btn, .btn-in-group form#request-create-form .file-input-file ~ .radio__label + .btn, form#request-create-form .btn-in-group .file-input-file ~ .radio__label + .btn, .btn-in-group form#request-create-form .file-input-file.radio__label + .btn, form#request-create-form .btn-in-group .file-input-file.radio__label + .btn, .btn-in-group form#request-create-form .file-input-file ~ .file-input-file ~ .btn + .btn, form#request-create-form .btn-in-group .file-input-file ~ .file-input-file ~ .btn + .btn {
     margin-top: 0;
   }
 }
@@ -2483,7 +2483,7 @@ body {
 }
 
 @media all and (min-width: 1400px) {
-  .btn, .radio__label {
+  .btn, .radio__label, form#request-create-form .file-input-file ~ .btn {
     border-radius: 6px;
     padding: 8px 16px 9px;
   }
@@ -2561,7 +2561,11 @@ body {
 
 .form .form-group + .form-group,
 .form .form-group + .btn,
-.form .form-group + .radio__label {
+.form .form-group + .radio__label,
+.form form#request-create-form .file-input-file ~ .form-group + .btn,
+form#request-create-form .form .file-input-file ~ .form-group + .btn,
+.form form#request-create-form .file-input-file.form-group + .btn,
+form#request-create-form .form .file-input-file.form-group + .btn {
   margin-top: 20px;
 }
 
@@ -2569,11 +2573,11 @@ body {
   padding: 10px 20px;
 }
 
-.form .form-group_btn .btn + *, .form .form-group_btn .radio__label + * {
+.form .form-group_btn .btn + *, .form .form-group_btn .radio__label + *, .form .form-group_btn form#request-create-form .file-input-file ~ .btn + *, form#request-create-form .form .form-group_btn .file-input-file ~ .btn + * {
   margin-top: 10px;
 }
 
-.form .btn + .checkbox, .form .radio__label + .checkbox {
+.form .btn + .checkbox, .form .radio__label + .checkbox, .form form#request-create-form .file-input-file ~ .btn + .checkbox, form#request-create-form .form .file-input-file ~ .btn + .checkbox {
   margin-top: 10px;
 }
 
@@ -2586,7 +2590,7 @@ body {
   border-top: 1px solid #bcbcbc;
 }
 
-.form_cabinet-create .form-group + .btn, .form_cabinet-create .form-group + .radio__label {
+.form_cabinet-create .form-group + .btn, .form_cabinet-create .form-group + .radio__label, .form_cabinet-create form#request-create-form .file-input-file ~ .form-group + .btn, form#request-create-form .form_cabinet-create .file-input-file ~ .form-group + .btn, .form_cabinet-create form#request-create-form .file-input-file.form-group + .btn, form#request-create-form .form_cabinet-create .file-input-file.form-group + .btn {
   margin-top: 0px;
 }
 
@@ -2608,7 +2612,7 @@ body {
   padding: 26px 10px;
 }
 
-.form_cabinet-create .btn, .form_cabinet-create .radio__label {
+.form_cabinet-create .btn, .form_cabinet-create .radio__label, .form_cabinet-create form#request-create-form .file-input-file ~ .btn, form#request-create-form .form_cabinet-create .file-input-file ~ .btn {
   margin-top: 0px;
   border-radius: 0px;
 }
@@ -2825,6 +2829,79 @@ body {
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background: #00F3D4;
   color: #484848;
+}
+
+.select2-container--create .select2-results__option {
+  padding: 8px 20px;
+}
+
+.select2-container--create .img-type {
+  width: 30px;
+  padding-right: 10px;
+}
+
+.has-error {
+  position: relative;
+}
+
+.has-error .input {
+  border: 1px solid #F42121;
+}
+
+.has-error .help-block {
+  font-size: 12px;
+  color: #F42121;
+  position: absolute;
+  left: 8px;
+  bottom: 4px;
+}
+
+form#request-create-form .form-group {
+  margin-bottom: 15px;
+}
+
+form#request-create-form .form-field-hint {
+  width: 20px;
+  height: 14px;
+  margin-top: -2px;
+}
+
+form#request-create-form .control-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form#request-create-form .form-control {
+  padding: 14px 20px;
+  font-size: 14px;
+  height: auto;
+  border-radius: 0;
+  border-color: #cedfda;
+}
+
+form#request-create-form .form-control:hover, form#request-create-form .form-control:focus {
+  border-color: #00C2A9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+form#request-create-form .select2-container .select2-selection--single {
+  padding: 9px 14px;
+  font-size: 14px;
+  border-color: #cedfda;
+  border-radius: 0;
+  height: auto;
+}
+
+form#request-create-form .select2-container .select2-selection--single .select2-selection__arrow {
+  top: calc(50% - 13px);
+}
+
+form#request-create-form .file-input-file ~ .radio__label, form#request-create-form .file-input-file ~ .btn {
+  border-radius: 0px;
 }
 
 .list {
@@ -3218,15 +3295,15 @@ body {
 .footer {
   background: #1d1d20;
   color: #ffffff;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
-.footer .text-small {
+.footer .text-small, .footer form#request-create-form .wanter-label, form#request-create-form .footer .wanter-label {
   font-size: 10px;
 }
 
 .footer .list .list__item + .list__item {
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .footer .list .list__link:hover .icon-svg path {
@@ -3260,11 +3337,12 @@ body {
 .footer .footer__logo {
   display: block;
   width: 100px;
-  height: 42px;
-  background: url("../img/logo-text-white.svg") no-repeat left 6px/contain;
+  height: 34px;
+  background: url("../img/logo-text-white.svg") no-repeat left top/contain;
 }
 
 .footer .footer__link {
+  font-size: 12px;
   line-height: 1.2;
   color: #bcbcbc;
 }
@@ -3335,7 +3413,7 @@ body {
   margin-top: 15px;
 }
 
-.cabinet-info .cabinet-info__bio + .btn, .cabinet-info .cabinet-info__bio + .radio__label {
+.cabinet-info .cabinet-info__bio + .btn, .cabinet-info .cabinet-info__bio + .radio__label, .cabinet-info form#request-create-form .file-input-file ~ .cabinet-info__bio + .btn, form#request-create-form .cabinet-info .file-input-file ~ .cabinet-info__bio + .btn, .cabinet-info form#request-create-form .file-input-file.cabinet-info__bio + .btn, form#request-create-form .cabinet-info .file-input-file.cabinet-info__bio + .btn {
   margin-top: 15px;
 }
 
@@ -3343,7 +3421,7 @@ body {
   margin-top: 15px;
 }
 
-.cabinet-info .btn, .cabinet-info .radio__label {
+.cabinet-info .btn, .cabinet-info .radio__label, .cabinet-info form#request-create-form .file-input-file ~ .btn, form#request-create-form .cabinet-info .file-input-file ~ .btn {
   padding: 2px 6px;
   margin-bottom: 6px;
   font-size: 12px;
@@ -3437,7 +3515,7 @@ body {
     padding-left: 20px;
     overflow-x: hidden;
   }
-  .cabinet-info .btn, .cabinet-info .radio__label {
+  .cabinet-info .btn, .cabinet-info .radio__label, .cabinet-info form#request-create-form .file-input-file ~ .btn, form#request-create-form .cabinet-info .file-input-file ~ .btn {
     padding: 6px 12px;
   }
 }
@@ -3516,7 +3594,7 @@ body {
   margin-right: 20px;
 }
 
-.cabinet-navigation .btn, .cabinet-navigation .radio__label {
+.cabinet-navigation .btn, .cabinet-navigation .radio__label, .cabinet-navigation form#request-create-form .file-input-file ~ .btn, form#request-create-form .cabinet-navigation .file-input-file ~ .btn {
   white-space: nowrap;
 }
 
@@ -3871,7 +3949,7 @@ body {
   border: none;
 }
 
-.cabinet-block_filter .tab-content .btn, .cabinet-block_filter .tab-content .radio__label {
+.cabinet-block_filter .tab-content .btn, .cabinet-block_filter .tab-content .radio__label, .cabinet-block_filter .tab-content form#request-create-form .file-input-file ~ .btn, form#request-create-form .cabinet-block_filter .tab-content .file-input-file ~ .btn {
   margin: 10px 5px 0;
 }
 
@@ -4318,7 +4396,7 @@ a.cabinet-block:hover .cabinet-block__title {
   border-top: 1px solid #f6f6f6;
 }
 
-.message-answer .btn, .message-answer .radio__label {
+.message-answer .btn, .message-answer .radio__label, .message-answer form#request-create-form .file-input-file ~ .btn, form#request-create-form .message-answer .file-input-file ~ .btn {
   height: 100%;
   width: 40px;
   background-size: 30px;
@@ -4687,7 +4765,7 @@ a.item:hover .item__title {
   margin: 0 6px;
 }
 
-.navigation .btn, .navigation .radio__label {
+.navigation .btn, .navigation .radio__label, .navigation form#request-create-form .file-input-file ~ .btn, form#request-create-form .navigation .file-input-file ~ .btn {
   font-size: 12px;
   white-space: nowrap;
 }
@@ -5256,12 +5334,12 @@ a.item:hover .item__title {
   color: #00F3D4;
 }
 
-.header-block .btn-group .btn, .header-block .btn-group .radio__label {
+.header-block .btn-group .btn, .header-block .btn-group .radio__label, .header-block .btn-group form#request-create-form .file-input-file ~ .btn, form#request-create-form .header-block .btn-group .file-input-file ~ .btn {
   width: 100%;
   padding: 12px 16px;
 }
 
-.header-block .btn-group .btn + .btn, .header-block .btn-group .radio__label + .btn, .header-block .btn-group .btn + .radio__label, .header-block .btn-group .radio__label + .radio__label {
+.header-block .btn-group .btn + .btn, .header-block .btn-group .radio__label + .btn, .header-block .btn-group .btn + .radio__label, .header-block .btn-group .radio__label + .radio__label, .header-block .btn-group form#request-create-form .file-input-file ~ .btn + .radio__label, form#request-create-form .header-block .btn-group .file-input-file ~ .btn + .radio__label, .header-block .btn-group form#request-create-form .file-input-file ~ .btn + .btn, form#request-create-form .header-block .btn-group .file-input-file ~ .btn + .btn, .header-block .btn-group form#request-create-form .file-input-file.btn + .btn, form#request-create-form .header-block .btn-group .file-input-file.btn + .btn, .header-block .btn-group form#request-create-form .file-input-file ~ .radio__label + .btn, form#request-create-form .header-block .btn-group .file-input-file ~ .radio__label + .btn, .header-block .btn-group form#request-create-form .file-input-file.radio__label + .btn, form#request-create-form .header-block .btn-group .file-input-file.radio__label + .btn, .header-block .btn-group form#request-create-form .file-input-file ~ .file-input-file ~ .btn + .btn, form#request-create-form .header-block .btn-group .file-input-file ~ .file-input-file ~ .btn + .btn {
   margin-top: 10px;
 }
 
@@ -5313,10 +5391,10 @@ a.item:hover .item__title {
 }
 
 @media all and (min-width: 576px) {
-  .header-block .btn-group .btn, .header-block .btn-group .radio__label {
+  .header-block .btn-group .btn, .header-block .btn-group .radio__label, .header-block .btn-group form#request-create-form .file-input-file ~ .btn, form#request-create-form .header-block .btn-group .file-input-file ~ .btn {
     width: auto;
   }
-  .header-block .btn-group .btn + .btn, .header-block .btn-group .radio__label + .btn, .header-block .btn-group .btn + .radio__label, .header-block .btn-group .radio__label + .radio__label {
+  .header-block .btn-group .btn + .btn, .header-block .btn-group .radio__label + .btn, .header-block .btn-group .btn + .radio__label, .header-block .btn-group .radio__label + .radio__label, .header-block .btn-group form#request-create-form .file-input-file ~ .btn + .radio__label, form#request-create-form .header-block .btn-group .file-input-file ~ .btn + .radio__label, .header-block .btn-group form#request-create-form .file-input-file ~ .btn + .btn, form#request-create-form .header-block .btn-group .file-input-file ~ .btn + .btn, .header-block .btn-group form#request-create-form .file-input-file.btn + .btn, form#request-create-form .header-block .btn-group .file-input-file.btn + .btn, .header-block .btn-group form#request-create-form .file-input-file ~ .radio__label + .btn, form#request-create-form .header-block .btn-group .file-input-file ~ .radio__label + .btn, .header-block .btn-group form#request-create-form .file-input-file.radio__label + .btn, form#request-create-form .header-block .btn-group .file-input-file.radio__label + .btn, .header-block .btn-group form#request-create-form .file-input-file ~ .file-input-file ~ .btn + .btn, form#request-create-form .header-block .btn-group .file-input-file ~ .file-input-file ~ .btn + .btn {
     margin-top: 0;
   }
 }
