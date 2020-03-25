@@ -5,39 +5,16 @@
     padding: 0;
     
     .form-input{
-        .form-input__date{
-            position: relative;
-            padding-left: 70px;
-            &:before{
-                position: absolute;
-                left: 20px;
-                top: calc(50% - 20px);
-
-                content:'';
-                display: block;
-                width: 40px;
-                height: 40px;
-                border-radius: 100%;
-                background: $body-bg url("../img/calendar.svg") no-repeat center / 20px;
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 10px;
+        outline: none;
+        &:focus{
+            &::placeholder{
+                opacity: 0;
             }
         }
-        .form-input__place{
-            position: relative;
-            padding-left: 70px;
-            &:before{
-                position: absolute;
-                left: 20px;
-                top: calc(50% - 20px);
-
-                content:'';
-                display: block;
-                width: 40px;
-                height: 40px;
-                border-radius: 100%;
-                background: $body-bg url("../img/map-marker.svg") no-repeat center / 20px;
-            }
-        }
-
         &_field{
             padding: 10px;
             border-radius: 4px;
@@ -52,14 +29,18 @@
         margin-bottom: 10px;
     }
     .form-group{
+        &_line{
+            @extend .line;
+            margin-right: -10px;
+            margin-left: -10px;
+            .column{
+                padding: 0 10px;
+            }
+        }
         &_first{
             .form-label{
                 margin-top: 0px;
             }
-        }
-        & + .form-group,
-        & + .btn{
-            margin-top: 20px;
         }
         &_btn{
             padding: 10px 20px;
@@ -67,45 +48,17 @@
                 margin-top: 10px;
             }
         }
+
+        & + .form-group,
+        & + .btn{
+            margin-top: 20px;
+        }
     }
 
     .btn + .checkbox{
         margin-top: 10px;
     }
 
-    &_cabinet-create{
-        // padding: 0 0 44px;
-        .cabinet-block{
-            margin: 0;
-        }
-        .form-group{
-            & + .form-group{
-                margin-top: 0;
-                border-top: 1px solid $grey;
-            }
-            & + .btn{
-                margin-top: 0px;
-            }
-            .form-input{
-                background: $white;
-            }
-            .radio-group{
-                padding: 10px 20px 0;
-            }
-            .input,
-            .textarea{
-                padding: 20px;
-            }
-            .input_place,
-            .input_date{
-                padding: 26px 10px;
-            }
-        }
-        .btn{
-            margin-top: 0px;
-            border-radius: 0px;
-        }
-    }
     &_user{
         // background: $dark-grey;
         color: $white;
@@ -142,13 +95,6 @@
     &:focus{
         &::placeholder{
             opacity: 0;
-        }
-    }
-    &.input_place,
-    &.input_date{
-        padding: 20px 10px;
-        &::placeholder{
-            font-size: 10px;
         }
     }
 }
@@ -238,6 +184,7 @@
     }
 }
 
+// Select2 Customization
 .select2{
     .select2-selection{
         &--single{
@@ -267,6 +214,16 @@
         }
     }
     &--create{
+        .select2-selection--single{
+            padding: 9px 14px;
+            font-size: 14px;
+            border-color: $border-color;
+            border-radius: 0;
+            height: auto;    
+            .select2-selection__arrow {
+                top: calc(50% - 13px);
+            }
+        }
         .select2-results__option {
             padding: 8px 20px;
         }
@@ -277,6 +234,8 @@
     }
 }
 
+
+// Error Fields
 .has-error{
     position: relative;
     .input{
@@ -292,12 +251,13 @@
 }
 
 // Request Creat Form in PP
-
 form#request-create-form{
+    width: 920px;
+    max-width: 100%;
+    margin-left: auto;
     .form-group{
         margin-bottom: 15px;
     }
-
     .form-field-hint{
         width: 20px;
         height: 14px;
@@ -320,18 +280,6 @@ form#request-create-form{
             border-color: $blue2;
             box-shadow: none;
             outline: none;
-        }
-    }
-    .select2-container{
-        .select2-selection--single{
-            padding: 9px 14px;
-            font-size: 14px;
-            border-color: $border-color;
-            border-radius: 0;
-            height: auto;    
-            .select2-selection__arrow {
-                top: calc(50% - 13px);
-            }
         }
     }
 

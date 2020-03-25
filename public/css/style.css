@@ -499,6 +499,12 @@ a.link-inverse:hover {
   text-align: left;
 }
 
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 .img-fluid {
   display: block;
   height: auto;
@@ -887,7 +893,7 @@ a.link-inverse:hover {
   margin-left: auto;
 }
 
-.line, .btn-in-group, .person {
+.line, .btn-in-group, .form .form-group_line, .person {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2406,13 +2412,6 @@ body {
   background: #252526;
 }
 
-.btn_cabinet-create {
-  font-size: 14px;
-  font-weight: bold;
-  width: 100%;
-  padding: 12px 15px;
-}
-
 .btn_message {
   padding: 0;
   width: 30px;
@@ -2507,38 +2506,32 @@ body {
   padding: 0;
 }
 
-.form .form-input .form-input__date {
-  position: relative;
-  padding-left: 70px;
+.form .form-input {
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 10px;
+  outline: none;
 }
 
-.form .form-input .form-input__date:before {
-  position: absolute;
-  left: 20px;
-  top: calc(50% - 20px);
-  content: '';
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background: #E3F6F0 url("../img/calendar.svg") no-repeat center/20px;
+.form .form-input:focus::-webkit-input-placeholder {
+  opacity: 0;
 }
 
-.form .form-input .form-input__place {
-  position: relative;
-  padding-left: 70px;
+.form .form-input:focus::-moz-placeholder {
+  opacity: 0;
 }
 
-.form .form-input .form-input__place:before {
-  position: absolute;
-  left: 20px;
-  top: calc(50% - 20px);
-  content: '';
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background: #E3F6F0 url("../img/map-marker.svg") no-repeat center/20px;
+.form .form-input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.form .form-input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.form .form-input:focus::placeholder {
+  opacity: 0;
 }
 
 .form .form-input_field {
@@ -2555,8 +2548,25 @@ body {
   margin-bottom: 10px;
 }
 
+.form .form-group_line {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.form .form-group_line .column, .form .form-group_line .person .person__image, .person .form .form-group_line .person__image, .form .form-group_line .person .person__info, .person .form .form-group_line .person__info {
+  padding: 0 10px;
+}
+
 .form .form-group_first .form-label {
   margin-top: 0px;
+}
+
+.form .form-group_btn {
+  padding: 10px 20px;
+}
+
+.form .form-group_btn .btn + *, .form .form-group_btn .radio__label + *, .form .form-group_btn form#request-create-form .file-input-file ~ .btn + *, form#request-create-form .form .form-group_btn .file-input-file ~ .btn + * {
+  margin-top: 10px;
 }
 
 .form .form-group + .form-group,
@@ -2569,52 +2579,8 @@ form#request-create-form .form .file-input-file.form-group + .btn {
   margin-top: 20px;
 }
 
-.form .form-group_btn {
-  padding: 10px 20px;
-}
-
-.form .form-group_btn .btn + *, .form .form-group_btn .radio__label + *, .form .form-group_btn form#request-create-form .file-input-file ~ .btn + *, form#request-create-form .form .form-group_btn .file-input-file ~ .btn + * {
-  margin-top: 10px;
-}
-
 .form .btn + .checkbox, .form .radio__label + .checkbox, .form form#request-create-form .file-input-file ~ .btn + .checkbox, form#request-create-form .form .file-input-file ~ .btn + .checkbox {
   margin-top: 10px;
-}
-
-.form_cabinet-create .cabinet-block {
-  margin: 0;
-}
-
-.form_cabinet-create .form-group + .form-group {
-  margin-top: 0;
-  border-top: 1px solid #bcbcbc;
-}
-
-.form_cabinet-create .form-group + .btn, .form_cabinet-create .form-group + .radio__label, .form_cabinet-create form#request-create-form .file-input-file ~ .form-group + .btn, form#request-create-form .form_cabinet-create .file-input-file ~ .form-group + .btn, .form_cabinet-create form#request-create-form .file-input-file.form-group + .btn, form#request-create-form .form_cabinet-create .file-input-file.form-group + .btn {
-  margin-top: 0px;
-}
-
-.form_cabinet-create .form-group .form-input {
-  background: #ffffff;
-}
-
-.form_cabinet-create .form-group .radio-group {
-  padding: 10px 20px 0;
-}
-
-.form_cabinet-create .form-group .input,
-.form_cabinet-create .form-group .textarea {
-  padding: 20px;
-}
-
-.form_cabinet-create .form-group .input_place,
-.form_cabinet-create .form-group .input_date {
-  padding: 26px 10px;
-}
-
-.form_cabinet-create .btn, .form_cabinet-create .radio__label, .form_cabinet-create form#request-create-form .file-input-file ~ .btn, form#request-create-form .form_cabinet-create .file-input-file ~ .btn {
-  margin-top: 0px;
-  border-radius: 0px;
 }
 
 .form_user {
@@ -2669,30 +2635,6 @@ form#request-create-form .form .file-input-file.form-group + .btn {
 
 .input:focus::placeholder {
   opacity: 0;
-}
-
-.input.input_place, .input.input_date {
-  padding: 20px 10px;
-}
-
-.input.input_place::-webkit-input-placeholder, .input.input_date::-webkit-input-placeholder {
-  font-size: 10px;
-}
-
-.input.input_place::-moz-placeholder, .input.input_date::-moz-placeholder {
-  font-size: 10px;
-}
-
-.input.input_place:-ms-input-placeholder, .input.input_date:-ms-input-placeholder {
-  font-size: 10px;
-}
-
-.input.input_place::-ms-input-placeholder, .input.input_date::-ms-input-placeholder {
-  font-size: 10px;
-}
-
-.input.input_place::placeholder, .input.input_date::placeholder {
-  font-size: 10px;
 }
 
 .textarea {
@@ -2831,6 +2773,18 @@ form#request-create-form .form .file-input-file.form-group + .btn {
   color: #484848;
 }
 
+.select2-container--create .select2-selection--single {
+  padding: 9px 14px;
+  font-size: 14px;
+  border-color: #cedfda;
+  border-radius: 0;
+  height: auto;
+}
+
+.select2-container--create .select2-selection--single .select2-selection__arrow {
+  top: calc(50% - 13px);
+}
+
 .select2-container--create .select2-results__option {
   padding: 8px 20px;
 }
@@ -2854,6 +2808,12 @@ form#request-create-form .form .file-input-file.form-group + .btn {
   position: absolute;
   left: 8px;
   bottom: 4px;
+}
+
+form#request-create-form {
+  width: 920px;
+  max-width: 100%;
+  margin-left: auto;
 }
 
 form#request-create-form .form-group {
@@ -2886,18 +2846,6 @@ form#request-create-form .form-control:hover, form#request-create-form .form-con
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: none;
-}
-
-form#request-create-form .select2-container .select2-selection--single {
-  padding: 9px 14px;
-  font-size: 14px;
-  border-color: #cedfda;
-  border-radius: 0;
-  height: auto;
-}
-
-form#request-create-form .select2-container .select2-selection--single .select2-selection__arrow {
-  top: calc(50% - 13px);
 }
 
 form#request-create-form .file-input-file ~ .radio__label, form#request-create-form .file-input-file ~ .btn {
@@ -3374,6 +3322,18 @@ form#request-create-form .file-input-file ~ .radio__label, form#request-create-f
   overflow-x: hidden;
 }
 
+.cabinet-info .cabinet-info__rating {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80px;
+  flex: 0 0 80px;
+}
+
+.cabinet-info .cabinet-info__result {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 120px;
+  flex: 0 0 120px;
+}
+
 .cabinet-info .cabinet-info__photo {
   border-radius: 50%;
   background-color: #E3F6F0;
@@ -3490,7 +3450,16 @@ form#request-create-form .file-input-file ~ .radio__label, form#request-create-f
   .cabinet-info .cabinet-info__pay {
     right: -10px;
   }
-  .cabinet-info_full > .line, .cabinet-info_full > .btn-in-group, .cabinet-info_full > .person {
+  .cabinet-info .btn, .cabinet-info .radio__label, .cabinet-info form#request-create-form .file-input-file ~ .btn, form#request-create-form .cabinet-info .file-input-file ~ .btn {
+    padding: 6px 12px;
+  }
+  .cabinet-info .cabinet-info__rating {
+    max-width: 35%;
+  }
+  .cabinet-info .cabinet-info__result {
+    max-width: 65%;
+  }
+  .cabinet-info_full > .line, .cabinet-info_full > .btn-in-group, .form .cabinet-info_full > .form-group_line, .cabinet-info_full > .person {
     max-width: 230px;
     margin: 0 auto;
   }
@@ -3515,13 +3484,10 @@ form#request-create-form .file-input-file ~ .radio__label, form#request-create-f
     padding-left: 20px;
     overflow-x: hidden;
   }
-  .cabinet-info .btn, .cabinet-info .radio__label, .cabinet-info form#request-create-form .file-input-file ~ .btn, form#request-create-form .cabinet-info .file-input-file ~ .btn {
-    padding: 6px 12px;
-  }
 }
 
 @media all and (min-width: 1400px) {
-  .cabinet-info_full > .line, .cabinet-info_full > .btn-in-group, .cabinet-info_full > .person {
+  .cabinet-info_full > .line, .cabinet-info_full > .btn-in-group, .form .cabinet-info_full > .form-group_line, .cabinet-info_full > .person {
     max-width: calc(100% + 40px);
     margin-left: -20px;
     margin-right: -20px;
@@ -3557,6 +3523,7 @@ form#request-create-form .file-input-file ~ .radio__label, form#request-create-f
 .cabinet-navigation .cabinet-navigation__link .title {
   font-size: 10px;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .cabinet-navigation .cabinet-navigation__link .alert {

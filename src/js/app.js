@@ -10,8 +10,9 @@ $(document).ready(() =>{
         return false;
     });
 
-    if ( $("#datepicker").length > 0 ){
-        $("#datepicker").datepicker();
+    // Datepicker
+    if ( $("#requestcustomerform-performancedate").length > 0 ){
+        $("#requestcustomerform-performancedate").datepicker();
     }
 
     // Slider
@@ -53,6 +54,7 @@ $(document).ready(() =>{
     if( $('.basic-select').length > 0 ) {
       $('.basic-select').select2();
     };
+
     function formatType (type) {
       if (!type.id) {
         return type.text;

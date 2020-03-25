@@ -87,8 +87,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     return false;
   });
 
-  if ((0, _jquery2.default)("#datepicker").length > 0) {
-    (0, _jquery2.default)("#datepicker").datepicker();
+  // Datepicker
+  if ((0, _jquery2.default)("#requestcustomerform-performancedate").length > 0) {
+    (0, _jquery2.default)("#requestcustomerform-performancedate").datepicker();
   }
 
   // Slider
@@ -126,6 +127,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   if ((0, _jquery2.default)('.basic-select').length > 0) {
     (0, _jquery2.default)('.basic-select').select2();
   };
+
   function formatType(type) {
     if (!type.id) {
       return type.text;
