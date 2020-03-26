@@ -183,6 +183,10 @@
         margin-right: 10px;
     }
 }
+.wanter-label{
+    @extend .text-small;
+    @extend .text-grey;
+}
 
 // Select2 Customization
 .select2{

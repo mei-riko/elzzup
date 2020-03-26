@@ -470,7 +470,7 @@ a.link-inverse:hover {
   color: #252526;
 }
 
-.text-grey {
+.text-grey, .wanter-label {
   color: #bcbcbc;
 }
 
@@ -482,7 +482,7 @@ a.link-inverse:hover {
   font-weight: 700;
 }
 
-.text-small, form#request-create-form .wanter-label, small, .small {
+.text-small, .wanter-label, form#request-create-form .wanter-label, small, .small {
   font-size: 12px;
   line-height: 16px;
 }
@@ -3246,7 +3246,7 @@ form#request-create-form .file-input-file ~ .radio__label, form#request-create-f
   padding: 40px 0;
 }
 
-.footer .text-small, .footer form#request-create-form .wanter-label, form#request-create-form .footer .wanter-label {
+.footer .text-small, .footer .wanter-label, .footer form#request-create-form .wanter-label, form#request-create-form .footer .wanter-label {
   font-size: 10px;
 }
 
@@ -4363,7 +4363,7 @@ a.cabinet-block:hover .cabinet-block__title {
   border-top: 1px solid #f6f6f6;
 }
 
-.message-answer .btn, .message-answer .radio__label, .message-answer form#request-create-form .file-input-file ~ .btn, form#request-create-form .message-answer .file-input-file ~ .btn {
+.message-answer .btn.btn_message, .message-answer .btn_message.radio__label, .message-answer form#request-create-form .file-input-file ~ .btn_message.btn, form#request-create-form .message-answer .file-input-file ~ .btn_message.btn {
   height: 100%;
   width: 40px;
   background-size: 30px;
@@ -4442,6 +4442,9 @@ a.cabinet-block:hover .cabinet-block__title {
   .message-answer {
     position: unset;
     border: 1px solid #cedfda;
+  }
+  .form .message-answer {
+    position: relative;
   }
 }
 

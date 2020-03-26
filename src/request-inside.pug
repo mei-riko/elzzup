@@ -112,11 +112,14 @@ html(lang="ru")
                                                     .message__item Ориентированных на сайтах и слова. Разной частотой, имеется разница в книгопечатанииdiv
                                                 .column.message__image
                                                     span.no-image ЮМ
-                                        .message-answer
-                                            form.form
-                                                textarea.textarea.textarea_message(rows="2" placeholder="Сообщение")
-                                                button.btn.btn_message
-                                        p.text-right.text-small.text-grey.mt-15 Принимаются файлы формата: gif, png, jpg, jpeg
+                                        form.form
+                                            .message-answer
+                                                    button.btn.btn_message(type="sumbit")
+                                                    textarea.textarea.textarea_message(rows="2" placeholder="Сообщение")
+                                            input(type="file" id="w0" name="RequestFile[imageUpload]" multiple="" style="display:none")
+                                            #file-input-wrapper.file-input-wrapper.file-input-multiple.file-input-file
+                                            button(type="button" id="w0_load_btn" class="btn btn_border mt-15") Добавить фото
+                                            p.wanter-label.mt-15 Доступные форматы: gif, png, jpg, jpeg
                                     .tab-pane.fade#type2(role="tabpanel" aria-labelledby="type2-tab")
                                         .person-list
                                             .line

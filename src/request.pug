@@ -19,7 +19,11 @@ html(lang="ru")
                     include chunks/cabinet-sidebar.pug
                 .column-12.column-xl-9.column-lg-8.column-md-7.cabinet-content
                     .cabinet-block.cabinet-block_alert
-                        p Отличный день! Самое время кому-то помочь.
+                        .line.align-items-center
+                            .column-12.column-lg-6.column-xl-8.text-lg-left
+                                p.mb-0 Отличный день! Самое время кому-то помочь
+                            .column-12.column-lg-6.column-xl-4.text-lg-right
+                                a.btn.btn_white(href="#") Создать заявку
                     .cabinet-block.cabinet-block_filter
                         .nav.tabs(role="tablist")
                             a.tabs__item.nav__link.active(id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true") Заказчик

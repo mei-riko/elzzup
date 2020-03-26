@@ -169,7 +169,7 @@
     background: $white;
     border-top: 1px solid $light-grey;
 
-    .btn{
+    .btn.btn_message{
         height: 100%;
         width: 40px;
         background-size: 30px;
@@ -178,6 +178,7 @@
         top: 0;
     }
 }
+
 .message-read-all{
     font-weight: bold;
     font-size: 12px;
@@ -264,5 +265,10 @@
     .message-answer{
         position: unset;
         border: 1px solid $border-color;
+    }
+    .form{
+        .message-answer{
+            position: relative;
+        }
     }
 }

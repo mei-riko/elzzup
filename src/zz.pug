@@ -20,6 +20,15 @@ html(lang="ru")
                         .column-12.column-xl-3.column-lg-4.column-md-5.cabinet-sidebar
                             include chunks/cabinet-sidebar.pug
                         .column-12.column-xl-9.column-lg-8.column-md-7.cabinet-content
+                            .cabinet-block
+                                p.h3.text-bold Информация по счету
+                            .cabinet-block
+                                .line
+                                    .column.column-6.column-xl-5
+                                        p.mb-0 Баланс счета
+                                        p.text-small.text-grey С учетом операций, находящихся в обработке
+                                    .column.column-6.column-xl-5
+                                        p 144 ZZ
                             .cabinet-block.cabinet-block--last
                                 form.form
                                     .form-group.form-group_line
@@ -30,6 +39,7 @@ html(lang="ru")
                                         .column.column-12.column-xl-2
                                             a.btn.btn_cta.btn_large.btn_fullwidth(href="#") Пополнить
                                     p.text-small.text-grey Текущий курс обмена 1 руб. = 12 ZZ
+                            p.h5.text-bold История действия со счетом
                             a.message.message_alert(href="#")
                                 .message__data 12 сент 2019 
                                 .message__name + 100 ZZ

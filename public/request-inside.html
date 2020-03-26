@@ -186,13 +186,16 @@
                         <div class="column message__image"><span class="no-image">ЮМ</span></div>
                       </div>
                     </div>
-                    <div class="message-answer">
-                      <form class="form">
+                    <form class="form">
+                      <div class="message-answer">
+                        <button class="btn btn_message" type="sumbit"></button>
                         <textarea class="textarea textarea_message" rows="2" placeholder="Сообщение"></textarea>
-                        <button class="btn btn_message"></button>
-                      </form>
-                    </div>
-                    <p class="text-right text-small text-grey mt-15">Принимаются файлы формата: gif, png, jpg, jpeg</p>
+                      </div>
+                      <input type="file" id="w0" name="RequestFile[imageUpload]" multiple="" style="display:none"/>
+                      <div class="file-input-wrapper file-input-multiple file-input-file" id="file-input-wrapper"></div>
+                      <button class="btn btn_border mt-15" type="button" id="w0_load_btn">Добавить фото</button>
+                      <p class="wanter-label mt-15">Доступные форматы: gif, png, jpg, jpeg</p>
+                    </form>
                   </div>
                   <div class="tab-pane fade" id="type2" role="tabpanel" aria-labelledby="type2-tab">
                     <div class="person-list">
