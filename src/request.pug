@@ -33,92 +33,70 @@ html(lang="ru")
                             .tab-pane.fade.active.show#type1(role="tabpanel" aria-labelledby="type1-tab")
                                 .navigation-scroll
                                     .navigation.btn-group.justify-content-md-center
-                                        select.basic-select(name="place")
-                                            option(value="Любой город") Фильтр 1
-                                            option(value="1") Москва
-                                            option(value="2") Санкт-Петербург
-                                        select.basic-select(name="place")
-                                            option(value="Любой город") Фильтр 2
-                                            option(value="1") Москва
-                                            option(value="2") Санкт-Петербург
-                                        select.basic-select(name="place")
-                                            option(value="Любой город") Фильтр 3
-                                            option(value="1") Москва
-                                            option(value="2") Санкт-Петербург
+                                        .navigation__item
+                                            label.wanter-label Номер заявки
+                                            input.input(type="text")
+                                        .navigation__item
+                                            label.wanter-label Место выполнения
+                                            select.basic-select(name="place")
+                                                option(value="Любой город") Фильтр 1
+                                                option(value="1") Москва
+                                                option(value="2") Санкт-Петербург
+                                        .navigation__item
+                                            label.wanter-label Тип
+                                            select.basic-select(name="place")
+                                                option(value="Любой город") Фильтр 2
+                                                option(value="1") Москва
+                                                option(value="2") Санкт-Петербург
+                                        .navigation__item
+                                            label.wanter-label Статус
+                                            select.basic-select(name="place")
+                                                option(value="Любой город") Фильтр 3
+                                                option(value="1") Москва
+                                                option(value="2") Санкт-Петербург
+                                .btn-in-group.justify-content-center
+                                    .btn.btn_border Очистить фильтр
+                                    .btn.btn_primary Применить фильтр
                             .tab-pane.fade#type2(role="tabpanel" aria-labelledby="type2-tab")
                                 p 2
                     .request-block
-                        .request-column
-                            .request
-                                .request__image-preview
-                                    .request__price.request__price_zz 122 ZZ
-                                .line.align-items-center
-                                    .column.request__image
-                                        span.image(style="background-image: url('../img/demo-photo.png')")
-                                    .column.request__info
-                                        .request__author Анна Старовер
-                                        .request__rating рейтинг пользователя — 4.8
-                                        .icon-category.icon-category_mask
-                                .request__content
-                                    .request__location РОССИЯ, САНКТ-ПЕТЕРБУРГ
-                                    .request__title Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                    .request__introtext Совсем необязательно сегодня существует несколько вариантов 
-                                        | lorem ipsum. Сегодня существует несколько вариантов lorem к обитателям 
-                                        | водоемов такое. Этот, несмотря на кириллице значительно.
-                                    .request__duration Осталось до окончания: 
-                                        span.text-bold 5 дн. 18 часов
-                            .request.request_no-preview
-                                .line
-                                    .column.request__image
-                                        span.no-image ЮМ
-                                    .column.request__info
-                                        .request__author Анна Старовер
-                                        .request__rating рейтинг пользователя — 4.8
-                                        .icon-category.icon-category_gift
-                                .request__content
-                                    .request__location РОССИЯ, САНКТ-ПЕТЕРБУРГ
-                                    .request__duration Осталось до окончания: 
-                                        span.text-bold 5 дн. 18 часов
-                                    .request__title Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                    .request__introtext Совсем необязательно сегодня существует несколько вариантов 
-                                        | lorem ipsum. Сегодня существует несколько вариантов lorem к обитателям 
-                                        | водоемов такое. Этот, несмотря на кириллице значительно.
-                                    .request__price.request__price_zz 122 ZZ
-                            .request.request_no-preview
-                                .line
-                                    .column.request__image
-                                        span.no-image ЮМ
-                                    .column.request__info
-                                        .request__author Анна Старовер
-                                        .request__rating рейтинг пользователя — 4.8
-                                        .icon-category.icon-category_hand
-                                .request__content
-                                    .request__location РОССИЯ, САНКТ-ПЕТЕРБУРГ
-                                    .request__duration Осталось до окончания: 
-                                        span.text-bold 5 дн. 18 часов
-                                    .request__title Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                    .request__introtext Совсем необязательно сегодня существует несколько вариантов 
-                                        | lorem ipsum. Сегодня существует несколько вариантов lorem к обитателям 
-                                        | водоемов такое. Этот, несмотря на кириллице значительно.
-                                    .request__price.request__price_zz 122 ZZ
-                            .request
-                                .request__image-preview(style="background-image:url(../img/image-6.jpg)")
-                                    .request__price.request__price_zz 122 ZZ
-                                .line.align-items-center
-                                    .column.request__image
-                                        span.no-image AC
-                                    .column.request__info
-                                        .request__author Анна Старовер
-                                        .request__rating рейтинг пользователя — 4.8
-                                        .icon-category.icon-category_heart
-                                .request__content
-                                    .request__location РОССИЯ, САНКТ-ПЕТЕРБУРГ
-                                    .request__title Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                    .request__introtext Совсем необязательно сегодня существует несколько вариантов 
-                                        | lorem ipsum. Сегодня существует несколько вариантов lorem к обитателям 
-                                        | водоемов такое. Этот, несмотря на кириллице значительно.
-                                    .request__duration Осталось до окончания: 
-                                        span.text-bold 5 дн. 18 часов
+                        .card.mb-5
+                            .card-body
+                                h3.card-title
+                                    a(href="#") Прислать открытку с видом на г...
+                                    |  (ID: 8)
+                                .row.card-info
+                                    .info.col-sm-6.col-md-6.col-lg-2
+                                        span.text-bold Тип
+                                        | Прочее
+                                    .info.col-sm-6.col-md-6.col-lg-2
+                                        span.text-bold Подписчиков
+                                        | 0
+                                    .info.address.col-sm-6.col-md-6.col-lg-4
+                                        span.text-bold Место выполнения заявки
+                                        | Румыния, Брашов
+                                    .info.col-sm-6.col-md-6.col-lg-4
+                                        span.text-bold Нематериальное вознаграждение
+                                        | Вечная благодарность
+                                    .info.col-sm-6.col-md-6.col-lg-2
+                                        span.text-bold Статус
+                                        p.request-status.request-status--create создана
+                                    .info.col-sm-6.col-md-6.col-lg-2
+                                        span.text-bold Исполнитель
+                                        | -
+                                    .info.col-sm-6.col-md-6.col-lg-4
+                                        span.text-bold Осталось до окончания
+                                        .left-time 11 д.
+                                    .info.col-sm-6.col-md-6.col-lg-4
+                                        span.text-bold Создана
+                                        | 14.04.2020
+                                p.card-text Прислать открытку с видом на город
+                                .info.info_link
+                                    a(href="#") Посмотреть
+                                    a(href="#") Использовать как шаблон
+                                    a(href="#") Опубликовать
+                                    a(href="#") Изменить
+                                    a(href="#") Удалить
         include chunks/footer.pug
         script(src="./js/util.js")
         script(src="./js/tab.js")

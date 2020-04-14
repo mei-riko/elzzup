@@ -25,8 +25,10 @@
         max-width: calc(100% + 40px);
     }
     .request-block{
-        margin-left: -20px;
-        margin-right: -20px;
+        padding: 0;
+        margin: 0;
+        // margin-left: -20px;
+        // margin-right: -20px;
         .request{
             margin-bottom: 20px;
             padding-bottom: 20px;
@@ -301,9 +303,8 @@ a.cabinet-block{
         }
         
         .request-block{
-            margin: 0;
-            padding: 20px;
-            border: 1px solid $border-color;
+            // padding: 20px;
+            // border: 1px solid $border-color;
             .request{
                 border-bottom: 1px solid $border-color;
             }

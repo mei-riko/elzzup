@@ -1,0 +1,54 @@
+.card{
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    .card-body{
+        padding: 30px;
+    }
+    .card-title{
+        margin-bottom: 30px;
+        a{
+            font-weight: 700;
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+    .card-info{
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 10px;
+        .info{
+            margin-bottom: 15px;
+        }
+        span.text-bold{
+            display: block;
+            color: $grey;
+            font-weight: 300;
+            line-height: 1.2;
+            margin-bottom: 4px;
+        }
+    }
+    .info{
+        &_link{
+            font-size: 12px;
+            line-height: 18px;
+            
+            a{
+                color: $grey;
+                text-decoration: underline;
+                &:hover{
+                    color: $red;
+                }
+                &:not(:last-child){
+                    &:after{
+                        content: '|';
+                        margin: 0 10px;
+                        color: $grey;
+                    }
+                }
+            }
+        }
+    }
+}
+

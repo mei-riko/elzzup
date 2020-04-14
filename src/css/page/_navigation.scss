@@ -6,13 +6,32 @@
     overflow-x: auto;
     padding: 20px 0;
 
+    .navigation__item{
+        display: flex;
+        flex-direction: column;
+    }
+
     &.btn-group{
         padding: 12px 0px;
+        .input{
+            min-width: 150px;
+            width: calc(100% - 12px);
+            margin: 0 6px;
+        }
         .select2-container{
             margin: 0 6px;
         }
+        .wanter-label{
+            margin: 0 6px 6px 6px;
+        }
     }
     
+    .input{
+        border: 1px solid #C4C4C4;
+        border-radius: 4px;
+        height: 30px;
+        padding: 0 8px;
+    }
     .btn{
         font-size: 12px;
         white-space: nowrap;

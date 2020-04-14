@@ -170,22 +170,39 @@
               <div class="tab-pane fade active show" id="type1" role="tabpanel" aria-labelledby="type1-tab">
                 <div class="navigation-scroll">
                   <div class="navigation btn-group justify-content-md-center">
-                    <select class="basic-select" name="place">
-                      <option value="Любой город">Фильтр 1</option>
-                      <option value="1">Москва</option>
-                      <option value="2">Санкт-Петербург</option>
-                    </select>
-                    <select class="basic-select" name="place">
-                      <option value="Любой город">Фильтр 2</option>
-                      <option value="1">Москва</option>
-                      <option value="2">Санкт-Петербург</option>
-                    </select>
-                    <select class="basic-select" name="place">
-                      <option value="Любой город">Фильтр 3</option>
-                      <option value="1">Москва</option>
-                      <option value="2">Санкт-Петербург</option>
-                    </select>
+                    <div class="navigation__item">
+                      <label class="wanter-label">Номер заявки</label>
+                      <input class="input" type="text"/>
+                    </div>
+                    <div class="navigation__item">
+                      <label class="wanter-label">Место выполнения</label>
+                      <select class="basic-select" name="place">
+                        <option value="Любой город">Фильтр 1</option>
+                        <option value="1">Москва</option>
+                        <option value="2">Санкт-Петербург</option>
+                      </select>
+                    </div>
+                    <div class="navigation__item">
+                      <label class="wanter-label">Тип</label>
+                      <select class="basic-select" name="place">
+                        <option value="Любой город">Фильтр 2</option>
+                        <option value="1">Москва</option>
+                        <option value="2">Санкт-Петербург</option>
+                      </select>
+                    </div>
+                    <div class="navigation__item">
+                      <label class="wanter-label">Статус</label>
+                      <select class="basic-select" name="place">
+                        <option value="Любой город">Фильтр 3</option>
+                        <option value="1">Москва</option>
+                        <option value="2">Санкт-Петербург</option>
+                      </select>
+                    </div>
                   </div>
+                </div>
+                <div class="btn-in-group justify-content-center">
+                  <div class="btn btn_border">Очистить фильтр</div>
+                  <div class="btn btn_primary">Применить фильтр</div>
                 </div>
               </div>
               <div class="tab-pane fade" id="type2" role="tabpanel" aria-labelledby="type2-tab">
@@ -194,90 +211,25 @@
             </div>
           </div>
           <div class="request-block">
-            <div class="request-column">
-              <div class="request">
-                <div class="request__image-preview">
-                  <div class="request__price request__price_zz">122 ZZ</div>
-                </div>
-                <div class="line align-items-center">
-                  <div class="column request__image"><span class="image" style="background-image: url('../img/demo-photo.png')"></span></div>
-                  <div class="column request__info">
-                    <div class="request__author">Анна Старовер</div>
-                    <div class="request__rating">рейтинг пользователя — 4.8</div>
-                    <div class="icon-category icon-category_mask"></div>
+            <div class="card mb-5">
+              <div class="card-body">
+                <h3 class="card-title"><a href="#">Прислать открытку с видом на г...</a> (ID: 8)</h3>
+                <div class="row card-info">
+                  <div class="info col-sm-6 col-md-6 col-lg-2"><span class="text-bold">Тип</span>Прочее</div>
+                  <div class="info col-sm-6 col-md-6 col-lg-2"><span class="text-bold">Подписчиков</span>0</div>
+                  <div class="info address col-sm-6 col-md-6 col-lg-4"><span class="text-bold">Место выполнения заявки</span>Румыния, Брашов</div>
+                  <div class="info col-sm-6 col-md-6 col-lg-4"><span class="text-bold">Нематериальное вознаграждение</span>Вечная благодарность</div>
+                  <div class="info col-sm-6 col-md-6 col-lg-2"><span class="text-bold">Статус</span>
+                    <p class="request-status request-status--create">создана</p>
                   </div>
-                </div>
-                <div class="request__content">
-                  <div class="request__location">РОССИЯ, САНКТ-ПЕТЕРБУРГ</div>
-                  <div class="request__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-                  <div class="request__introtext">
-                    Совсем необязательно сегодня существует несколько вариантов lorem ipsum. Сегодня существует несколько вариантов lorem к обитателям 
-                    водоемов такое. Этот, несмотря на кириллице значительно.
+                  <div class="info col-sm-6 col-md-6 col-lg-2"><span class="text-bold">Исполнитель</span>-</div>
+                  <div class="info col-sm-6 col-md-6 col-lg-4"><span class="text-bold">Осталось до окончания</span>
+                    <div class="left-time">11 д.</div>
                   </div>
-                  <div class="request__duration">Осталось до окончания: <span class="text-bold">5 дн. 18 часов</span></div>
+                  <div class="info col-sm-6 col-md-6 col-lg-4"><span class="text-bold">Создана</span>14.04.2020</div>
                 </div>
-              </div>
-              <div class="request request_no-preview">
-                <div class="line">
-                  <div class="column request__image"><span class="no-image">ЮМ</span></div>
-                  <div class="column request__info">
-                    <div class="request__author">Анна Старовер</div>
-                    <div class="request__rating">рейтинг пользователя — 4.8</div>
-                    <div class="icon-category icon-category_gift"></div>
-                  </div>
-                </div>
-                <div class="request__content">
-                  <div class="request__location">РОССИЯ, САНКТ-ПЕТЕРБУРГ</div>
-                  <div class="request__duration">Осталось до окончания: <span class="text-bold">5 дн. 18 часов</span></div>
-                  <div class="request__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-                  <div class="request__introtext">
-                    Совсем необязательно сегодня существует несколько вариантов lorem ipsum. Сегодня существует несколько вариантов lorem к обитателям 
-                    водоемов такое. Этот, несмотря на кириллице значительно.
-                  </div>
-                  <div class="request__price request__price_zz">122 ZZ</div>
-                </div>
-              </div>
-              <div class="request request_no-preview">
-                <div class="line">
-                  <div class="column request__image"><span class="no-image">ЮМ</span></div>
-                  <div class="column request__info">
-                    <div class="request__author">Анна Старовер</div>
-                    <div class="request__rating">рейтинг пользователя — 4.8</div>
-                    <div class="icon-category icon-category_hand"></div>
-                  </div>
-                </div>
-                <div class="request__content">
-                  <div class="request__location">РОССИЯ, САНКТ-ПЕТЕРБУРГ</div>
-                  <div class="request__duration">Осталось до окончания: <span class="text-bold">5 дн. 18 часов</span></div>
-                  <div class="request__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-                  <div class="request__introtext">
-                    Совсем необязательно сегодня существует несколько вариантов lorem ipsum. Сегодня существует несколько вариантов lorem к обитателям 
-                    водоемов такое. Этот, несмотря на кириллице значительно.
-                  </div>
-                  <div class="request__price request__price_zz">122 ZZ</div>
-                </div>
-              </div>
-              <div class="request">
-                <div class="request__image-preview" style="background-image:url(../img/image-6.jpg)">
-                  <div class="request__price request__price_zz">122 ZZ</div>
-                </div>
-                <div class="line align-items-center">
-                  <div class="column request__image"><span class="no-image">AC</span></div>
-                  <div class="column request__info">
-                    <div class="request__author">Анна Старовер</div>
-                    <div class="request__rating">рейтинг пользователя — 4.8</div>
-                    <div class="icon-category icon-category_heart"></div>
-                  </div>
-                </div>
-                <div class="request__content">
-                  <div class="request__location">РОССИЯ, САНКТ-ПЕТЕРБУРГ</div>
-                  <div class="request__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-                  <div class="request__introtext">
-                    Совсем необязательно сегодня существует несколько вариантов lorem ipsum. Сегодня существует несколько вариантов lorem к обитателям 
-                    водоемов такое. Этот, несмотря на кириллице значительно.
-                  </div>
-                  <div class="request__duration">Осталось до окончания: <span class="text-bold">5 дн. 18 часов</span></div>
-                </div>
+                <p class="card-text">Прислать открытку с видом на город</p>
+                <div class="info info_link"><a href="#">Посмотреть</a><a href="#">Использовать как шаблон</a><a href="#">Опубликовать</a><a href="#">Изменить</a><a href="#">Удалить</a></div>
               </div>
             </div>
           </div>

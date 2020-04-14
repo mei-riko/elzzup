@@ -88,6 +88,27 @@
         }
     }
 }
+.request-status{
+    font-weight: 700;
+    &--create{
+        color: $blue4;
+    }
+    &--publish{
+        color: $blue3;
+    }
+    &--active{
+        color: $blue2;
+    }
+    &--process{
+        color: $red;
+    }
+    &--check{
+        color: $dark-blue;
+    }
+    &--end{
+        color: $grey;
+    }
+}
 
 @media all and (min-width: map-get($grid-breakpoints, 'sm')){
     .request-tabs{
